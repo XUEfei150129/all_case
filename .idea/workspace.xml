@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a9cc72e-d9e7-4995-a974-60eec43f340f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_lib/api_case_lib/logistics/Car_Basc_Info.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_lib/api_case_lib/logistics/Car_Basc_Info.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/logistics/case02.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+            <state relative-caret-position="190">
+              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/logistics/Car_Basc_Info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -41,20 +54,22 @@
       <list>
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/logistics/case02.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/logistics/case03.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/logistics/Car_Basc_Info.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="102" />
-    <option name="y" value="-21" />
-    <option name="width" value="1722" />
-    <option name="height" value="1101" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1635" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -84,8 +99,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../参考/rule_yuanshi" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -98,6 +115,87 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck">
+    <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_SearchTruck" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="all_case" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/logistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Car_Basc_Info.Car_Basc_Info.test_SearchTruck&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="all_case" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/logistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_getIndexMenuAndButton" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="all_case" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/logistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Car_Basc_Info.Car_Basc_Info.test_getIndexMenuAndButton&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_updateTruck" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="all_case" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/logistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Car_Basc_Info.Car_Basc_Info.test_updateTruck&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Car_Basc_Info.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="all_case" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/logistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/case_lib/api_case_lib/logistics/Car_Basc_Info.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" />
+        <item itemvalue="Python tests.Unittests for Car_Basc_Info.Car_Basc_Info.test_getIndexMenuAndButton" />
+        <item itemvalue="Python tests.Unittests for Car_Basc_Info.Car_Basc_Info.test_updateTruck" />
+        <item itemvalue="Python tests.Unittests for Car_Basc_Info.Car_Basc_Info.test_SearchTruck" />
+        <item itemvalue="Python tests.Unittests in Car_Basc_Info.py" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -112,15 +210,47 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_updateTruck - 2019.03.21 at 18h 44m 32s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_updateTruck" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_addDeleteTruck - 2019.03.21 at 18h 44m 44s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_addDeleteTruck - 2019.03.21 at 18h 45m 27s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_addDeleteTruck - 2019.03.21 at 18h 45m 45s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_addDeleteTruck - 2019.03.21 at 18h 45m 55s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_getIndexMenuAndButton - 2019.03.21 at 18h 46m 20s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_getIndexMenuAndButton" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_addDeleteTruck - 2019.03.21 at 18h 49m 00s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_addDeleteTruck - 2019.03.21 at 18h 49m 07s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_addDeleteTruck - 2019.03.21 at 18h 50m 19s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Car_Basc_Info_Car_Basc_Info_test_addDeleteTruck - 2019.03.21 at 18h 51m 10s.xml">
+      <configuration name="Unittests for Car_Basc_Info.Car_Basc_Info.test_addDeleteTruck" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20810167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5150977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -135,13 +265,21 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/logistics/case03.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/logistics/case03.py" />
     <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/logistics/case02.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="67" lean-forward="true" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+        <state relative-caret-position="190">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/logistics/Car_Basc_Info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
