@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a9cc72e-d9e7-4995-a974-60eec43f340f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/Excel/6666.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/Excel/Operation_Excel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/Excel/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/Mysql_db/Read_Ini.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/Mysql_db/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/Mysql_db/connect_db.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/Mysql_db/db.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/Mysql_db/find_dbparameter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/UI_case_lib/draft.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/api_case_lib/logistics/Car_Basc_Info.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_lib/api_case_lib/logistics/Car_Basc_Info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/api_case_lib/logistics/case02.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_lib/api_case_lib/logistics/case02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/email/OperationEmail.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/email/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/login_Element/Login.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/login_Element/Read_Ini.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/login_Element/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/login_Element/user_name.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/method/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_lib/method/checkmethod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Excel/6666.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Excel/Operation_Excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Excel/Operation_Excel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/email/OperationEmail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            <state relative-caret-position="-361">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#72#86#0" expanded="true" />
               </folding>
@@ -55,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Excel/Operation_Excel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="792">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -106,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI_Element_Tool/Find_Elements.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-893">
+            <state relative-caret-position="-2550">
               <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
               <folding>
                 <element signature="e#86#95#0" expanded="true" />
@@ -162,12 +144,12 @@
         <option value="$PROJECT_DIR$/case_lib/UI_case_lib/logistics/Car_Base_Info_UI.py" />
         <option value="$PROJECT_DIR$/Mysql_db/Read_Ini.py" />
         <option value="$PROJECT_DIR$/Mysql_db/connect_db.py" />
-        <option value="$PROJECT_DIR$/Excel/Operation_Excel.py" />
         <option value="$PROJECT_DIR$/login_api/Read_Ini.py" />
+        <option value="$PROJECT_DIR$/Excel/Operation_Excel.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="186" />
     <option name="y" value="9" />
     <option name="width" value="1725" />
@@ -184,11 +166,6 @@
             <path>
               <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
               <item name="all_case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="all_case" type="462c0819:PsiDirectoryNode" />
-              <item name="UI_Element_Tool" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,15 +350,14 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18030183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20959148" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,10 +477,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UI_Element_Tool/Find_Elements.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2550">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding>
+            <element signature="e#86#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Excel/Operation_Excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="792">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -513,20 +499,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/email/OperationEmail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        <state relative-caret-position="-361">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#72#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI_Element_Tool/Find_Elements.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-893">
-          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
-          <folding>
-            <element signature="e#86#95#0" expanded="true" />
           </folding>
         </state>
       </provider>
