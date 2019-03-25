@@ -7,7 +7,7 @@ Library    case_lib.api_case_lib.logistics.Car_Basc_Info
         test_getIndexMenuAndButton
 
 
-验证新增车辆信息 -- wl001001
+验证新增/删除车辆信息 -- wl001001
         test_addDeleteTruck
 
 
