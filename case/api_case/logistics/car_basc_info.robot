@@ -13,3 +13,7 @@ Library    case_lib.api_case_lib.logistics.Car_Basc_Info
 
 验证修改车辆信息-- wl001002
         test_updateTruck
+
+
+验证查询车辆信息-- wl001003
+        test_SearchTruck

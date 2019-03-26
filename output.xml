@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.6.7 on win32)" generated="20190325 15:30:38.536" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.6.7 on win32)" generated="20190326 09:00:14.185" rpa="false">
 <suite id="s1" name="Case" source="D:\all_case\case">
 <suite id="s1-s1" name="Api Case" source="D:\all_case\case\api_case">
 <suite id="s1-s1-s1" name="Logistics" source="D:\all_case\case\api_case\logistics">
@@ -9,133 +9,97 @@
 <doc>调用端：web
 应用访问地址：/#/logistics/carBaseInfo
 平台应用场景：进入物流管理，点击车辆基本信息</doc>
-<msg timestamp="20190325 15:30:41.885" level="INFO">eyJhbGciOiJIUzUxMiJ9.eyJ1aWQiOiIxNTA1MDU2MzY5MCIsImN1cnJUaW1lIjoxNTUzNDk5MDM5MDQxfQ.xMFJ4KfvPY6bPVjR13FPTrRFbw9yhbVfB8T_77IbyhJ7LEj0F8uwzp3Rw5cZivtlxKaF6Cu_JsY9skK0Si4QmA
-接口返回值参数及类型&gt;&gt;&gt;&gt;&gt;&gt;&gt; {'id': 'str', 'username': 'str', 'name': 'str', 'description': 'NoneType', 'image': 'NoneType', 'menus': 'list', 'elements': 'list'}
+<msg timestamp="20190326 09:00:17.461" level="INFO">接口返回值参数及类型&gt;&gt;&gt;&gt;&gt;&gt;&gt; {'id': 'str', 'username': 'str', 'name': 'str', 'description': 'NoneType', 'image': 'NoneType', 'menus': 'list', 'elements': 'list'}
 接口返回值参数及类型&gt;&gt;&gt;&gt;&gt;&gt;&gt; {'data': {'id': 'str', 'username': 'str', 'name': 'str', 'description': 'NoneType', 'image': 'NoneType', 'menus': 'list', 'elements': 'list'}, 'message': 'str', 'success': 'bool', 'errCode': 'int'}</msg>
-<status status="PASS" starttime="20190325 15:30:38.747" endtime="20190325 15:30:41.885"></status>
+<status status="PASS" starttime="20190326 09:00:14.361" endtime="20190326 09:00:17.461"></status>
 </kw>
 <tags>
 <tag>logistics</tag>
 </tags>
-<status status="PASS" starttime="20190325 15:30:38.743" endtime="20190325 15:30:41.886" critical="yes"></status>
+<status status="PASS" starttime="20190326 09:00:14.356" endtime="20190326 09:00:17.462" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-s1-t2" name="验证新增/删除车辆信息 -- wl001001">
 <kw name="Test AddDeleteTruck" library="case_lib.api_case_lib.logistics.Car_Basc_Info">
 <doc>调用端：web
 应用访问地址：#/logistics/carBaseInfo
 平台应用场景：添加/删除车辆信息</doc>
-<status status="PASS" starttime="20190325 15:30:41.890" endtime="20190325 15:30:43.283"></status>
+<status status="PASS" starttime="20190326 09:00:17.465" endtime="20190326 09:00:18.388"></status>
 </kw>
 <tags>
 <tag>logistics</tag>
 </tags>
-<status status="PASS" starttime="20190325 15:30:41.887" endtime="20190325 15:30:43.284" critical="yes"></status>
+<status status="PASS" starttime="20190326 09:00:17.464" endtime="20190326 09:00:18.389" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-s1-t3" name="验证修改车辆信息-- wl001002">
 <kw name="Test UpdateTruck" library="case_lib.api_case_lib.logistics.Car_Basc_Info">
 <doc>调用端：web
 应用访问地址：#/logistics/carBaseInfo
 平台应用场景：修改车辆信息</doc>
-<msg timestamp="20190325 15:30:43.718" level="INFO">接口返回值参数及类型&gt;&gt;&gt;&gt;&gt;&gt;&gt; {'data': 'bool', 'message': 'str', 'errCode': 'int', 'success': 'bool'}</msg>
-<status status="PASS" starttime="20190325 15:30:43.286" endtime="20190325 15:30:43.718"></status>
+<msg timestamp="20190326 09:00:18.881" level="INFO">接口返回值参数及类型&gt;&gt;&gt;&gt;&gt;&gt;&gt; {'data': 'bool', 'message': 'str', 'errCode': 'int', 'success': 'bool'}</msg>
+<status status="PASS" starttime="20190326 09:00:18.392" endtime="20190326 09:00:18.881"></status>
 </kw>
 <tags>
 <tag>logistics</tag>
 </tags>
-<status status="PASS" starttime="20190325 15:30:43.285" endtime="20190325 15:30:43.719" critical="yes"></status>
+<status status="PASS" starttime="20190326 09:00:18.391" endtime="20190326 09:00:18.881" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20190325 15:30:38.576" endtime="20190325 15:30:43.720"></status>
+<test id="s1-s1-s1-s1-t4" name="验证查询车辆信息-- wl001003">
+<kw name="Test SearchTruck" library="case_lib.api_case_lib.logistics.Car_Basc_Info">
+<doc>调用端：web
+应用访问地址：#/logistics/carBaseInfo
+平台应用场景：搜索车辆信息</doc>
+<msg timestamp="20190326 09:00:19.986" level="INFO">接口返回值参数及类型&gt;&gt;&gt;&gt;&gt;&gt;&gt; {'searchKey': 'NoneType', 'pageNum': 'int', 'pageSize': 'int', 'total': 'int', 'pages': 'int', 'list': 'list', 'firstPage': 'bool', 'lastPage': 'bool'}
+接口返回值参数及类型&gt;&gt;&gt;&gt;&gt;&gt;&gt; {'data': {'searchKey': 'NoneType', 'pageNum': 'int', 'pageSize': 'int', 'total': 'int', 'pages': 'int', 'list': 'list', 'firstPage': 'bool', 'lastPage': 'bool'}, 'message': 'str', 'errCode': 'int', 'success': 'bool'}</msg>
+<status status="PASS" starttime="20190326 09:00:18.885" endtime="20190326 09:00:19.986"></status>
+</kw>
+<tags>
+<tag>logistics</tag>
+</tags>
+<status status="PASS" starttime="20190326 09:00:18.884" endtime="20190326 09:00:19.986" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190326 09:00:14.232" endtime="20190326 09:00:19.989"></status>
 </suite>
 <suite id="s1-s1-s1-s2" name="Case02" source="D:\all_case\case\api_case\logistics\case02.robot">
 <test id="s1-s1-s1-s2-t1" name="验证 - case02里面的ccccc">
 <kw name="Ccccc" library="case_lib.api_case_lib.logistics.case02">
-<status status="PASS" starttime="20190325 15:30:43.740" endtime="20190325 15:30:43.740"></status>
+<status status="PASS" starttime="20190326 09:00:20.010" endtime="20190326 09:00:20.011"></status>
 </kw>
 <tags>
 <tag>logistics</tag>
 </tags>
-<status status="PASS" starttime="20190325 15:30:43.736" endtime="20190325 15:30:43.741" critical="yes"></status>
+<status status="PASS" starttime="20190326 09:00:20.009" endtime="20190326 09:00:20.011" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-s2-t2" name="验证 - case02里面的ddddd">
 <kw name="Ddddd" library="case_lib.api_case_lib.logistics.case02">
-<status status="PASS" starttime="20190325 15:30:43.751" endtime="20190325 15:30:43.751"></status>
+<status status="PASS" starttime="20190326 09:00:20.017" endtime="20190326 09:00:20.017"></status>
 </kw>
 <tags>
 <tag>logistics</tag>
 </tags>
-<status status="PASS" starttime="20190325 15:30:43.747" endtime="20190325 15:30:43.752" critical="yes"></status>
+<status status="PASS" starttime="20190326 09:00:20.016" endtime="20190326 09:00:20.017" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20190325 15:30:43.723" endtime="20190325 15:30:43.754"></status>
+<status status="PASS" starttime="20190326 09:00:19.992" endtime="20190326 09:00:20.019"></status>
 </suite>
-<status status="PASS" starttime="20190325 15:30:38.574" endtime="20190325 15:30:43.766"></status>
+<status status="PASS" starttime="20190326 09:00:14.225" endtime="20190326 09:00:20.029"></status>
 </suite>
-<suite id="s1-s1-s2" name="Model 2" source="D:\all_case\case\api_case\model_2">
-<suite id="s1-s1-s2-s1" name="Case03" source="D:\all_case\case\api_case\model_2\case03.robot">
-<test id="s1-s1-s2-s1-t1" name="验证 - case02里面的ccccc">
-<kw name="Ccccc" library="case_lib.api_case_lib.logistics.case02">
-<status status="PASS" starttime="20190325 15:30:43.785" endtime="20190325 15:30:43.786"></status>
-</kw>
-<tags>
-<tag>model_2</tag>
-</tags>
-<status status="PASS" starttime="20190325 15:30:43.784" endtime="20190325 15:30:43.786" critical="yes"></status>
-</test>
-<test id="s1-s1-s2-s1-t2" name="验证 - case02里面的ddddd">
-<kw name="Ddddd" library="case_lib.api_case_lib.logistics.case02">
-<status status="PASS" starttime="20190325 15:30:43.792" endtime="20190325 15:30:43.792"></status>
-</kw>
-<tags>
-<tag>model_2</tag>
-</tags>
-<status status="PASS" starttime="20190325 15:30:43.789" endtime="20190325 15:30:43.793" critical="yes"></status>
-</test>
-<status status="PASS" starttime="20190325 15:30:43.778" endtime="20190325 15:30:43.797"></status>
+<status status="PASS" starttime="20190326 09:00:14.222" endtime="20190326 09:00:20.038"></status>
 </suite>
-<suite id="s1-s1-s2-s2" name="Case04" source="D:\all_case\case\api_case\model_2\case04.robot">
-<test id="s1-s1-s2-s2-t1" name="验证 - case02里面的ccccc">
-<kw name="Ccccc" library="case_lib.api_case_lib.logistics.case02">
-<status status="PASS" starttime="20190325 15:30:43.811" endtime="20190325 15:30:43.812"></status>
-</kw>
-<tags>
-<tag>model_2</tag>
-</tags>
-<status status="PASS" starttime="20190325 15:30:43.809" endtime="20190325 15:30:43.812" critical="yes"></status>
-</test>
-<test id="s1-s1-s2-s2-t2" name="验证 - case02里面的ddddd">
-<kw name="Ddddd" library="case_lib.api_case_lib.logistics.case02">
-<status status="PASS" starttime="20190325 15:30:43.819" endtime="20190325 15:30:43.819"></status>
-</kw>
-<tags>
-<tag>model_2</tag>
-</tags>
-<status status="PASS" starttime="20190325 15:30:43.814" endtime="20190325 15:30:43.819" critical="yes"></status>
-</test>
-<status status="PASS" starttime="20190325 15:30:43.802" endtime="20190325 15:30:43.822"></status>
-</suite>
-<status status="PASS" starttime="20190325 15:30:43.772" endtime="20190325 15:30:43.829"></status>
-</suite>
-<status status="PASS" starttime="20190325 15:30:38.572" endtime="20190325 15:30:43.835"></status>
-</suite>
-<status status="PASS" starttime="20190325 15:30:38.538" endtime="20190325 15:30:43.841"></status>
+<status status="PASS" starttime="20190326 09:00:14.188" endtime="20190326 09:00:20.048"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="9" fail="0">Critical Tests</stat>
-<stat pass="9" fail="0">All Tests</stat>
+<stat pass="6" fail="0">Critical Tests</stat>
+<stat pass="6" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="5" fail="0">logistics</stat>
-<stat pass="4" fail="0">model_2</stat>
+<stat pass="6" fail="0">logistics</stat>
 </tag>
 <suite>
-<stat pass="9" fail="0" id="s1" name="Case">Case</stat>
-<stat pass="9" fail="0" id="s1-s1" name="Api Case">Case.Api Case</stat>
-<stat pass="5" fail="0" id="s1-s1-s1" name="Logistics">Case.Api Case.Logistics</stat>
-<stat pass="3" fail="0" id="s1-s1-s1-s1" name="Car Basc Info">Case.Api Case.Logistics.Car Basc Info</stat>
+<stat pass="6" fail="0" id="s1" name="Case">Case</stat>
+<stat pass="6" fail="0" id="s1-s1" name="Api Case">Case.Api Case</stat>
+<stat pass="6" fail="0" id="s1-s1-s1" name="Logistics">Case.Api Case.Logistics</stat>
+<stat pass="4" fail="0" id="s1-s1-s1-s1" name="Car Basc Info">Case.Api Case.Logistics.Car Basc Info</stat>
 <stat pass="2" fail="0" id="s1-s1-s1-s2" name="Case02">Case.Api Case.Logistics.Case02</stat>
-<stat pass="4" fail="0" id="s1-s1-s2" name="Model 2">Case.Api Case.Model 2</stat>
-<stat pass="2" fail="0" id="s1-s1-s2-s1" name="Case03">Case.Api Case.Model 2.Case03</stat>
-<stat pass="2" fail="0" id="s1-s1-s2-s2" name="Case04">Case.Api Case.Model 2.Case04</stat>
 </suite>
 </statistics>
 <errors>
