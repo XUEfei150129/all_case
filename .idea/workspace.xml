@@ -38,83 +38,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_two.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="161">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUITool.py">
+        <entry file="file://$PROJECT_DIR$/Excel/Operation_Excel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI_Element_Tool/Find_Elements.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="92" column="12" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="12" />
-              <folding>
-                <element signature="e#86#95#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-              <folding>
-                <element signature="e#15#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/method/checkmethod.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="e#15#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="722">
+              <caret line="62" column="29" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="95" column="25" lean-forward="true" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="27" />
-              <folding>
-                <element signature="e#469#485#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="124" column="31" lean-forward="true" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="949">
-              <caret line="280" column="35" lean-forward="true" selection-start-line="280" selection-start-column="35" selection-end-line="280" selection-end-column="35" />
+            <state relative-caret-position="-114">
+              <caret line="123" column="40" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="40" />
               <folding>
                 <element signature="e#83#128#0" expanded="true" />
               </folding>
@@ -123,19 +66,178 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login_api/user_name.ini">
+        <entry file="file://C:/Program Files (x86)/Python36-32/Lib/configparser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="87">
+              <caret line="791" selection-start-line="791" selection-end-line="791" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login_api/Read_Ini.py">
+        <entry file="file://$PROJECT_DIR$/login_api/user_name.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10">
+              <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/bi_dev_maintain">
+          <provider selected="true" editor-type-id="1.DATA">
+            <state row-count="0" readonly="false">
+              <columns>
+                <column name="id" position="0" visible="true" />
+                <column name="dev_complete" position="1" visible="true" />
+                <column name="dev_code" position="2" visible="true" />
+                <column name="store_code" position="3" visible="true" />
+                <column name="create_by" position="4" visible="true" />
+                <column name="create_by_name" position="5" visible="true" />
+                <column name="create_by_dept" position="6" visible="true" />
+                <column name="create_by_dept_name" position="7" visible="true" />
+                <column name="create_by_region" position="8" visible="true" />
+                <column name="create_by_region_name" position="9" visible="true" />
+                <column name="status" position="10" visible="true" />
+                <column name="status_name" position="11" visible="true" />
+                <column name="approvalStatus" position="12" visible="true" />
+                <column name="approvalStatus_name" position="13" visible="true" />
+                <column name="component_fee" position="14" visible="true" />
+                <column name="service_staff" position="15" visible="true" />
+                <column name="service_staff_name" position="16" visible="true" />
+                <column name="reason" position="17" visible="true" />
+                <column name="result" position="18" visible="true" />
+                <column name="model_name" position="19" visible="true" />
+                <column name="device_hours" position="20" visible="true" />
+                <column name="hours" position="21" visible="true" />
+                <column name="require_finish_time" position="22" visible="true" />
+                <column name="create_dev_maintain_time" position="23" visible="true" />
+                <column name="assign_dev_maintain_time" position="24" visible="true" />
+                <column name="assign_dev_maintain_approver" position="25" visible="true" />
+                <column name="assign_dev_maintain_approver_name" position="26" visible="true" />
+                <column name="assign_dev_maintain_status" position="27" visible="true" />
+                <column name="accept_dev_maintain_time" position="28" visible="true" />
+                <column name="accept_dev_maintain_approver" position="29" visible="true" />
+                <column name="accept_dev_maintain_approver_name" position="30" visible="true" />
+                <column name="accept_dev_maintain_status" position="31" visible="true" />
+                <column name="deal_dev_maintain_time" position="32" visible="true" />
+                <column name="deal_dev_maintain_approver" position="33" visible="true" />
+                <column name="deal_dev_maintain_approver_name" position="34" visible="true" />
+                <column name="deal_dev_maintain_status" position="35" visible="true" />
+                <column name="finish_dev_maintain_time" position="36" visible="true" />
+                <column name="finish_dev_maintain_approver" position="37" visible="true" />
+                <column name="finish_dev_maintain_approver_name" position="38" visible="true" />
+                <column name="finish_dev_maintain_status" position="39" visible="true" />
+                <column name="create_dev_maintain_audit_time" position="40" visible="true" />
+                <column name="create_dev_maintain_audit_approver" position="41" visible="true" />
+                <column name="create_dev_maintain_audit_approver_name" position="42" visible="true" />
+                <column name="create_dev_maintain_audit_status" position="43" visible="true" />
+                <column name="del_flag" position="44" visible="true" />
+              </columns>
+              <sorting />
+              <content-types />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/bi_device_income">
+          <provider selected="true" editor-type-id="1.DATA">
+            <state row-count="100" readonly="false">
+              <columns>
+                <column name="ID" position="0" visible="true" />
+                <column name="CALCULATION_DATE" position="1" visible="true" />
+                <column name="STORE_CODE" position="2" visible="true" />
+                <column name="STORE_NAME" position="3" visible="true" />
+                <column name="CUSTOMER_MANAGER_CODE" position="4" visible="true" />
+                <column name="CUSTOMER_MANAGER_NAME" position="5" visible="true" />
+                <column name="ORDER_CODE" position="6" visible="true" />
+                <column name="CUSTOMER_CODE" position="7" visible="true" />
+                <column name="CUSTOMER_NAME" position="8" visible="true" />
+                <column name="PROJECT_CODE" position="9" visible="true" />
+                <column name="PROJECT_NAME" position="10" visible="true" />
+                <column name="SER_ENTER_CODE" position="11" visible="true" />
+                <column name="DEVICE_CODE" position="12" visible="true" />
+                <column name="RENTAL_INCOME" position="13" visible="true" />
+                <column name="FREIGHT_INCOME" position="14" visible="true" />
+                <column name="CLAIM_INCOME" position="15" visible="true" />
+                <column name="PAY_BACK_MONEY" position="16" visible="true" />
+                <column name="TOTAL_INCOME" position="17" visible="true" />
+                <column name="RENTAL_ADJUST" position="18" visible="true" />
+                <column name="FREIGHT_ADJUST" position="19" visible="true" />
+                <column name="CLAIM_ADJUST" position="20" visible="true" />
+                <column name="RENTAL_FINAL" position="21" visible="true" />
+                <column name="FREIGHT_FINAL" position="22" visible="true" />
+                <column name="CLAIM_FINAL" position="23" visible="true" />
+                <column name="TOTAL_FINAL" position="24" visible="true" />
+                <column name="RENTAL_INCOME_DUE" position="25" visible="true" />
+                <column name="RELEVANT_DOCUMENTS" position="26" visible="true" />
+                <column name="create_time" position="27" visible="true" />
+                <column name="update_time" position="28" visible="true" />
+              </columns>
+              <sorting />
+              <content-types />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/bi_cargo_rental_record">
+          <provider selected="true" editor-type-id="1.DATA">
+            <state row-count="200" readonly="false">
+              <columns>
+                <column name="ID" position="0" visible="true" />
+                <column name="IDENTITY" position="1" visible="true" />
+                <column name="ORDER_CODE" position="2" visible="true" />
+                <column name="CUSTOMER_CODE" position="3" visible="true" />
+                <column name="CUSTOMER_NAME" position="4" visible="true" />
+                <column name="CREATE_BY" position="5" visible="true" />
+                <column name="CREATE_BY_NAME" position="6" visible="true" />
+                <column name="CREATE_BY_DEPT" position="7" visible="true" />
+                <column name="CREATE_BY_DEPT_NAME" position="8" visible="true" />
+                <column name="CREATE_BY_REGION" position="9" visible="true" />
+                <column name="CREATE_BY_REGION_NAME" position="10" visible="true" />
+                <column name="JOB_ADDRESS" position="11" visible="true" />
+                <column name="DAY_RENT_PRICE" position="12" visible="true" />
+                <column name="MONTH_RENT_PRICE" position="13" visible="true" />
+                <column name="DEV_ENTER_CODE" position="14" visible="true" />
+                <column name="PLAN_ENTER_DATE" position="15" visible="true" />
+                <column name="ENTER_DATE" position="16" visible="true" />
+                <column name="RENT_DATE" position="17" visible="true" />
+                <column name="DAYS" position="18" visible="true" />
+                <column name="HOURS" position="19" visible="true" />
+                <column name="DEV_EXIT_CODE" position="20" visible="true" />
+                <column name="PLAN_EXIT_DATE" position="21" visible="true" />
+                <column name="EXIT_DATE" position="22" visible="true" />
+                <column name="UNRENT_DATE" position="23" visible="true" />
+                <column name="EXIT_HOURS" position="24" visible="true" />
+                <column name="enter_status" position="25" visible="true" />
+                <column name="enter_approvalStatus" position="26" visible="true" />
+                <column name="exit_status" position="27" visible="true" />
+                <column name="exit_approvalStatus" position="28" visible="true" />
+                <column name="del_flag" position="29" visible="true" />
+                <column name="dev_source" position="30" visible="true" />
+              </columns>
+              <sorting />
+              <content-types />
             </state>
           </provider>
         </entry>
@@ -154,6 +256,8 @@
       <find>true</find>
       <find>文本</find>
       <find>test_submitAuditInst</find>
+      <find>join</find>
+      <find>list</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;&quot;</replace>
@@ -181,7 +285,6 @@
         <option value="$PROJECT_DIR$/send_email/email_263.py" />
         <option value="$PROJECT_DIR$/send_email/Email_263.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/main_process.py" />
-        <option value="$PROJECT_DIR$/Excel/Operation_Excel.py" />
         <option value="$PROJECT_DIR$/case_lib/UI_case_lib/logistics/Car_Base_Info_UI.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/LOG/Car_Basc_Info.py" />
         <option value="$PROJECT_DIR$/case/api_case/LOG/car_basc_info.robot" />
@@ -199,29 +302,31 @@
         <option value="$PROJECT_DIR$/login_api/Read_Ini.py" />
         <option value="$PROJECT_DIR$/login_api/Login.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py" />
-        <option value="$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUI.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/分享一.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_one.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_two.py" />
         <option value="$PROJECT_DIR$/method/checkmethod.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/hello" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py" />
+        <option value="$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUI.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_two.py" />
+        <option value="$PROJECT_DIR$/Excel/Operation_Excel.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="186" />
-    <option name="y" value="9" />
-    <option name="width" value="1725" />
-    <option name="height" value="1062" />
+    <option name="x" value="726" />
+    <option name="y" value="339" />
+    <option name="width" value="1119" />
+    <option name="height" value="573" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,11 +337,6 @@
             <path>
               <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
               <item name="all_case" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="all_case" type="462c0819:PsiDirectoryNode" />
               <item name="case_lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,27 +344,6 @@
               <item name="all_case" type="462c0819:PsiDirectoryNode" />
               <item name="case_lib" type="462c0819:PsiDirectoryNode" />
               <item name="api_case_lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="all_case" type="462c0819:PsiDirectoryNode" />
-              <item name="case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="api_case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="CIS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="all_case" type="462c0819:PsiDirectoryNode" />
-              <item name="case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="api_case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="FMS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="all_case" type="462c0819:PsiDirectoryNode" />
-              <item name="case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="api_case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="LGT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
@@ -282,39 +361,37 @@
             <path>
               <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
               <item name="all_case" type="462c0819:PsiDirectoryNode" />
-              <item name="case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="UI_case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="LGT" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="all_case" type="462c0819:PsiDirectoryNode" />
               <item name="login_api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="all_case" type="462c0819:PsiDirectoryNode" />
-              <item name="UI_Element_Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../参考/rule_yuanshi" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../参考/Requests" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\all_case\case_lib\UI_case_lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\all_case\case_lib\api_case_lib\MAIN_PROCESS\share" />
       <recent name="D:\all_case\login_ui" />
       <recent name="D:\all_case" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\all_case\case_lib\UI_case_lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -329,8 +406,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.语法介绍">
-    <configuration name="语法介绍" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests for Main_Process.Main_Process.test_list0">
+    <configuration name="Operation_Excel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="all_case" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -338,74 +415,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Excel" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Read_Ini" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="all_case" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/login_api" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/login_api/Read_Ini.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="语法介绍" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="all_case" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="语法介绍" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="all_case" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Excel/Operation_Excel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -477,6 +491,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_os" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="all_case" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="all_case" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -491,7 +526,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Main_Process.Main_Process.test_needlist" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for Main_Process.Main_Process.test_list0" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="all_case" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -501,7 +536,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Main_Process.Main_Process.test_needlist&quot;" />
+      <option name="_new_target" value="&quot;Main_Process.Main_Process.test_list0&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -519,36 +554,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Main_Process.Main_Process.test_submitAuditInst" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="all_case" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Main_Process.Main_Process.test_submitAuditInst&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.语法介绍" />
       <item itemvalue="Python.share_two" />
-      <item itemvalue="Python.Read_Ini" />
       <item itemvalue="Python tests.Unittests for Main_Process.Main_Process.test_ordersignsave" />
+      <item itemvalue="Python.Operation_Excel" />
+      <item itemvalue="Python.test_os" />
       <item itemvalue="Python tests.Unittests for Main_Process.Main_Process.test_createDevEnter" />
-      <item itemvalue="Python tests.Unittests for Main_Process.Main_Process.test_submitAuditInst" />
-      <item itemvalue="Python tests.Unittests for Main_Process.Main_Process.test_needlist" />
+      <item itemvalue="Python tests.Unittests for Main_Process.Main_Process.test_list0" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.语法介绍" />
+        <item itemvalue="Python tests.Unittests for Main_Process.Main_Process.test_list0" />
         <item itemvalue="Python tests.Unittests for Main_Process.Main_Process.test_createDevEnter" />
-        <item itemvalue="Python.Read_Ini" />
+        <item itemvalue="Python.test_os" />
+        <item itemvalue="Python.Operation_Excel" />
         <item itemvalue="Python.share_two" />
-        <item itemvalue="Python tests.Unittests for Main_Process.Main_Process.test_submitAuditInst" />
       </list>
     </recent_temporary>
   </component>
@@ -566,92 +586,143 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.12 at 13h 51m 38s.xml">
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.18 at 14h 57m 40s.xml">
       <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.12 at 14h 33m 17s.xml">
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.18 at 15h 12m 09s.xml">
       <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.13 at 09h 23m 07s.xml">
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.18 at 15h 17m 11s.xml">
       <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.13 at 09h 26m 21s.xml">
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.18 at 15h 46m 44s.xml">
       <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.13 at 09h 27m 10s.xml">
-      <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_list0 - 2019.04.18 at 16h 35m 54s.xml">
+      <configuration name="Unittests for Main_Process.Main_Process.test_list0" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.13 at 09h 27m 32s.xml">
-      <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_list0 - 2019.04.18 at 16h 36m 59s.xml">
+      <configuration name="Unittests for Main_Process.Main_Process.test_list0" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.13 at 09h 28m 56s.xml">
-      <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_list0 - 2019.04.18 at 16h 37m 50s.xml">
+      <configuration name="Unittests for Main_Process.Main_Process.test_list0" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.13 at 09h 29m 12s.xml">
-      <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_list0 - 2019.04.18 at 16h 38m 09s.xml">
+      <configuration name="Unittests for Main_Process.Main_Process.test_list0" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.13 at 09h 29m 49s.xml">
-      <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_list0 - 2019.04.18 at 16h 39m 04s.xml">
+      <configuration name="Unittests for Main_Process.Main_Process.test_list0" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process_Main_Process_test_createDevEnter - 2019.04.13 at 09h 30m 28s.xml">
-      <configuration name="Unittests for Main_Process.Main_Process.test_createDevEnter" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process_Main_Process_test_list0 - 2019.04.18 at 16h 39m 55s.xml">
+      <configuration name="Unittests for Main_Process.Main_Process.test_list0" configurationId="tests" />
     </history-entry>
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21683876" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20413026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="DB Browser" order="3" weight="0.2065131" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.42273533" />
-      <window_info active="true" anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="2" sideWeight="0.49960285" visible="true" weight="0.34991118" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36944938" />
+      <window_info active="true" anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="2" sideWeight="0.4980143" visible="true" weight="0.10479574" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4831261" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.28596804" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039715" side_tool="true" weight="0.4635879" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019857" side_tool="true" weight="0.20071048" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3285968" />
+      <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18903892" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.4236111" />
-      <window_info anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="2" sideWeight="0.49960285" type="WINDOWED" weight="0.12966253" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3321492" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039715" side_tool="true" weight="0.4635879" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3285968" />
+      <window_info active="true" id="DB Browser" order="0" visible="true" weight="0.2065131" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.20413026" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.42273533" />
+      <window_info anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="3" sideWeight="0.4988086" weight="0.26110125" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4831261" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.28596804" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50119144" side_tool="true" weight="0.41740674" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="2" language="Python" />
+        <watch expression="girls" />
+        <watch expression="girls" />
+        <watch expression="girls" />
+        <watch expression="girls" />
+        <watch expression="girls" />
+        <watch expression="girls" />
+        <watch expression="girls" />
       </configuration>
     </watches-manager>
   </component>
@@ -665,79 +736,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/logistics/case03.py" />
-    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/Car_Basc_Info_UI.py" />
-    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/string.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/requests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/email/OperationEmail.py" />
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_api/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/api_case/iot/case03.robot" />
-    <entry file="file://$PROJECT_DIR$/case/api_case/iot/case04.robot" />
-    <entry file="file://$PROJECT_DIR$/case/api_case/LOG/case02.robot" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/case/api_case/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/send_email/Email_263.py" />
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LGT/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/api_case/LGT/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/api_case/IOT/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#36#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LOG/case02.py" />
-    <entry file="file://$PROJECT_DIR$/Excel/Operation_Excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/logistics/__init__.py" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2071">
-          <caret line="109" column="82" selection-start-line="109" selection-start-column="82" selection-end-line="109" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/logistics/Car_Base_Info_UI.py" />
     <entry file="file://$PROJECT_DIR$/Mysql_db/Read_Ini.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -752,26 +750,60 @@
     <entry file="file://$PROJECT_DIR$/login_ui/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mysql_db/db.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="4" selection-start-line="1" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mysql_db/find_dbparameter.py">
+    <entry file="file://$PROJECT_DIR$/login_api/Login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mysql_db/connect_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        <state relative-caret-position="76">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
-            <element signature="e#15#64#0" expanded="true" />
+            <element signature="e#15#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_ui/Login_UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#84#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/1.png" />
+    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUITool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1402888915/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="5729" column="6" selection-start-line="5729" selection-start-column="6" selection-end-line="5729" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding>
+            <element signature="e#15#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/method/checkmethod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -786,141 +818,602 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1402888915/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="4699" column="8" selection-start-line="4699" selection-start-column="8" selection-end-line="4699" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_api/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="e#15#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/微信截图_20190410224141.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_ui/Login_UI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#84#99#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/1.png" />
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_one.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#85#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_two.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUITool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UI_Element_Tool/Find_Elements.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="92" column="12" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="12" />
+        <state relative-caret-position="4465">
+          <caret line="243" column="33" selection-start-line="243" selection-start-column="33" selection-end-line="243" selection-end-column="33" />
           <folding>
             <element signature="e#86#95#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/method/checkmethod.py">
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/typing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="43320">
+          <caret line="2287" column="8" selection-start-line="2287" selection-start-column="8" selection-end-line="2287" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_api/user_name.ini">
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/验证.gif" />
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="2812">
+          <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login_api/Read_Ini.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mysql_db/find_dbparameter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/tms/tables/tms_truck_type_info">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="27" readonly="false">
+          <columns>
+            <column name="type" position="0" visible="true" />
+            <column name="type_name" position="1" visible="true" />
+            <column name="parent_type" position="2" visible="true" />
+            <column name="parent_type_name" position="3" visible="true" />
+            <column name="recommend_truck_code" position="4" visible="true" />
+          </columns>
+          <sorting>
+            <column name="parent_type_name" index="1" direction="DESCENDING" />
+          </sorting>
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/tmp_customer_xuedan">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="100" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="customer_code" position="1" visible="true" />
+            <column name="company_name" position="2" visible="true" />
+            <column name="customer_name" position="3" visible="true" />
+            <column name="customer_phone" position="4" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/tms/tables/tms_config">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="73" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="type" position="1" visible="true" />
+            <column name="config_key" position="2" visible="true" />
+            <column name="config_value" position="3" visible="true" />
+            <column name="order_idex" position="4" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/ser_dev_enter">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="100" readonly="false">
+          <columns>
+            <column name="source" position="0" visible="true" />
+            <column name="id" position="1" visible="true" />
+            <column name="order_code" position="2" visible="true" />
+            <column name="dev_enter_code" position="3" visible="true" />
+            <column name="plan_quit_date" position="4" visible="true" />
+            <column name="add_trans_fee" position="5" visible="true" />
+            <column name="add_bail_fee" position="6" visible="true" />
+            <column name="status" position="7" visible="true" />
+            <column name="approvalStatus" position="8" visible="true" />
+            <column name="del_flag" position="9" visible="true" />
+            <column name="create_by" position="10" visible="true" />
+            <column name="service_staff" position="11" visible="true" />
+            <column name="create_date" position="12" visible="true" />
+            <column name="update_by" position="13" visible="true" />
+            <column name="update_date" position="14" visible="true" />
+            <column name="remarks" position="15" visible="true" />
+            <column name="fileid" position="16" visible="true" />
+            <column name="prepay_bond" position="17" visible="true" />
+            <column name="prepay_rent" position="18" visible="true" />
+            <column name="prepay_freight" position="19" visible="true" />
+            <column name="revise" position="20" visible="true" />
+            <column name="reason" position="21" visible="true" />
+            <column name="balance_type" position="22" visible="true" />
+            <column name="balance_type_name" position="23" visible="true" />
+            <column name="caution_money_percent" position="24" visible="true" />
+            <column name="caution_money_value" position="25" visible="true" />
+            <column name="account_period" position="26" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mysql_db/db.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/bi_daily_rental_rate">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="700" readonly="false">
+          <columns>
+            <column name="NO" position="0" visible="true" />
+            <column name="STORE_IDENTITY" position="1" visible="true" />
+            <column name="STORE_NAME" position="2" visible="true" />
+            <column name="DAY" position="3" visible="true" />
+            <column name="TOTAL" position="4" visible="true" />
+            <column name="ZAIZU_TOTAL" position="5" visible="true" />
+            <column name="DAIJINCHANG_TOTAL" position="6" visible="true" />
+            <column name="DAIZU_TOTAL" position="7" visible="true" />
+            <column name="BAOTING_TOTAL" position="8" visible="true" />
+            <column name="ZHENGBEI_TOTAL" position="9" visible="true" />
+            <column name="CHAIJIAN_TOTAL" position="10" visible="true" />
+            <column name="RENTAL_RATE" position="11" visible="true" />
+            <column name="CATEGORY" position="12" visible="true" />
+            <column name="MONTH" position="13" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/session_browsers/Connection Sessions">
+      <provider selected="true" editor-type-id="0.SESSION_BROWSER">
+        <state>
+          <refresh-interval value="0" />
+          <sorting />
+          <filter>
+            <user value="" />
+            <host value="" />
+            <status value="" />
+          </filter>
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/tms/tables/tms_truck_dock_price">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="8" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="priority" position="1" visible="true" />
+            <column name="priority_name" position="2" visible="true" />
+            <column name="city" position="3" visible="true" />
+            <column name="city_name" position="4" visible="true" />
+            <column name="client_type" position="5" visible="true" />
+            <column name="client_type_name" position="6" visible="true" />
+            <column name="client" position="7" visible="true" />
+            <column name="client_name" position="8" visible="true" />
+            <column name="shigh" position="9" visible="true" />
+            <column name="shigh_name" position="10" visible="true" />
+            <column name="category" position="11" visible="true" />
+            <column name="category_name" position="12" visible="true" />
+            <column name="truck_code" position="13" visible="true" />
+            <column name="truck_type" position="14" visible="true" />
+            <column name="truck_type_name" position="15" visible="true" />
+            <column name="truck_length" position="16" visible="true" />
+            <column name="truck_length_name" position="17" visible="true" />
+            <column name="dock_type" position="18" visible="true" />
+            <column name="dock_type_name" position="19" visible="true" />
+            <column name="price" position="20" visible="true" />
+            <column name="effective_time" position="21" visible="true" />
+            <column name="expire_time" position="22" visible="true" />
+            <column name="create_time" position="23" visible="true" />
+            <column name="create_by" position="24" visible="true" />
+            <column name="update_by" position="25" visible="true" />
+            <column name="update_time" position="26" visible="true" />
+            <column name="del_flag" position="27" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/tms/tables/tms_truck_transport_order_device">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="100" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="truck_transport_code" position="1" visible="true" />
+            <column name="shigh" position="2" visible="true" />
+            <column name="shigh_name" position="3" visible="true" />
+            <column name="category" position="4" visible="true" />
+            <column name="category_name" position="5" visible="true" />
+            <column name="used_amount" position="6" visible="true" />
+            <column name="transport_code" position="7" visible="true" />
+            <column name="del_flag" position="8" visible="true" />
+            <column name="address" position="9" visible="true" />
+            <column name="type" position="10" visible="true" />
+            <column name="longitude" position="11" visible="true" />
+            <column name="latitude" position="12" visible="true" />
+            <column name="signed_time" position="13" visible="true" />
+            <column name="signed_longitude" position="14" visible="true" />
+            <column name="signed_latitude" position="15" visible="true" />
+            <column name="signed_status" position="16" visible="true" />
+            <column name="reason_for_abnormal_signed" position="17" visible="true" />
+            <column name="truck_transport_device_code" position="18" visible="true" />
+            <column name="demand_code" position="19" visible="true" />
+            <column name="group_id" position="20" visible="true" />
+            <column name="contact_name" position="21" visible="true" />
+            <column name="contact_mobile" position="22" visible="true" />
+            <column name="order_index" position="23" visible="true" />
+            <column name="status" position="24" visible="true" />
+            <column name="contact_code" position="25" visible="true" />
+            <column name="same_oper_code" position="26" visible="true" />
+            <column name="confirmed_time" position="27" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/fin_receivables_adjustment">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="42" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="adj_receivable_code" position="1" visible="true" />
+            <column name="order_code" position="2" visible="true" />
+            <column name="cust_name" position="3" visible="true" />
+            <column name="cust_code" position="4" visible="true" />
+            <column name="cust_manager_code" position="5" visible="true" />
+            <column name="cust_manager_name" position="6" visible="true" />
+            <column name="adj_type_code" position="7" visible="true" />
+            <column name="adj_type_name" position="8" visible="true" />
+            <column name="adj_detail_code" position="9" visible="true" />
+            <column name="adj_detail_name" position="10" visible="true" />
+            <column name="adj_dev_num" position="11" visible="true" />
+            <column name="receivable_balance" position="12" visible="true" />
+            <column name="payreq_amount" position="13" visible="true" />
+            <column name="adj_amount" position="14" visible="true" />
+            <column name="adj_reason" position="15" visible="true" />
+            <column name="store_code" position="16" visible="true" />
+            <column name="store_name" position="17" visible="true" />
+            <column name="bond_amount" position="18" visible="true" />
+            <column name="service_status" position="19" visible="true" />
+            <column name="approveStatus" position="20" visible="true" />
+            <column name="approve_date" position="21" visible="true" />
+            <column name="create_by" position="22" visible="true" />
+            <column name="create_time" position="23" visible="true" />
+            <column name="update_by" position="24" visible="true" />
+            <column name="update_time" position="25" visible="true" />
+            <column name="del_flag" position="26" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mysql_db/connect_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+          <folding>
+            <element signature="e#15#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/ser_dev_enter_demand">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="200" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="dev_enter_code" position="1" visible="true" />
+            <column name="dev_enter_demand_code" position="2" visible="true" />
+            <column name="order_dev_code" position="3" visible="true" />
+            <column name="shigh" position="4" visible="true" />
+            <column name="category" position="5" visible="true" />
+            <column name="num" position="6" visible="true" />
+            <column name="type" position="7" visible="true" />
+            <column name="create_by" position="8" visible="true" />
+            <column name="create_date" position="9" visible="true" />
+            <column name="update_date" position="10" visible="true" />
+            <column name="update_by" position="11" visible="true" />
+            <column name="del_flag" position="12" visible="true" />
+            <column name="add_num" position="13" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-614">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/tms/tables/sys_version">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="2" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="url" position="1" visible="true" />
+            <column name="version" position="2" visible="true" />
+            <column name="version_code" position="3" visible="true" />
+            <column name="force_update" position="4" visible="true" />
+            <column name="type" position="5" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/tms/tables/tms_carrier_contact_user_rel">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="100" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="carrier_code" position="1" visible="true" />
+            <column name="user_code" position="2" visible="true" />
+            <column name="create_time" position="3" visible="true" />
+            <column name="create_by" position="4" visible="true" />
+            <column name="update_by" position="5" visible="true" />
+            <column name="update_time" position="6" visible="true" />
+            <column name="del_flag" position="7" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/consoles/Connection">
+      <provider selected="true" editor-type-id="0.CONSOLE">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/hello">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#85#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/select_need.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/握手.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/流程图示.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/bi_dealt_stops">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="200" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="order_code" position="1" visible="true" />
+            <column name="enter_code" position="2" visible="true" />
+            <column name="factory_num" position="3" visible="true" />
+            <column name="stop_code" position="4" visible="true" />
+            <column name="stop_days" position="5" visible="true" />
+            <column name="stop_begin_time" position="6" visible="true" />
+            <column name="stop_end_time" position="7" visible="true" />
+            <column name="open_begin_time" position="8" visible="true" />
+            <column name="stop_type" position="9" visible="true" />
+            <column name="sum_date" position="10" visible="true" />
+            <column name="stop_dev_code" position="11" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/bi_dev_maintain">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="0" readonly="false">
+          <columns>
+            <column name="id" position="0" visible="true" />
+            <column name="dev_complete" position="1" visible="true" />
+            <column name="dev_code" position="2" visible="true" />
+            <column name="store_code" position="3" visible="true" />
+            <column name="create_by" position="4" visible="true" />
+            <column name="create_by_name" position="5" visible="true" />
+            <column name="create_by_dept" position="6" visible="true" />
+            <column name="create_by_dept_name" position="7" visible="true" />
+            <column name="create_by_region" position="8" visible="true" />
+            <column name="create_by_region_name" position="9" visible="true" />
+            <column name="status" position="10" visible="true" />
+            <column name="status_name" position="11" visible="true" />
+            <column name="approvalStatus" position="12" visible="true" />
+            <column name="approvalStatus_name" position="13" visible="true" />
+            <column name="component_fee" position="14" visible="true" />
+            <column name="service_staff" position="15" visible="true" />
+            <column name="service_staff_name" position="16" visible="true" />
+            <column name="reason" position="17" visible="true" />
+            <column name="result" position="18" visible="true" />
+            <column name="model_name" position="19" visible="true" />
+            <column name="device_hours" position="20" visible="true" />
+            <column name="hours" position="21" visible="true" />
+            <column name="require_finish_time" position="22" visible="true" />
+            <column name="create_dev_maintain_time" position="23" visible="true" />
+            <column name="assign_dev_maintain_time" position="24" visible="true" />
+            <column name="assign_dev_maintain_approver" position="25" visible="true" />
+            <column name="assign_dev_maintain_approver_name" position="26" visible="true" />
+            <column name="assign_dev_maintain_status" position="27" visible="true" />
+            <column name="accept_dev_maintain_time" position="28" visible="true" />
+            <column name="accept_dev_maintain_approver" position="29" visible="true" />
+            <column name="accept_dev_maintain_approver_name" position="30" visible="true" />
+            <column name="accept_dev_maintain_status" position="31" visible="true" />
+            <column name="deal_dev_maintain_time" position="32" visible="true" />
+            <column name="deal_dev_maintain_approver" position="33" visible="true" />
+            <column name="deal_dev_maintain_approver_name" position="34" visible="true" />
+            <column name="deal_dev_maintain_status" position="35" visible="true" />
+            <column name="finish_dev_maintain_time" position="36" visible="true" />
+            <column name="finish_dev_maintain_approver" position="37" visible="true" />
+            <column name="finish_dev_maintain_approver_name" position="38" visible="true" />
+            <column name="finish_dev_maintain_status" position="39" visible="true" />
+            <column name="create_dev_maintain_audit_time" position="40" visible="true" />
+            <column name="create_dev_maintain_audit_approver" position="41" visible="true" />
+            <column name="create_dev_maintain_audit_approver_name" position="42" visible="true" />
+            <column name="create_dev_maintain_audit_status" position="43" visible="true" />
+            <column name="del_flag" position="44" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/bi_device_income">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="100" readonly="false">
+          <columns>
+            <column name="ID" position="0" visible="true" />
+            <column name="CALCULATION_DATE" position="1" visible="true" />
+            <column name="STORE_CODE" position="2" visible="true" />
+            <column name="STORE_NAME" position="3" visible="true" />
+            <column name="CUSTOMER_MANAGER_CODE" position="4" visible="true" />
+            <column name="CUSTOMER_MANAGER_NAME" position="5" visible="true" />
+            <column name="ORDER_CODE" position="6" visible="true" />
+            <column name="CUSTOMER_CODE" position="7" visible="true" />
+            <column name="CUSTOMER_NAME" position="8" visible="true" />
+            <column name="PROJECT_CODE" position="9" visible="true" />
+            <column name="PROJECT_NAME" position="10" visible="true" />
+            <column name="SER_ENTER_CODE" position="11" visible="true" />
+            <column name="DEVICE_CODE" position="12" visible="true" />
+            <column name="RENTAL_INCOME" position="13" visible="true" />
+            <column name="FREIGHT_INCOME" position="14" visible="true" />
+            <column name="CLAIM_INCOME" position="15" visible="true" />
+            <column name="PAY_BACK_MONEY" position="16" visible="true" />
+            <column name="TOTAL_INCOME" position="17" visible="true" />
+            <column name="RENTAL_ADJUST" position="18" visible="true" />
+            <column name="FREIGHT_ADJUST" position="19" visible="true" />
+            <column name="CLAIM_ADJUST" position="20" visible="true" />
+            <column name="RENTAL_FINAL" position="21" visible="true" />
+            <column name="FREIGHT_FINAL" position="22" visible="true" />
+            <column name="CLAIM_FINAL" position="23" visible="true" />
+            <column name="TOTAL_FINAL" position="24" visible="true" />
+            <column name="RENTAL_INCOME_DUE" position="25" visible="true" />
+            <column name="RELEVANT_DOCUMENTS" position="26" visible="true" />
+            <column name="create_time" position="27" visible="true" />
+            <column name="update_time" position="28" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://ab9a71b9-a092-4c06-bdc6-15f9db6687b3/objects/schemas/bi/tables/bi_cargo_rental_record">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="200" readonly="false">
+          <columns>
+            <column name="ID" position="0" visible="true" />
+            <column name="IDENTITY" position="1" visible="true" />
+            <column name="ORDER_CODE" position="2" visible="true" />
+            <column name="CUSTOMER_CODE" position="3" visible="true" />
+            <column name="CUSTOMER_NAME" position="4" visible="true" />
+            <column name="CREATE_BY" position="5" visible="true" />
+            <column name="CREATE_BY_NAME" position="6" visible="true" />
+            <column name="CREATE_BY_DEPT" position="7" visible="true" />
+            <column name="CREATE_BY_DEPT_NAME" position="8" visible="true" />
+            <column name="CREATE_BY_REGION" position="9" visible="true" />
+            <column name="CREATE_BY_REGION_NAME" position="10" visible="true" />
+            <column name="JOB_ADDRESS" position="11" visible="true" />
+            <column name="DAY_RENT_PRICE" position="12" visible="true" />
+            <column name="MONTH_RENT_PRICE" position="13" visible="true" />
+            <column name="DEV_ENTER_CODE" position="14" visible="true" />
+            <column name="PLAN_ENTER_DATE" position="15" visible="true" />
+            <column name="ENTER_DATE" position="16" visible="true" />
+            <column name="RENT_DATE" position="17" visible="true" />
+            <column name="DAYS" position="18" visible="true" />
+            <column name="HOURS" position="19" visible="true" />
+            <column name="DEV_EXIT_CODE" position="20" visible="true" />
+            <column name="PLAN_EXIT_DATE" position="21" visible="true" />
+            <column name="EXIT_DATE" position="22" visible="true" />
+            <column name="UNRENT_DATE" position="23" visible="true" />
+            <column name="EXIT_HOURS" position="24" visible="true" />
+            <column name="enter_status" position="25" visible="true" />
+            <column name="enter_approvalStatus" position="26" visible="true" />
+            <column name="exit_status" position="27" visible="true" />
+            <column name="exit_approvalStatus" position="28" visible="true" />
+            <column name="del_flag" position="29" visible="true" />
+            <column name="dev_source" position="30" visible="true" />
+          </columns>
+          <sorting />
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_two.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Excel/Operation_Excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="124" column="31" lean-forward="true" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+        <state relative-caret-position="10">
+          <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py">
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="e#15#60#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/configparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="791" selection-start-line="791" selection-end-line="791" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_api/user_name.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="949">
-          <caret line="280" column="35" lean-forward="true" selection-start-line="280" selection-start-column="35" selection-end-line="280" selection-end-column="35" />
+        <state relative-caret-position="-114">
+          <caret line="123" column="40" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="40" />
           <folding>
             <element signature="e#83#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="95" column="25" lean-forward="true" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="27" />
-          <folding>
-            <element signature="e#469#485#0" expanded="true" />
           </folding>
         </state>
       </provider>

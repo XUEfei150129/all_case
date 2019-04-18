@@ -30,9 +30,9 @@
 #
 
 
-import traceback
-import time
-from appium import webdriver  # webdriver是基于selenium扩展的一个对象
+# import traceback
+# import time
+# from appium import webdriver  # webdriver是基于selenium扩展的一个对象
 
 a = """
 废掉一个人最隐蔽的方法：
@@ -93,9 +93,57 @@ a = """
 #
 # print(func.__doc__)
 # # 结果：这个是函数的注释
-questions = ['name', 'quest', 'favorite color']
-answers = ['lancelot', 'the holy grail', 'blue']
-for q, a in zip(questions, answers):
-    print('What is your {0}?  It is {1}.'.format(q, a))
+# for n in range(2, 10):
+#     for x in range(2, n):
+#         if n % x == 0:
+#             print(n, 'equals', x, '*', n // x)
+#             break
+#     else:
+#         print(n, 'is a prime number')
 
 
+# row = 1
+# while row <= 9:
+#     col = 1
+#     while col <= row:
+#         print("%d*%d=%d" % (col, row, col * row), end="\t")  # 打印99乘法表
+#         col += 1
+#     print("")
+#     row += 1
+
+
+# for x in range(1, 10):
+#     for y in range(1, x + 1):
+#         print("{}*{}={} \t".format(y, x, y * x), end="")
+#     print("")
+
+# alist = ["a", "b", "c", "d", "e", "f"]
+# for i in range(0, 2):  # 两次 0 1
+#     for name in alist:
+#         print(name)
+#         if name == "b":
+#             break
+# print("over")
+
+
+# boys = ["mike", "jack", "tom"]
+# girls = ["lisa", "linda", "mary"]
+# for boy in boys:
+#     for girl in girls:
+#         print("%s shakes %s" % (boy, girl))
+# print("run over")
+
+
+# def hello(a, b):
+#     print(a + b)
+#     return a ** b
+#
+#
+# # hello(2, 4)
+#
+# s = hello(2, 89)
+# print(s + 1)
+
+
+# print("{}*{}={} \t".format(2, 3, 6), end="")
+print("sadsads\ta",end="sss")

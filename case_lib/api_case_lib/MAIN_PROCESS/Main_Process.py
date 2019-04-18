@@ -15,7 +15,10 @@ from time import sleep
 
 
 class Main_Process(LoginShort, Login):
-    def test_ceratorder(self, numss=1):
+    #订单数据和发起进场的数量一致
+    num_order = 1
+    enter_order = 1
+    def test_ceratorder(self):
         '''调用端：移动端
             应用访问地址：
             平台应用场景：客户经理在订单管理模块创建订单
@@ -33,7 +36,7 @@ class Main_Process(LoginShort, Login):
                                 "jobAddress": "江苏省南京市雨花台区中国南京软件谷郁金香路25号南京(雨花)国际软件外包产业园", "balanceTypeName": "后付",
                                 "projectCode": "PROJECT101289", "businessPolicyChangeReason": "测试", "kilometre": "500",
                                 "jobType": "7", "jobTypeName": "钢结构", "balanceType": 3, "lat": "31.9837794", "city": "",
-                                "accountPeriod": "30", "isTransport": "{}".format(numss), "creditLevel": "C",
+                                "accountPeriod": "30", "isTransport": "{}".format(self.num_order), "creditLevel": "C",
                                 "creditScore": "",
                                 "remarks": ""}, "orderCode": "", "orderDevList": [
                 {"monthInfoFee": "0", "rentPriceCommission": "75", "categoryName": "剪叉", "minDayPrice": "112",
@@ -41,7 +44,7 @@ class Main_Process(LoginShort, Login):
                  "guidePriceCommission": "75", "category": "FORK", "shigh": "6", "minMonthPrice": "2250",
                  "shighName": "6米", "monthGuidePrice": "2500", "useDate": "{}".format(nowtime),
                  "monthRentPrice": "2500",
-                 "warehouseCode": "DEP1802000106", "dayGuidePrice": "125", "kzCount": "10", "num": "2",
+                 "warehouseCode": "DEP1802000106", "dayGuidePrice": "125", "kzCount": "10", "num": "{}".format(self.num_order),
                  "maxDayPrice": "375", "shighAndCategory": "6 FORK", "dayRentPrice": "125", "dayInfoFee": "0"}]}
         values = json.dumps(values)
         result = requests.post(self.url + "/api-oms/api/order/create", data=values, headers=headers)
@@ -132,6 +135,25 @@ class Main_Process(LoginShort, Login):
 
     def test_list(self):
         """
+        合同管理专员获取最新的合同,
+        :return:第一个订单号
+        """
+        token = self.test_Login("chenyanyan")
+        headers = {
+            'Content-Type': 'application/json',
+            "X-Auth-Token": token,
+        }
+        values = {
+            "pageNo": 1,
+            "pageSize": 10
+        }
+        result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
+        self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
+        self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
+        return result.json()['data']['list'][0]['instNo']
+
+    def test_list0(self):
+        """
         合同管理专员获取最新的合同
         :return:
         """
@@ -147,8 +169,8 @@ class Main_Process(LoginShort, Login):
         result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
-        # pprint(result.json()['data']['list'][0]['instNo'])
-        return result.json()['data']['list'][0]['instNo']
+        for i in result.json()['data']['list']:
+            print("第{}单号是：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
 
     # break
     def test_list1(self):
@@ -168,7 +190,7 @@ class Main_Process(LoginShort, Login):
         result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
-        # pprint(result.json()['data']['list'])
+        # pprint(result.json()['data']['list'][6])
         for i in result.json()['data']['list']:
             if "CHA" in i["bizNo"]:
                 break
@@ -233,9 +255,8 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         # pprint(result.json()['data']['list'])
         for i in result.json()['data']['list']:
-            # print(i["bizNo"])
             if "CHA" in i["bizNo"]:
-                print("销售单号依次是{}：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
+                print("销售单号是{}：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
                 break
                 # continue      (同break效果一样)
 
@@ -262,7 +283,7 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print("合同专员审核合同通过")
 
-    def test_createDevEnter(self, nums=1):
+    def test_createDevEnter(self):
         self.test_ubmitAuditInst()
         token = self.test_Login("xuefei")
         headers = {
@@ -275,7 +296,7 @@ class Main_Process(LoginShort, Login):
                 {"lockedNum": "1", "notEnterNumTe": "1", "storeCode": "DEP18020003", "categoryName": "剪叉",
                  "warehouseName": "南京仓", "days": "30", "orderDevCode": "DEV190316856", "addNum": 0, "category": "FORK",
                  "isExit": False, "rentingNum": "2", "shigh": "6", "orderDevType": "0", "shighName": "6米", "type": "0",
-                 "monthRentPrice": "2500", "warehouseCode": "DEP1802000106", "num": "{}".format(nums), "stockNum": "6",
+                 "monthRentPrice": "2500", "warehouseCode": "DEP1802000106", "num": "{}".format(self.enter_order), "stockNum": "6",
                  "dayRentPrice": "125"}], "warehouseName": "南京仓", "storeCode": "DEP18020003", "storeName": "南京店",
                   "addTransFee": "", "remarks": "", "planQuitDate": "{}".format(nowtime)}
         values = json.dumps(values)
@@ -283,3 +304,5 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print("客户经理发起进场成功")
+
+

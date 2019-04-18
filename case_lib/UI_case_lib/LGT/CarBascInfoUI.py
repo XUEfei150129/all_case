@@ -20,6 +20,7 @@ class CarBascInfoUI(LoginUi):
 
     def test_add_car(self):
         sleep(3)
+        self.wd.refresh()
         li_list = self.Check_elements(
             "css", "ul[role*=menubar]", "ul[role*=menubar]>li")
         for li in li_list:
