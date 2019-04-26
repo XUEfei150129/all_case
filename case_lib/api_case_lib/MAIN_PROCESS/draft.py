@@ -87,12 +87,12 @@ from pprint import pprint
 # a = {'data': {'id': 60041, 'revise': 0, 'orderCode': 'ZNLHZL-2019-28348', 'devEnterCode': 'FWJ190360041', 'approvalStatus': None, 'planQuitDate': '2019-03-29 15:17', 'planArriveDate': '2019-03-29 15:17', 'arriveDate': None, 'rentDate': None, 'status': 10, 'delFlag': None, 'fileid': None, 'filePath': None, 'createBy': 'USER1903030886', 'createDate': None, 'updateBy': 'USER1903030886', 'updateDate': None, 'auditStatus': None, 'staff': None, 'serviceStaff': None, 'serviceStaffName': None, 'staffPhone': None, 'loadingStaff': None, 'loadingStaffName': None, 'loadingStaffPhone': None, 'customerManagerCode': None, 'customerManager': None, 'customerManagerPhone': None, 'custCode': None, 'custName': None, 'contactName': None, 'contactPhone': None, 'jobAddress': None, 'jobType': None, 'jobTypeName': None, 'projectCode': None, 'projectName': None, 'projectLongitude': None, 'projectLatitude': None, 'signPersonList': None, 'serDevEnterDemandList': [{'id': 54093, 'revise': None, 'approvalStatus': None, 'source': None, 'addNum': 0, 'devEnterCode': 'FWJ190360041', 'devEnterDemandCode': 'FWJ_DEMAND_190354093', 'shigh': '6', 'shighName': '6米', 'category': 'FORK', 'categoryName': '剪叉', 'num': 1, 'createBy': 'USER1903030886', 'createDate': None, 'updateDate': None, 'updateBy': 'USER1903030886', 'dayRentPrice': '125', 'monthRentPrice': '2500', 'storeCode': 'DEP18020003', 'storeName': None, 'orderDevCode': 'DEV190316856', 'orderCode': None, 'days': 30, 'notEnterNum': None, 'notEnterNumTe': 1, 'rentingNum': 2, 'lockedNum': 1, 'stockNum': 6, 'type': 0, 'orderDevType': 0, 'soureType': None, 'status': None, 'warehouseCode': 'DEP1802000106', 'warehouseName': '南京仓', 'orderNum': None, 'lockFlag': None, 'matchList': None, 'matchCount': None}], 'addTransFee': None, 'addBailFee': None, 'bond': None, 'estimatePrice': None, 'storeName': '南京店', 'storeCode': 'DEP18020003', 'remarks': '', 'query': None, 'pageNo': None, 'isAdd': 0, 'isTransport': None, 'isToDay': None, 'reason': None, 'prepayBond': None, 'prepayRent': None, 'prepayFreight': None, 'balanceType': 3, 'source': 0, 'orderSource': None, 'balanceTypeName': '后付', 'cautionMoneyPercent': None, 'cautionMoneyValue': None, 'accountPeriod': None, 'warehouseCode': 'DEP1802000106', 'warehouseName': '南京仓', 'pageSize': None, 'jobAddressLongitude': None, 'jobAddressLatitude': None, 'enterpriseCode': None, 'enterpriseName': None, 'transportDemands': None, 'traineeList': None, 'filePathList': None, 'modPlanArriveDateFlag': None, 'opRole': None, 'loadingModifyFlag': None, 'signType': None, 'signInFlag': None, 'fenceFlag': None, 'isArchived': None, 'showSignInIcon': 0, 'approveTime': None, 'contractId': None}, 'message': 'ok', 'success': True, 'errCode': 0}
 # pprint(a)
 
-A = 1
-B = A
-A = 2
-
-print(B)
-# row = 1
+# A = 1
+# B = A
+# A = 2
+#
+# print(B)
+# # row = 1
 # while row <= 9:
 #     col = 1
 #     while col <= row:
@@ -100,38 +100,150 @@ print(B)
 #         col += 1
 #     print("")
 #     row += 1
+#
+
+"""
+面向对象编程(Object Oriented Programming )简写OOP
+ 相比较函数，面向对象是更大的封装，根据职责在一个对象中封装多个方法
+    1.在完成摸一个需求前，首先要确定职责 --- 要做的的事情（方法）
+    2.根据职责确定不同的对象，在对象内部封装不同的方法（多个）
+    3.最后完成代码，就是顺序的让不同的对象调用不同的方法
+ 
+面向对象的特点：
+    1.注重对象和职责，不同的对象承担不同的职责
+    2.更适合应对复杂的需求变化，是专门应对复杂项目开发，提供的固定套路
+    3.需要在面向过程的基础上，在学习一些面向对象的语法
+
+类和对象
+    类和对象是面向对象编程的两个核心概念
+    
+    
+类：
+    类 是对一群具有 相同特征 或者 行为 的事物的一个统称，是抽象的，不能直接使用
+        特征 被称为 属性
+        行为 被称为 方法
+        
+    类 就相当于制造飞机时的 图纸，是一个 模板，是 负责创建对象的
+对象：
+    对象 是由类创建出来的一个具体存在，可以直接使用
+    是由哪个类创建出来的 对象，就拥有在 哪一个类 中定义的：
+     属性
+     方法
+    对象就相对于 图纸制造的飞机
+    在程序开发中，应该先有类，再有对象
+类和对象的关系
+    类是模板， 对象是根据类这个模板创建出来的，应该先有类，再有对象
+    类只有一个，而，对象有很多个
+        不同的对象之间的属性可能会各不相同
+    类中定义了什么属性和方法，对象中就有什么属性和方法，不可能多，也不可能少
+类的设计
+    在程序开发中，要设计一个类，要满足三个要素：
+        1.类名 这类事物的名字，满足大驼峰命名法
+            大驼峰命名法：
+                1.每个单词的首字母大写
+                2.单词与单词之间没有下划线
+        2.属性 这类事物具有什么样的特征
+        3.方法 这类食物具有什么样的行为
+    
+    类名的确定
+        名词提炼法 分析整个业务流程，出现的名词，通常就是找到的类
+    属性和方法的确定
+        对 对象的特征描述，通常可以定义成属性
+        对象具有的行为（动词），通常可以定义为方法
+            提示：需求中没有涉及的属性或者是方法在设计类时，不需要考虑
+    
+面向对象基础语法
+    dir内置函数
+     使用内置函数dir传入标识符/数据，可以查看对象内的所有属性及方法
+     提示：__方法名__ 格式的方法是python提供的内置方法/属性
+        验证了函数也是对象，对象是由对象的方法或是属性的
+        def aaa():
+            pass
+        print(dir(aaa()))
+        #结果：['__bool__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+
+    
+    引用的概念：
+        在面向对象开发中，引用的概念是同样适用的！
+        ·在python中使用类创建对象之后，tom变量中仍然记录的是对象在内存中的地址
+        ·也就是tom变量引用了新建的猫对象
+        ·使用print输出对象变量，默认情况下，是能够输出这个变量引用的对象是由那一个类创建的对象，
+          以及在内存中的地址（16进制表示）
+           提示：在计算机中，通常使用16进制表示内存地址
+            
+            ·十进制和十六进制都是用来表达数字的，只是表示的方式不一样
+            ·十进制和十六进制的数字之间可以来回转换
+        ·%d 可以以10进制输出数字
+        ·%x 可以以16进制输出数字
+            
+    
+class Cat:
+def eat(self):
+    print("小猫哎吃鱼")
+
+def drink(self):
+    print("小猫要喝水")
+
+tom = Cat()
+tom.eat()
+tom.drink()
+print(tom)
+print("%d"%(id(tom)))           #%d打印的是10进制的
+print("%x"%(id(tom)))           #%X打印的是16进制的
+#结果   （计算机中喜欢用16进制表示地址）
+# 小猫哎吃鱼
+# 小猫要喝水
+# <__main__.Cat object at 0x03161330>
+# 51778352
+# 3161330
+
+    初始化方法
+    当使用类名()创建对象的时候，会自动执行以下操作：
+        1.为对象在内存中分配空间 -- 创建对象
+        2.为对象的属性设置初始值 --初始化方法（init）
+    这个初始化方法就是__init__方法，__init__是对象的 内置方法
+     __init__方法是专门用来定义一个类具有哪些属性的方法  
+
+"""
+
+#
+# class Cat:
+#     def __init__(self):
+#         print("这是初始化方法")
+#
+# #使用类名()创建对象的时候，会自动调用初始化方法__init__
+# tom = Cat()
+
+
+
+# result = 0
+# i = 0
+# while i<=100:
+#     if i % 2 == 0:
+
+
 import requests
-import itchat
-from threading import Timer
 
 
-# 获取金山词霸每日一句，英文和翻译
-def get_news():
-    url = "http://open.iciba.com/dsapi"
-    r = requests.get(url)
-    contents = r.json()['content']
-    translation = r.json()['translation']
-    return contents, translation
+def Login():
+    result = requests.get(
+        "http://api.zuul.autotest.znlhzl.org/api-sso/api/v1/login?name=15050563690&pwd=888888")
+    return result.json()["data"]["token"]
 
 
-# 发送消息
-def send_news():
-    try:
-        itchat.auto_login()  # 会弹出网页二维码，扫描即可，登入你的微信账号，True保持登入状态
-        my_girfriend = itchat.search_friends(name='张玉文')  # name改成你心爱的人在你微信的备注
-        mylover = my_girfriend[0]["UserName"]
-        message1 = str(get_news()[0])  # 获取金山字典的内容
-        content = str(get_news()[1][17:])
-        message2 = str(content)
-        message3 = "来自你最爱的人"
-        itchat.send(message1, toUserName=mylover)
-        itchat.send(message2, toUserName=mylover)
-        itchat.send(message3, toUserName=mylover)
-        Timer(0.5, send_news).start()  # 每隔86400秒发送一次，也就是每天发一次
-    except:
-        message4 = "最爱你的人出现啦~~"
-        itchat.send(message4, toUserName=mylover)
+session = Login()
+print(session)
 
-
-if __name__ == "__main__":
-    send_news()
+headers = {
+    'Content-Type': 'application/json',
+    "X-Auth-Token": session,
+}
+values = {"pageNo": "1",
+                  "pageSize": "20",
+                  "truckPlateNumber": "冀A1T2C6",
+                  "truckType": "",
+                  "truckBelong": "",
+                  "truckLoad": ""
+                  }
+a = requests.get("http://api.zuul.autotest.znlhzl.org/api-tms/api/v1/bd/truck/loadTrucks",params=values,headers = headers)
+print(a.url)

@@ -12,11 +12,12 @@
 """
 import random
 
+
 #
 # # 简单条件判断
-# age = int(input("你今年几岁："))
+# age2 = int(input("你今年几岁："))
 #
-# if age >= 18:
+# if age2 >= 18:
 #     print("你长大了，你可以进去玩了")
 #     print("记得时间不要太长")
 # else:
@@ -62,7 +63,6 @@ import random
 # number = int(input("请输入一个正整数："))
 # if number >= 0:
 #     if number % 2 == 0:
-#
 #         if number % 3 == 0:
 #             print("您输入的数字能整除2，也能整除3")
 #         else:
@@ -83,7 +83,7 @@ import random
 #         or (player == 2 and computer == 3)
 #         or (player == 3 and computer == 1)):
 #     print("玩家赢")
-# elif (player == computer):
+# elif player == computer:
 #     print("太巧了，你和电脑出的一样")
 # else:
 #     print("电脑赢")
@@ -126,7 +126,7 @@ import random
 # print(salary_after)
 # range
 # range() 函数可创建一个整数列表，一般用在 for 循环中
-# range(start, stop[, step])
+# range(start, stop, [step])
 # start: 计数从 start 开始。默认是从 0 开始。例如range（5）等价于range（0， 5）;
 # stop: 计数到 stop 结束，但不包括 stop。例如：range（0， 5） 是[0, 1, 2, 3, 4]没有5
 # step：步长，默认为1。例如：range（0， 5） 等价于 range(0, 5, 1)
@@ -136,7 +136,7 @@ import random
 # sumData = 0
 # for i in range(1, 101):
 #     sumData += i
-#     #sumData = sumData + i
+#
 # print(sumData)
 
 
@@ -155,11 +155,31 @@ import random
 #     print("")  # 每个大循环换行
 
 # while循环
+# n = 1
+# sum = 0
+# while n < 101:
+#     sum = sum + n
+#     n += 1
+# print(sum)
+#
+#
+# result = 0
+# i = 0
+# while i <= 100:
+#     if i % 2 == 0:
+#         result += i
+#     i += 1
+# print("0~100之间偶数求和结果 = %d" % result)
+
+
 # a = input("请输入任意字符：")
 # while a != "exit":
 #     print("你在循环中，按'exit'退出")
 #     a = input("请输入任意字符：")
-# numbers = [12, 37, 5, 42, 8, 43]
+# print("您已退出")
+
+
+# numbers = [12, 37, 5, 42, 8, 43, 67, 6886]
 # a = []
 # b = []
 # while len(numbers) > 0:
@@ -190,6 +210,12 @@ import random
 
 # return和print理解
 
+# """
+# 在程序开发中，有时候，会希望 一个函数执行结束后，告诉调用者一个结果，以便调用者针对具体的结果做后续的处理
+# 返回值 是函数 完成工作后，最后 给调用者的 一个结果
+# 在函数中使用 return 关键字可以返回结果
+# 调用函数一方，可以 使用变量 来 接收 函数的返回结果
+# """
 
 
 

@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3">
-        <schema name="bi" object-types="view, column, function, index, table, procedure, constraint, dataset trigger" />
+        <schema name="bi" object-types="view, table" />
         <schema name="tms" object-types="view, table" />
       </connection>
     </loaded-nodes>
@@ -36,11 +36,7 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" object-ref="schemas/bi/tables/bi_cargo_rental_record" />
-      <object connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" object-ref="schemas/bi/tables/bi_dev_maintain" />
-      <object connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" object-ref="schemas/bi/tables/bi_device_income" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" />
@@ -54,15 +50,19 @@
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.bi_daily_rental_rate" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.fin_receivables_adjustment" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.bi_cargo_rental_record" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.bi_tms_external_efficiency" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="tms.tms_client_freight_ratio" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.bi_device_income" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="tms.tms_truck_transport_order_device_match" active-filter-id="" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="tms.tms_config" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="tms.tms_truck_transport_order_device" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="tms.tms_truck_type_info" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.bi_order_receivable_overdue_sum" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.tmp_customer_xuedan" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.bi_dev_maintain" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="tms.tms_carrier_contact_user_rel" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.bi_cargo" active-filter-id="" />
+    <filter-actions connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3" dataset="bi.bi_follow" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />

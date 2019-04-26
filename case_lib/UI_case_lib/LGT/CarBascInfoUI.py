@@ -38,6 +38,7 @@ class CarBascInfoUI(LoginUi):
                 string.ascii_uppercase +
                 string.digits,
                 k=6))
+        print(ran_str)
         self.Input(
             "css",
             CarBascInfoUItool().carinfo(1),

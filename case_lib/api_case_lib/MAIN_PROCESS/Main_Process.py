@@ -15,9 +15,13 @@ from time import sleep
 
 
 class Main_Process(LoginShort, Login):
-    #订单数据和发起进场的数量一致
+    """
+    主流程测试用例
+    """
+    # 订单设备数据和发起进场的设备数量一致
     num_order = 1
     enter_order = 1
+
     def test_ceratorder(self):
         '''调用端：移动端
             应用访问地址：
@@ -32,25 +36,27 @@ class Main_Process(LoginShort, Login):
         nowtime = datetime.now().strftime('%Y-%m-%d')
         values = {"createName": "薛飞", "customerName": "薛飞", "storeCode": "DEP18020003", "customerCode": "CUST110359",
                   "enterpriseCode": "", "enterpriseName": "", "estimatePriceUpdateFlag": 0,
-                  "orderInfo": {"projectName": "测试工程", "fileid": "", "lon": "118.779574", "estimatePrice": "1000",
+                  "orderInfo": {"projectName": "测试一下", "fileid": "", "lon": "118.780588", "estimatePrice": "200",
                                 "jobAddress": "江苏省南京市雨花台区中国南京软件谷郁金香路25号南京(雨花)国际软件外包产业园", "balanceTypeName": "后付",
-                                "projectCode": "PROJECT101289", "businessPolicyChangeReason": "测试", "kilometre": "500",
-                                "jobType": "7", "jobTypeName": "钢结构", "balanceType": 3, "lat": "31.9837794", "city": "",
-                                "accountPeriod": "30", "isTransport": "{}".format(self.num_order), "creditLevel": "C",
+                                "projectCode": "PROJECT101179", "businessPolicyChangeReason": "测试", "kilometre": "100",
+                                "jobType": "1", "jobTypeName": "钢结构", "balanceType": 3, "lat": "31.983009", "city": "",
+                                "accountPeriod": "30", "isTransport": "{}".format(self.num_order), "creditLevel": "A",
                                 "creditScore": "",
                                 "remarks": ""}, "orderCode": "", "orderDevList": [
-                {"monthInfoFee": "0", "rentPriceCommission": "75", "categoryName": "剪叉", "minDayPrice": "112",
+                {"monthInfoFee": "0", "rentPriceCommission": "75", "categoryName": "剪叉", "minDayPrice": "100",
                  "warehouseName": "南京仓", "days": "30", "shighNameAndCategoryName": "6米 剪叉", "maxMonthPrice": "3750",
-                 "guidePriceCommission": "75", "category": "FORK", "shigh": "6", "minMonthPrice": "2250",
+                 "guidePriceCommission": "75", "category": "FORK", "shigh": "6", "minMonthPrice": "2000",
                  "shighName": "6米", "monthGuidePrice": "2500", "useDate": "{}".format(nowtime),
                  "monthRentPrice": "2500",
-                 "warehouseCode": "DEP1802000106", "dayGuidePrice": "125", "kzCount": "10", "num": "{}".format(self.num_order),
+                 "warehouseCode": "DEP1802000106", "dayGuidePrice": "125", "kzCount": "10",
+                 "num": "{}".format(self.num_order),
                  "maxDayPrice": "375", "shighAndCategory": "6 FORK", "dayRentPrice": "125", "dayInfoFee": "0"}]}
         values = json.dumps(values)
         result = requests.post(self.url + "/api-oms/api/order/create", data=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         self.assertEqual("订单创建成功！", result.json()['meta']["message"], msg="验证订单是否创建成功")
+        #print(result.json())
         print("订单创建成功")
 
     def test_needlist(self):
@@ -70,7 +76,6 @@ class Main_Process(LoginShort, Login):
         result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
-        # pprint(result.json())
         bizNo = result.json()["data"]["list"][0]["bizNo"]
         instNo = result.json()["data"]["list"][0]["instNo"]
         print(bizNo, instNo + " 获取成功")
@@ -88,7 +93,6 @@ class Main_Process(LoginShort, Login):
         bizNo = info[0]
         instNo = info[1]
         token = self.test_Login("huangfei")
-        print(token)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -99,7 +103,6 @@ class Main_Process(LoginShort, Login):
         values = json.dumps(values)
         result = requests.post(self.url + "/api-wfe/api/proc/submitAuditInst", data=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
-        print(result.json())
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print("城市经理审核通过")
 
@@ -128,7 +131,6 @@ class Main_Process(LoginShort, Login):
         values = json.dumps(values)
         result = requests.post(self.url + "/api-oms/api/order/sign/save", data=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
-        print(result.json())
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         self.assertEqual('签约信息保存成功', result.json()['meta']['message'], msg="验证签约信息保存成功")
         print("客户经理上传合同成功")
@@ -138,7 +140,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同,
         :return:第一个订单号
         """
-        token = self.test_Login("chenyanyan")
+        token = self.test_Login("qinchuanxiu")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -150,6 +152,7 @@ class Main_Process(LoginShort, Login):
         result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
+        #pprint(result.json()['data']['list'])
         return result.json()['data']['list'][0]['instNo']
 
     def test_list0(self):
@@ -157,7 +160,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同
         :return:
         """
-        token = self.test_Login("chenyanyan")
+        token = self.test_Login("qinchuanxiu")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -178,7 +181,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同
         :return:
         """
-        token = self.test_Login("chenyanyan")
+        token = self.test_Login("qinchuanxiu")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -192,7 +195,7 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         # pprint(result.json()['data']['list'][6])
         for i in result.json()['data']['list']:
-            if "CHA" in i["bizNo"]:
+            if "415" in i["bizNo"]:
                 break
             print("销售单号依次是{}：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
 
@@ -208,7 +211,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同
         :return:
         """
-        token = self.test_Login("chenyanyan")
+        token = self.test_Login("qinchuanxiu")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -241,7 +244,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同
         :return:
         """
-        token = self.test_Login("chenyanyan")
+        token = self.test_Login("qinchuanxiu")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -269,13 +272,13 @@ class Main_Process(LoginShort, Login):
         """
         self.test_ordersignsave()
         instNo = self.test_list()
-        token = self.test_Login("chenyanyan")
+        token = self.test_Login("qinchuanxiu")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
         }
-        values = {"status": 1, "submitUserCode": "USER1804001207", "submitUserName": "陈艳艳",
-                  "bizNo": bizNo, "updateUserCode": "USER1804001207", "updateUserName": "陈艳艳",
+        values = {"status": 1, "submitUserCode": "USER180301077", "submitUserName": "秦传秀",
+                  "bizNo": bizNo, "updateUserCode": "USER180301077", "updateUserName": "秦传秀",
                   "instNo": instNo, "comment": "测试"}
         values = json.dumps(values)
         result = requests.post(self.url + "/api-wfe/api/proc/submitAuditInst", data=values, headers=headers)
@@ -296,7 +299,8 @@ class Main_Process(LoginShort, Login):
                 {"lockedNum": "1", "notEnterNumTe": "1", "storeCode": "DEP18020003", "categoryName": "剪叉",
                  "warehouseName": "南京仓", "days": "30", "orderDevCode": "DEV190316856", "addNum": 0, "category": "FORK",
                  "isExit": False, "rentingNum": "2", "shigh": "6", "orderDevType": "0", "shighName": "6米", "type": "0",
-                 "monthRentPrice": "2500", "warehouseCode": "DEP1802000106", "num": "{}".format(self.enter_order), "stockNum": "6",
+                 "monthRentPrice": "2500", "warehouseCode": "DEP1802000106", "num": "{}".format(self.enter_order),
+                 "stockNum": "6",
                  "dayRentPrice": "125"}], "warehouseName": "南京仓", "storeCode": "DEP18020003", "storeName": "南京店",
                   "addTransFee": "", "remarks": "", "planQuitDate": "{}".format(nowtime)}
         values = json.dumps(values)
@@ -304,5 +308,3 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print("客户经理发起进场成功")
-
-
