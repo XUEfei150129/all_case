@@ -225,7 +225,7 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         # pprint(result.json()['data']['list'])
         for i in result.json()['data']['list']:
-            if "CHA" in i["bizNo"]:
+            if "415" in i["bizNo"]:
                 continue
             print("销售单号依次是{}：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
 
@@ -258,7 +258,7 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         # pprint(result.json()['data']['list'])
         for i in result.json()['data']['list']:
-            if "CHA" in i["bizNo"]:
+            if "415" in i["bizNo"]:
                 print("销售单号是{}：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
                 break
                 # continue      (同break效果一样)
@@ -307,4 +307,5 @@ class Main_Process(LoginShort, Login):
         result = requests.post(self.url + "/api-ser/api/ser/enter/createDevEnter", data=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
+        pprint(result.json())
         print("客户经理发起进场成功")

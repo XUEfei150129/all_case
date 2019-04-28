@@ -10187,14 +10187,14 @@ a = """
   0315614033321272849194418437150696552087542450598956787961303311646283996346460422090106105779458151
 
 """
-
-birthday = input("请输入您的生日：(格式为19901029) :")
-b = a.find(birthday)
-if b != -1:
-    print(b)
-    print("圆周率中包含您的生日")
-else:
-    print("不包含")
+#
+# birthday = input("请输入您的生日：(格式为19901029) :")
+# b = a.find(birthday)
+# if b != -1:
+#     print(b)
+#     print("圆周率中包含您的生日")
+# else:
+#     print("不包含")
 # count = 0
 # while count <= 10000:
 #     print(count)
@@ -10203,4 +10203,14 @@ else:
 
 # p = lambda x, y: x ** y
 # print(p(4, 6))
-print(str(open(r"D:\test_python\test.txt", 'r', encoding="gb18030").readlines()).count("贾宝玉"))
+# print(str(open(r"D:\test_python\test.txt", 'r', encoding="gb18030").readlines()).count(""))
+#
+
+#
+# try:
+#     dssd
+#     b = 4 / 0  # 这句不执行
+#     print("abc")        # 这句不执行，一旦代码块里面出错了，错误的语句就终止了，后面的代码就不执行了。然后立刻看except里面有没有捕获这种类型的异常，有的话就执行except里面的代码
+# except ZeroDivisionError:  # 针对哪一种错误类型进行处理（这里是除0的错处理，没有对NameError进行捕获，所以就抛出异常）
+#     print("handle ZeroDivisionError")   # 一旦有除0的错就执行这里的代码块
+# print("结尾处")  # 由于错误在上面的NameError没有被except处理，下面的代码不会被执行

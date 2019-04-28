@@ -13,9 +13,12 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
+import string
+import random
 
 
 class Tool_Element:
+    wd = webdriver.Chrome()
 
     # 跳转页面
     def Jumpwebpage(self, page, time_wait=3):
@@ -102,19 +105,20 @@ class Tool_Element:
     # click方法
     def Click(self, type, value):
         if type == "xpath":
-            self.wd.find_element_by_xpath(value).click()
+            res = self.wd.find_element_by_xpath(value).click()
         elif type == "class_name":
-            self.wd.find_element_by_class_name(value).click()
+            res = self.wd.find_element_by_class_name(value).click()
         elif type == "id":
-            self.wd.find_element_by_id(value).click()
+            res = self.wd.find_element_by_id(value).click()
         elif type == "name":
-            self.wd.find_element_by_name(value).click()
+            res = self.wd.find_element_by_name(value).click()
         elif type == "link_text":
-            self.wd.find_element_by_link_text(value).click()
+            res = self.wd.find_element_by_link_text(value).click()
         elif type == "partial_link_text":
-            self.wd.find_element_by_partial_link_text(value).click()
+            res = self.wd.find_element_by_partial_link_text(value).click()
         elif type == "css":
-            self.wd.find_element_by_css_selector(value).click()
+            res = self.wd.find_element_by_css_selector(value).click()
+        return res
 
     # 鼠标事件方法二
     # clear方法
@@ -289,3 +293,7 @@ class Tool_Element:
     #     elif type == "css":
     #         text = ((self.wd.find_element_by_css_selector(value1)).find_element_by_css(value2)).text
     #         return text
+
+    def ran_num(self, num):
+        ran_str = ''.join(random.choices(string.ascii_uppercase + string.digits, k=num))
+        return ran_str
