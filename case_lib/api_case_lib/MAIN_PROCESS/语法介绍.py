@@ -10187,7 +10187,7 @@ a = """
   0315614033321272849194418437150696552087542450598956787961303311646283996346460422090106105779458151
 
 """
-#
+# print(len(a))
 # birthday = input("请输入您的生日：(格式为19901029) :")
 # b = a.find(birthday)
 # if b != -1:
@@ -10214,3 +10214,10 @@ a = """
 # except ZeroDivisionError:  # 针对哪一种错误类型进行处理（这里是除0的错处理，没有对NameError进行捕获，所以就抛出异常）
 #     print("handle ZeroDivisionError")   # 一旦有除0的错就执行这里的代码块
 # print("结尾处")  # 由于错误在上面的NameError没有被except处理，下面的代码不会被执行
+
+#
+# from datetime import datetime
+# import winsound
+# print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+# winsound.Beep(1500,5000) # 发出提示音
+# print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))

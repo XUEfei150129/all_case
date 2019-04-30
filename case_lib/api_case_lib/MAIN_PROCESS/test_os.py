@@ -50,7 +50,7 @@ access_mode
 
 # file = open(r"D:\test_python\test.txt", 'r', encoding="gb18030")  # 打开test1.txt 文件
 # a = str(file.readlines())
-# b = a.count("宝玉")
+# b = a.count("宝钗")
 # print(b)
 # file.close()  # 关闭文件
 
@@ -71,32 +71,67 @@ access_mode
 
 
 # 先自定义两个异常
-class NameTooLongError(Exception):
-    pass
-
-
-class NameTooshortError(Exception):
-    pass
-
-
-def inputname():
-    name = input("请输入姓名：")
-    if len(name) > 10:
-        raise NameTooLongError
-    if len(name) < 6:
-        raise NameTooshortError
-
-
-# 主体部分调用
-try:  # 捕获异常
-    ret = inputname()
-except NameTooshortError:
-    print("太短了")
-except NameTooLongError:
-    print("太长了")
+# class NameTooLongError(Exception):
+#     pass
+#
+#
+# class NameTooshortError(Exception):
+#     pass
+#
+#
+# def inputname():
+#     name = input("请输入姓名：")
+#     if len(name) > 10:
+#         raise NameTooLongError
+#     if len(name) < 6:
+#         raise NameTooshortError
+#
+#
+# # 主体部分调用
+# try:  # 捕获异常
+#     ret = inputname()
+# except NameTooshortError:
+#     print("太短了")
+# except NameTooLongError:
+#     print("太长了")
 
 # 结果：
 # 请输入姓名：1111111111111111111111
 # 太长了
 
 # 当输的名字长度大于10的时候，在函数里面会抛出NameTooLongError异常，函数后面的代码都不执了，因为它没有捕获异常。直接跑到上层去，调用它的地方去。调用的地方代码被try监控着，expect里面匹配这个错误类型。匹配到了，就会打印一个太长了
+
+
+
+"""
+
+
+
+
+
+"""
+# import unittest
+# import sys
+# class SeleniumTest(unittest.TestCase):
+#     ...
+#
+#     def tearDown(self):
+#         if sys.exc_info()[0]:
+#             test_method_name = self._testMethodName
+#             self.driver.save_screenshot("Screenshots/%s.png" % test_method_name)
+#         super(SeleniumTest, self).tearDown()
+
+# from datetime import datetime
+# png_name = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+# png_name = png_name.replace("-","")
+# png_name = png_name.replace(":","")
+# png_name = png_name.replace(" ","")
+# print(png_name)
+
+import re
+
+from datetime import datetime
+png_name = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+png_name = re.sub("\D", "", png_name)
+print(png_name)

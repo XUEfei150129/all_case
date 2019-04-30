@@ -27,11 +27,11 @@ class CarBascInfoUItool(LoginUi):
         return f"div.el-dialog__body>form>div:nth-child({row})>div>div>input"
 
     def carlist(self, col):
-
         """
         车辆列表页，第一行每一列的元素
         """
-        return ".el-table__header-wrapper+div>table>tbody>tr>td:nth-child({})>div".format(col)
+        return ".el-table__header-wrapper+div>table>tbody>tr>td:nth-child({})>div".format(
+            col)
 
     def BindMenuLevel(self, menu_name):
         """
@@ -75,16 +75,40 @@ class CarBascInfoUItool(LoginUi):
                 sleep(2)
                 for li_next in li_list_next:
                     li_next_text = li_next.text
-                    if "{}".format(menuname_next) in li_next_text:
+                    if menuname_next in li_next_text:
                         li_next.click()
                         break
-            except:
-                self.wd.get("http://zms.autotest.znlhzl.org/#/logistics/carBaseInfo")
-        except:
+            except BaseException:
+                self.wd.get(
+                    "http://zms.autotest.znlhzl.org/#/logistics/carBaseInfo")
+        except BaseException:
             raise Exception("通过链接和按钮都无法登陆")
+
+    def actionbuttons(self, button_name):
+        try:
+            sleep(2)
+            buttons = self.Check_element("css", "div.shopRight")
+            button_list = buttons.find_elements("css", "button")  # 这里不需要组选择器
+            for button in button_list:
+                buttonname = button.find_element_by_css_selector("span")
+                if button_name in buttonname.text:
+                    button.click()
+                    break
+            createVehicle = self.Get_text(
+                "css",
+                "div.content-box>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div>div>div>span")
+            if "新建车辆信息" == createVehicle:
+                print("点击新增按钮正常")
+            else:
+                self.wd.get(
+                    "http://zms.autotest.znlhzl.org/#/logistics/carBaseInfo")
+                self.actionbuttons(button_name)  # 通过递归，确保正常执行下去
+        except BaseException:
+            raise Exception("点击按钮异常")
 
 
 if __name__ == '__main__':
     car = CarBascInfoUItool()
     car.Login_ZMS_UI()
-    car.menuIndex("物流管理", "物流对内管理时效")
+    car.menuIndex("物流管理", "车辆基本信息")
+    car.actionbuttons("新增")

@@ -17,3 +17,6 @@ Library    case_lib.api_case_lib.LGT.Car_Basc_Info
 
 验证查询车辆信息-- LGT0001003
         test_SearchTruck
+
+
+

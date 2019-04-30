@@ -119,7 +119,7 @@ import random
 #     if i >= 15000:
 #         salary_after.append(int(0.9 * i))
 # print(salary_after)
-#
+
 # # 遍历---列表生成式
 # salary_before = [1000, 2000, 15000, 20000]
 # salary_after = [int(0.9 * one) for one in salary_before]
@@ -179,16 +179,16 @@ import random
 # print("您已退出")
 
 
-# numbers = [12, 37, 5, 42, 8, 43, 67, 6886]
-# a = []
-# b = []
-# while len(numbers) > 0:
-#     number = numbers.pop()
-#     if number % 2 != 0:
-#         a.append(number)
-#     else:
-#         b.append(number)
-# print(a, b)
+numbers = [12, 37, 5, 42, 8, 43, 67, 6886]
+a = []
+b = []
+while len(numbers) > 0:
+    number = numbers.pop()
+    if number % 2 != 0:
+        a.append(number)
+    else:
+        b.append(number)
+print(a, b)
 
 # break和continue的用法
 # break的用法

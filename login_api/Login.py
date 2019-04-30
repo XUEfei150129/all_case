@@ -37,3 +37,10 @@ class LoginShort(unittest.TestCase):  # 小程序
             "{}/api-sso/api/v2/pc/creditUser/custLogin".format(
                 self.url), data=values, headers=headers)
         return result.json()["data"]["userInfo"]["tokenId"]
+
+
+
+
+
+
+

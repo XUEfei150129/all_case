@@ -15,6 +15,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 import string
 import random
+import re
+from datetime import datetime
 
 
 class Tool_Element:
@@ -73,6 +75,10 @@ class Tool_Element:
     #     elif self.browser_type == '':
     #         self.wd = webdriver.Chrome()
     #     self.wd.maximize_window()
+
+    def open_browser(self):
+        self.wd.maximize_window()  # 最大化窗口
+        self.wd.implicitly_wait(15)
 
     # 关闭浏览器
     def close_browser(self):
@@ -297,3 +303,15 @@ class Tool_Element:
     def ran_num(self, num):
         ran_str = ''.join(random.choices(string.ascii_uppercase + string.digits, k=num))
         return ran_str
+
+    def Screenshots(self):
+        """
+
+        :return: 以当前时间为截图名称
+        """
+        self.wd.save_screenshot(
+            r"D:\errorpng\{}.png".format(re.sub("\D", "", (datetime.now().strftime('%Y-%m-%d %H:%M:%S')))))
+
+
+if __name__ == '__main__':
+    wo = Tool_Element()
