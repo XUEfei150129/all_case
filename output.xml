@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.6.7 on win32)" generated="20190430 15:40:49.152" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.6.7 on win32)" generated="20190430 18:09:26.754" rpa="false">
 <suite id="s1" name="Case" source="D:\all_case\case">
 <suite id="s1-s1" name="UI case" source="D:\all_case\case\UI_case">
 <kw name="Open Browser" library="UI_Element_Tool.Find_Elements.Tool_Element" type="setup">
-<status status="PASS" starttime="20190430 15:41:04.157" endtime="20190430 15:41:05.301"></status>
+<status status="PASS" starttime="20190430 18:09:39.735" endtime="20190430 18:09:40.895"></status>
 </kw>
 <suite id="s1-s1-s1" name="LGT" source="D:\all_case\case\UI_case\LGT">
 <kw name="Login ZMS UI" library="login_ui.Login_UI.LoginUi" type="setup">
@@ -11,30 +11,30 @@
 :param password: 登录的密码
 :param 登录期望的页面title
 :return:</doc>
-<status status="PASS" starttime="20190430 15:41:05.313" endtime="20190430 15:41:12.260"></status>
+<status status="PASS" starttime="20190430 18:09:40.914" endtime="20190430 18:09:48.192"></status>
 </kw>
 <suite id="s1-s1-s1-s1" name="Carbascinfo" source="D:\all_case\case\UI_case\LGT\carbascinfo.robot">
 <test id="s1-s1-s1-s1-t1" name="添加车辆信息 -- LGT0010000">
 <kw name="Test Add Car" library="case_lib.UI_case_lib.LGT.CarBascInfoUI.CarBascInfoUI">
-<msg timestamp="20190430 15:41:27.734" level="INFO">点击新增按钮正常</msg>
-<msg timestamp="20190430 15:41:27.735" level="FAIL">添加车辆的功能异常</msg>
-<status status="FAIL" starttime="20190430 15:41:12.277" endtime="20190430 15:41:27.735"></status>
+<msg timestamp="20190430 18:10:03.831" level="INFO">点击新增按钮正常</msg>
+<msg timestamp="20190430 18:10:03.832" level="FAIL">添加车辆的功能异常</msg>
+<status status="FAIL" starttime="20190430 18:09:48.215" endtime="20190430 18:10:03.833"></status>
 </kw>
 <tags>
 <tag>logisticsUI</tag>
 </tags>
-<status status="FAIL" starttime="20190430 15:41:12.275" endtime="20190430 15:41:27.736" critical="yes">添加车辆的功能异常</status>
+<status status="FAIL" starttime="20190430 18:09:48.214" endtime="20190430 18:10:03.833" critical="yes">添加车辆的功能异常</status>
 </test>
-<status status="FAIL" starttime="20190430 15:41:12.260" endtime="20190430 15:41:27.739"></status>
+<status status="FAIL" starttime="20190430 18:09:48.193" endtime="20190430 18:10:03.835"></status>
 </suite>
-<status status="FAIL" starttime="20190430 15:41:05.301" endtime="20190430 15:41:27.743"></status>
+<status status="FAIL" starttime="20190430 18:09:40.895" endtime="20190430 18:10:03.837"></status>
 </suite>
 <kw name="Close Browser" library="UI_Element_Tool.Find_Elements.Tool_Element" type="teardown">
-<status status="PASS" starttime="20190430 15:41:27.754" endtime="20190430 15:41:31.179"></status>
+<status status="PASS" starttime="20190430 18:10:03.841" endtime="20190430 18:10:07.294"></status>
 </kw>
-<status status="FAIL" starttime="20190430 15:40:49.202" endtime="20190430 15:41:31.179"></status>
+<status status="FAIL" starttime="20190430 18:09:26.804" endtime="20190430 18:10:07.294"></status>
 </suite>
-<status status="FAIL" starttime="20190430 15:40:49.155" endtime="20190430 15:41:31.183"></status>
+<status status="FAIL" starttime="20190430 18:09:26.757" endtime="20190430 18:10:07.296"></status>
 </suite>
 <statistics>
 <total>

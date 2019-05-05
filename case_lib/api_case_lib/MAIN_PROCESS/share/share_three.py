@@ -10,8 +10,6 @@
     循环(for,while)：让特定的代码重复执行
 
 """
-import random
-
 
 #
 # # 简单条件判断
@@ -179,16 +177,16 @@ import random
 # print("您已退出")
 
 
-numbers = [12, 37, 5, 42, 8, 43, 67, 6886]
-a = []
-b = []
-while len(numbers) > 0:
-    number = numbers.pop()
-    if number % 2 != 0:
-        a.append(number)
-    else:
-        b.append(number)
-print(a, b)
+# numbers = [12, 37, 5, 42, 8, 43, 67, 6886]
+# a = []
+# b = []
+# while len(numbers) > 0:
+#     number = numbers.pop()
+#     if number % 2 != 0:
+#         a.append(number)
+#     else:
+#         b.append(number)
+# print(a, b)
 
 # break和continue的用法
 # break的用法

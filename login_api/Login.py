@@ -7,7 +7,7 @@ import json
 
 class Login(unittest.TestCase):
 
-    url = "http://api.zuul.autotest.znlhzl.org"  # 不同环境测试，需要改url
+    url = "http://api.zuul.uat.znlhzl.cn"  # 不同环境测试，需要改url
 
     def test_Login(self, name):
         result = requests.get(
@@ -21,7 +21,7 @@ class Login(unittest.TestCase):
 
 
 class LoginShort(unittest.TestCase):  # 小程序
-    url = "http://api.zuul.autotest.znlhzl.org"  # 不同环境测试，需要改url
+    url = "http://api.zuul.uat.znlhzl.cn"  # 不同环境测试，需要改url
 
     def test_Login_short(self, name):
         headers = {

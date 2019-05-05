@@ -12,6 +12,7 @@ import requests
 from datetime import datetime
 from pprint import pprint
 from time import sleep
+import re
 
 
 class Main_Process(LoginShort, Login):
@@ -21,6 +22,29 @@ class Main_Process(LoginShort, Login):
     # 订单设备数据和发起进场的设备数量一致
     num_order = 1
     enter_order = 1
+
+    def test_addproject(self):
+        """
+        创建工程
+        :return: 返回值为工程号
+        """
+        token = self.test_Login("xuefei")
+        headers = {
+            'Content-Type': 'application/json',
+            "X-Auth-Token": token,
+        }
+        nowT = re.sub("\D", "", datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        projectname = "auto" + nowT  # 生成一个以当前时间命名的工程名
+        values = {"projectFullName": "{}".format(projectname), "address": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
+                  "longitude": "118.7790948694178", "latitude": "31.991562671134364", "filePath": [], "projectTrade": 1,
+                  "constructionStage": 0, "infoSource": 1, "forkCount": 1, "armCount": 1, "custCode": "",
+                  "creatFlag": 1}
+        values = json.dumps(values)
+        result = requests.post(self.url + "/api-crm/api/v2/crm/project/add", data=values, headers=headers)
+        self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
+        self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
+        print("生成的工程单号是：{}".format(result.json()["data"]))
+        return result.json()["data"]
 
     def test_ceratorder(self):
         '''调用端：移动端
@@ -56,7 +80,6 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         self.assertEqual("订单创建成功！", result.json()['meta']["message"], msg="验证订单是否创建成功")
-        # print(result.json())
         print("订单创建成功")
 
     def test_needlist(self):
@@ -309,3 +332,16 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         pprint(result.json())
         print("客户经理发起进场成功")
+
+    # def test_devGpsPosition(self):
+    #     token = self.test_Login("xuefei")
+    #     headers = {
+    #         'Content-Type': 'application/json',
+    #         "X-Auth-Token": token,
+    #     }
+    #     # values = {
+    #     #     "type": 1
+    #     # }
+    #     # values = json.dumps(values)
+    #     result = requests.get(self.url + "/api-sku/api/ims/getDevGpsPosition?type=1", headers=headers)
+    #     pprint(result.json())

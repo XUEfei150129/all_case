@@ -10221,3 +10221,42 @@ a = """
 # print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 # winsound.Beep(1500,5000) # 发出提示音
 # print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+from datetime import datetime
+import re
+
+nowT = re.sub("\D", "", datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+projectFullName = "auto" + nowT
+print(projectFullName)
+
+a = {"data": {"projectCode": "PROJECT107374", "projectFullName": "auto20190505161537", "projectShortName": null,
+              "provinceId": 320000, "cityId": 320100, "areaId": 320114, "address": "江苏省南京市雨花台区中国南京软件谷南京(雨花)国际软件外包产业园",
+              "longitude": "118.78052716900723", "latitude": "31.983130546545645", "projectTrade": 1,
+              "projectTradeDesc": "厂房建设", "constructionStage": 0, "constructionStageDesc": "待建", "infoSource": 1,
+              "infoSourcesDesc": "上门拜访", "buildCycle": 0, "buildStartDate": null, "buildEndDate": null,
+              "buildCycleDesc": null, "levelHeight": 0.0, "levelNum": 0, "buildArea": 0.0, "investAmount": 0.0,
+              "generalContract": "", "forkCount": 1, "armCount": 1, "projectFollowStage": 0, "storeCode": "DEP18020003",
+              "storeName": "南京店", "delFlag": 0, "competitorRemark": "", "filePaths": "", "createBy": "USER1903029032",
+              "createByName": "薛飞", "createTime": "2019-05-05 15:59", "updateBy": "USER1903029032",
+              "updateByName": "薛飞", "updateTime": "2019-05-05 16:15", "filePath": [""], "filePathList": [],
+              "userList": [{"userName": "薛飞", "userCode": null, "type": 0, "typeName": "在职", "storeCode": null,
+                            "storeName": null}], "distanceWarehouseDesc": "距南京仓22公里"}, "message": "ok", "success": true,
+     "errCode": 0}
+
+
+b = {"createName": "薛飞", "customerName": "薛飞", "storeCode": "DEP18020003", "customerCode": "CUST110359",
+                  "enterpriseCode": "", "enterpriseName": "", "estimatePriceUpdateFlag": 0,
+                  "orderInfo": {"projectName": "测试一下", "fileid": "", "lon": "118.780588", "estimatePrice": "200",
+                                "jobAddress": "江苏省南京市雨花台区中国南京软件谷郁金香路25号南京(雨花)国际软件外包产业园", "balanceTypeName": "后付",
+                                "projectCode": "PROJECT101179", "businessPolicyChangeReason": "测试", "kilometre": "100",
+                                "jobType": "1", "jobTypeName": "钢结构", "balanceType": 3, "lat": "31.983009", "city": "",
+                                "accountPeriod": "30", "isTransport": "{}".format(self.num_order), "creditLevel": "A",
+                                "creditScore": "",
+                                "remarks": ""}, "orderCode": "", "orderDevList": [
+                {"monthInfoFee": "0", "rentPriceCommission": "75", "categoryName": "剪叉", "minDayPrice": "100",
+                 "warehouseName": "南京仓", "days": "30", "shighNameAndCategoryName": "6米 剪叉", "maxMonthPrice": "3750",
+                 "guidePriceCommission": "75", "category": "FORK", "shigh": "6", "minMonthPrice": "2000",
+                 "shighName": "6米", "monthGuidePrice": "2500", "useDate": "{}".format(nowtime),
+                 "monthRentPrice": "2500",
+                 "warehouseCode": "DEP1802000106", "dayGuidePrice": "125", "kzCount": "10",
+                 "num": "{}".format(self.num_order),
+                 "maxDayPrice": "375", "shighAndCategory": "6 FORK", "dayRentPrice": "125", "dayInfoFee": "0"}]}
