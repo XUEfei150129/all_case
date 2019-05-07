@@ -152,7 +152,7 @@ class Main_Process(LoginShort, Login):
         result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
-        # pprint(result.json()['data']['list'])
+        pprint(result.json()['data']['list'])
         return result.json()['data']['list'][0]['instNo']
 
     def test_list0(self):

@@ -26,7 +26,6 @@
     <loaded-nodes>
       <connection connection-id="ab9a71b9-a092-4c06-bdc6-15f9db6687b3">
         <schema name="bi" object-types="table, view" />
-        <schema name="tms" object-types="table, view" />
       </connection>
     </loaded-nodes>
   </component>
