@@ -5,10 +5,12 @@
 from login_api.Login import Login, LoginShort
 from Mysql_db.connect_db import OperationMysql
 from method.checkmethod import isJson, checktype
+from login_api.Read_Ini import Read_Ini
 import string
 import random
 import json
 import requests
+import time
 from datetime import datetime
 from pprint import pprint
 from time import sleep
@@ -35,15 +37,28 @@ class Main_Process(LoginShort, Login):
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
         }
-        nowT = re.sub("\D", "", datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        nowT = re.sub(r"\D", "", datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         global projectname
         projectname = "auto" + nowT  # 生成一个以当前时间命名的工程名
-        values = {"projectFullName": "{}".format(projectname), "address": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
-                  "longitude": "118.7790948694178", "latitude": "31.991562671134364", "filePath": [], "projectTrade": 1,
-                  "constructionStage": 0, "infoSource": 1, "forkCount": 1, "armCount": 1, "custCode": "",
-                  "creatFlag": 1}
+        values = {
+            "projectFullName": "{}".format(projectname),
+            "address": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
+            "longitude": "118.7790948694178",
+            "latitude": "31.991562671134364",
+            "filePath": [],
+            "projectTrade": 1,
+            "constructionStage": 0,
+            "infoSource": 1,
+            "forkCount": 1,
+            "armCount": 1,
+            "custCode": "",
+            "creatFlag": 1}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-crm/api/v2/crm/project/add", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-crm/api/v2/crm/project/add",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print(">>>>>>>>>>生成的工程单号是：{}>>>>>>>>>>".format(result.json()["data"]))
@@ -62,8 +77,11 @@ class Main_Process(LoginShort, Login):
         }
         values = {"custCode": self.cCode, "projectCode": "{}".format(pcode)}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-crm/api/v2/crm/project/crmCustomerAndProject", data=values,
-                               headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-crm/api/v2/crm/project/crmCustomerAndProject",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print(">>>>>>>>>>工程关联客户成功>>>>>>>>>>")
@@ -84,13 +102,19 @@ class Main_Process(LoginShort, Login):
             "custCode": "{}".format(self.cCode),
             "projectName": ""
         }
-        result = requests.get(self.url + "/api-crm/api/v2/crm/project/projectListUnderCust", params=values,
-                              headers=headers)
+        result = requests.get(
+            self.url +
+            "/api-crm/api/v2/crm/project/projectListUnderCust",
+            params=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         firstpName = result.json()["data"]["list"][0]["projectName"]
         firstpCode = result.json()["data"]["list"][0]["projectCode"]
-        print(">>>>>>>>>>成功获取到刚创建的工程名:{};工程id:{}>>>>>>>>>>".format(firstpName, firstpCode))
+        print(
+            ">>>>>>>>>>成功获取到刚创建的工程名:{};工程id:{}>>>>>>>>>>".format(
+                firstpName,
+                firstpCode))
         return [firstpName, firstpCode]
 
     def test_ceratorder(self):
@@ -108,30 +132,69 @@ class Main_Process(LoginShort, Login):
             "X-Auth-Token": token,
         }
         nowtime = datetime.now().strftime('%Y-%m-%d')
-        values = {"createName": "薛飞", "customerName": "薛飞", "storeCode": "DEP18020003",
+        values = {"createName": "薛飞",
+                  "customerName": "薛飞",
+                  "storeCode": "DEP18020003",
                   "customerCode": "{}".format(self.cCode),
-                  "enterpriseCode": "", "enterpriseName": "", "estimatePriceUpdateFlag": 0,
-                  "orderInfo": {"projectName": "{}".format(pnaemcode[0]), "fileid": "", "lon": "118.7790948694178",
-                                "estimatePrice": "500", "jobAddress": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
-                                "balanceTypeName": "后付", "projectCode": "{}".format(pnaemcode[0]),
-                                "businessPolicyChangeReason": "", "kilometre": "50", "jobType": "1",
-                                "jobTypeName": "钢结构", "balanceType": 3, "lat": "31.991562671134364", "city": "",
-                                "accountPeriod": "30", "isTransport": "{}".format(self.num_order), "creditLevel": "A",
+                  "enterpriseCode": "",
+                  "enterpriseName": "",
+                  "estimatePriceUpdateFlag": 0,
+                  "orderInfo": {"projectName": "{}".format(pnaemcode[0]),
+                                "fileid": "",
+                                "lon": "118.7790948694178",
+                                "estimatePrice": "500",
+                                "jobAddress": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
+                                "balanceTypeName": "后付",
+                                "projectCode": "{}".format(pnaemcode[0]),
+                                "businessPolicyChangeReason": "",
+                                "kilometre": "50",
+                                "jobType": "1",
+                                "jobTypeName": "钢结构",
+                                "balanceType": 3,
+                                "lat": "31.991562671134364",
+                                "city": "",
+                                "accountPeriod": "30",
+                                "isTransport": "{}".format(self.num_order),
+                                "creditLevel": "A",
                                 "creditScore": "",
-                                "remarks": ""}, "orderCode": "", "orderDevList": [
-                {"monthInfoFee": "0", "rentPriceCommission": "87", "categoryName": "剪叉", "minDayPrice": "130",
-                 "warehouseName": "南京仓", "days": "30", "shighNameAndCategoryName": "10米 剪叉", "maxMonthPrice": "4350",
-                 "guidePriceCommission": "87", "category": "FORK", "shigh": "10", "minMonthPrice": "2610",
-                 "shighName": "10米", "monthGuidePrice": "2900", "useDate": "{}".format(nowtime),
-                 "monthRentPrice": "2900",
-                 "warehouseCode": "DEP1802000106", "dayGuidePrice": "145", "kzCount": "17",
-                 "num": "{}".format(self.num_order),
-                 "maxDayPrice": "435", "shighAndCategory": "10 FORK", "dayRentPrice": "145", "dayInfoFee": "0"}]}
+                                "remarks": ""},
+                  "orderCode": "",
+                  "orderDevList": [{"monthInfoFee": "0",
+                                    "rentPriceCommission": "87",
+                                    "categoryName": "剪叉",
+                                    "minDayPrice": "130",
+                                    "warehouseName": "南京仓",
+                                    "days": "30",
+                                    "shighNameAndCategoryName": "10米 剪叉",
+                                    "maxMonthPrice": "4350",
+                                    "guidePriceCommission": "87",
+                                    "category": "FORK",
+                                    "shigh": "10",
+                                    "minMonthPrice": "2610",
+                                    "shighName": "10米",
+                                    "monthGuidePrice": "2900",
+                                    "useDate": "{}".format(nowtime),
+                                    "monthRentPrice": "2900",
+                                    "warehouseCode": "DEP1802000106",
+                                    "dayGuidePrice": "145",
+                                    "kzCount": "17",
+                                    "num": "{}".format(self.num_order),
+                                    "maxDayPrice": "435",
+                                    "shighAndCategory": "10 FORK",
+                                    "dayRentPrice": "145",
+                                    "dayInfoFee": "0"}]}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-oms/api/order/create", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-oms/api/order/create",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
-        self.assertEqual("订单创建成功！", result.json()['meta']["message"], msg="验证订单是否创建成功")
+        self.assertEqual(
+            "订单创建成功！",
+            result.json()['meta']["message"],
+            msg="验证订单是否创建成功")
         print(">>>>>>>>>>订单创建成功>>>>>>>>>>")
 
     def test_needlist(self):
@@ -148,7 +211,11 @@ class Main_Process(LoginShort, Login):
             "pageNo": 1,
             "pageSize": 10
         }
-        result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
+        result = requests.get(
+            self.url +
+            "/api-wfe/api/proc/selectNeed",
+            params=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         bizNo = result.json()["data"]["list"][0]["bizNo"]
@@ -172,11 +239,21 @@ class Main_Process(LoginShort, Login):
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
         }
-        values = {"status": 1, "submitUserCode": "USER180301007", "submitUserName": "黄飞", "bizNo": bizNo,
-                  "updateUserCode": "USER180301007", "updateUserName": "黄飞",
-                  "instNo": instNo, "comment": "测试"}
+        values = {
+            "status": 1,
+            "submitUserCode": "USER180301007",
+            "submitUserName": "黄飞",
+            "bizNo": bizNo,
+            "updateUserCode": "USER180301007",
+            "updateUserName": "黄飞",
+            "instNo": instNo,
+            "comment": "测试"}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-wfe/api/proc/submitAuditInst", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-wfe/api/proc/submitAuditInst",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print(">>>>>>>>>>城市经理审核通过>>>>>>>>>>")
@@ -193,20 +270,35 @@ class Main_Process(LoginShort, Login):
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
         }
-        values = {"contractStatus": 1, "contractTargetCode": "CUST110359", "contractTargetName": "薛飞",
-                  "contractTargetType": 1, "licenseFilePath": [],
-                  "filePath": ["{}".format(
-                      {"localUrl": (None, "1.png"),
-                       "imgFile": ("1.png", open(r"d:\1.png", "rb"), "image/png")})],
+        values = {"contractStatus": 1,
+                  "contractTargetCode": "CUST110359",
+                  "contractTargetName": "薛飞",
+                  "contractTargetType": 1,
+                  "licenseFilePath": [],
+                  "filePath": ["{}".format({"localUrl": (None,
+                                                         "1.png"),
+                                            "imgFile": ("1.png",
+                                                        open(r"d:\1.png",
+                                                             "rb"),
+                                                        "image/png")})],
                   "orderCode": bizNo,
-                  "orderSignPersonVoList": [{"idcard": "320882198810292412", "mobile": "15151864744", "name": "薛飞",
+                  "orderSignPersonVoList": [{"idcard": "320882198810292412",
+                                             "mobile": "15151864744",
+                                             "name": "薛飞",
                                              "images": ["lpt/0/1108990759794774016.jpg",
                                                         "lpt/1/1108990760113541120.jpg"]}]}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-oms/api/order/sign/save", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-oms/api/order/sign/save",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
-        self.assertEqual('签约信息保存成功', result.json()['meta']['message'], msg="验证签约信息保存成功")
+        self.assertEqual(
+            '签约信息保存成功',
+            result.json()['meta']['message'],
+            msg="验证签约信息保存成功")
         print(">>>>>>>>>客户经理上传合同成功>>>>>>>>>>")
         print(">>>>>>>>>>让服务器休息5秒钟>>>>>>>>>>")
         sleep(5)
@@ -226,7 +318,11 @@ class Main_Process(LoginShort, Login):
             "pageNo": 1,
             "pageSize": 10
         }
-        result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
+        result = requests.get(
+            self.url +
+            "/api-wfe/api/proc/selectNeed",
+            params=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         return result.json()['data']['list'][0]['instNo']
@@ -243,11 +339,21 @@ class Main_Process(LoginShort, Login):
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
         }
-        values = {"status": 1, "submitUserCode": "USER1804001207", "submitUserName": "陈艳艳",
-                  "bizNo": bizNo, "updateUserCode": "USER1804001207", "updateUserName": "陈艳艳",
-                  "instNo": instNo, "comment": "测试"}
+        values = {
+            "status": 1,
+            "submitUserCode": "USER1804001207",
+            "submitUserName": "陈艳艳",
+            "bizNo": bizNo,
+            "updateUserCode": "USER1804001207",
+            "updateUserName": "陈艳艳",
+            "instNo": instNo,
+            "comment": "测试"}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-wfe/api/proc/submitAuditInst", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-wfe/api/proc/submitAuditInst",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print(">>>>>>>>>>合同专员审核合同通过>>>>>>>>>>")
@@ -260,17 +366,44 @@ class Main_Process(LoginShort, Login):
             "X-Auth-Token": token,
         }
         nowtime = datetime.now().strftime('%Y-%m-%d %H:%M')
-        values = {"orderCode": bizNo, "isAdd": "0", "balanceTypeName": "后付", "addBailFee": "",
-                  "warehouseCode": "DEP1802000106", "balanceType": "3", "serDevEnterDemandList": [
-                {"lockedNum": "1", "notEnterNumTe": "1", "storeCode": "DEP18020003", "categoryName": "剪叉",
-                 "warehouseName": "南京仓", "days": "30", "orderDevCode": "DEV190517738", "addNum": 0, "category": "FORK",
-                 "isExit": False, "rentingNum": "14", "shigh": "10", "orderDevType": "0", "shighName": "10米",
-                 "type": "0", "monthRentPrice": "2900", "warehouseCode": "DEP1802000106",
-                 "num": "{}".format(self.enter_order), "stockNum": "20",
-                 "dayRentPrice": "145"}], "warehouseName": "南京仓", "storeCode": "DEP18020003", "storeName": "南京店",
-                  "addTransFee": "", "remarks": "", "planQuitDate": "{}".format(nowtime)}
+        values = {"orderCode": bizNo,
+                  "isAdd": "0",
+                  "balanceTypeName": "后付",
+                  "addBailFee": "",
+                  "warehouseCode": "DEP1802000106",
+                  "balanceType": "3",
+                  "serDevEnterDemandList": [{"lockedNum": "1",
+                                             "notEnterNumTe": "1",
+                                             "storeCode": "DEP18020003",
+                                             "categoryName": "剪叉",
+                                             "warehouseName": "南京仓",
+                                             "days": "30",
+                                             "orderDevCode": "DEV190517738",
+                                             "addNum": 0,
+                                             "category": "FORK",
+                                             "isExit": False,
+                                             "rentingNum": "14",
+                                             "shigh": "10",
+                                             "orderDevType": "0",
+                                             "shighName": "10米",
+                                             "type": "0",
+                                             "monthRentPrice": "2900",
+                                             "warehouseCode": "DEP1802000106",
+                                             "num": "{}".format(self.enter_order),
+                                             "stockNum": "20",
+                                             "dayRentPrice": "145"}],
+                  "warehouseName": "南京仓",
+                  "storeCode": "DEP18020003",
+                  "storeName": "南京店",
+                  "addTransFee": "",
+                  "remarks": "",
+                  "planQuitDate": "{}".format(nowtime)}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-ser/api/ser/enter/createDevEnter", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-ser/api/ser/enter/createDevEnter",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print(">>>>>>>>>>客户经理发起进场成功>>>>>>>>>>")
@@ -289,10 +422,15 @@ class Main_Process(LoginShort, Login):
             "pageNo": 1,
             "pageSize": 10
         }
-        result = requests.get(self.url + "/api-wfe/api/proc/selectNeed", params=values, headers=headers)
+        result = requests.get(
+            self.url +
+            "/api-wfe/api/proc/selectNeed",
+            params=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
-        print(">>>>>>>>>>进场单号是：{}>>>>>>>>>>".format(result.json()["data"]["list"][0]["bizNo"]))
+        print(">>>>>>>>>>进场单号是：{}>>>>>>>>>>".format(
+            result.json()["data"]["list"][0]["bizNo"]))
         return result.json()["data"]["list"][0]["bizNo"]
 
     def test_enterAssign(self):
@@ -308,10 +446,18 @@ class Main_Process(LoginShort, Login):
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
         }
-        values = {"devEnterCode": fwj, "loadingStaff": "USER180301156", "loadingStaffName": "江凤余",
-                  "deliveryStaff": "USER180301156", "deliveryStaffName": "江凤余"}
+        values = {
+            "devEnterCode": fwj,
+            "loadingStaff": "USER180301156",
+            "loadingStaffName": "江凤余",
+            "deliveryStaff": "USER180301156",
+            "deliveryStaffName": "江凤余"}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-ser/api/ser/enter/enterAssign", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-ser/api/ser/enter/enterAssign",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print(">>>>>>>>>>服务经理成功分配进场需求>>>>>>>>>>")
@@ -329,11 +475,16 @@ class Main_Process(LoginShort, Login):
         values = {
             "devEnterCode": fwj,
         }
-        result = requests.get(self.url + "/api-ser/api/ser/enter/serDevEnterByCode", params=values, headers=headers)
+        result = requests.get(
+            self.url +
+            "/api-ser/api/ser/enter/serDevEnterByCode",
+            params=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         global devEnterDemandCode
-        devEnterDemandCode = result.json()["data"]["serDevEnterDemandList"][0]["devEnterDemandCode"]
+        devEnterDemandCode = result.json(
+        )["data"]["serDevEnterDemandList"][0]["devEnterDemandCode"]
         print(">>>>>>>>>>成功获取devEnterDemandCode的值：{}".format(devEnterDemandCode))
         return devEnterDemandCode
 
@@ -351,10 +502,15 @@ class Main_Process(LoginShort, Login):
         values = {
             "devEnterDemandCode": devEnterDemandCode,
         }
-        result = requests.get(self.url + "/api-ser/api/ser/enter/selectEnterMatchDev", params=values, headers=headers)
+        result = requests.get(
+            self.url +
+            "/api-ser/api/ser/enter/selectEnterMatchDev",
+            params=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
-        pprint(">>>>>>>>>>成功获取设备的出厂编号：{}>>>>>>>>>>".format(result.json()["data"][0]["devCode"]))
+        pprint(">>>>>>>>>>成功获取设备的出厂编号：{}>>>>>>>>>>".format(
+            result.json()["data"][0]["devCode"]))
         return result.json()["data"][0]["devCode"]
 
     def test_addEnterMatchDev(self):
@@ -376,7 +532,11 @@ class Main_Process(LoginShort, Login):
             "devEnterDemandCode": devEnterDemandCode,  #
             "devCode": devCode  # 出厂编号
         }
-        result = requests.post(self.url + "/api-ser/api/ser/enter/addEnterMatchDev", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-ser/api/ser/enter/addEnterMatchDev",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         pprint(">>>>>>>>>>选择设备成功,并正常返回devEnterMatchCode：{}>>>>>>>>>>".format(
@@ -421,8 +581,99 @@ class Main_Process(LoginShort, Login):
                                                {"name": "液压油", "value": "正常"}, {"name": "操作手柄", "value": "标签清晰"},
                                                {"name": "地面操作面板", "value": "标签清晰"}, {"name": "GPS", "value": "正常"}]}
         values = json.dumps(values)
-        result = requests.post(self.url + "/api-ser/api/ser/enter/enterMatchDev", data=values, headers=headers)
+        result = requests.post(
+            self.url +
+            "/api-ser/api/ser/enter/enterMatchDev",
+            data=values,
+            headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         pprint(">>>>>>>>>>服务工程师成功验机>>>>>>>>>>")
 
+    def test_getwarehousecode(self):
+        """
+        获取仓库code和仓库name
+        :return:
+        """
+        token = self.test_Login("jiangfengyu")
+        headers = {
+            'Content-Type': 'application/json',
+            "X-Auth-Token": token,
+        }
+        values = {
+            "demandType": 1,
+            "demandRelationCode": fwj
+        }
+        result = requests.get(
+            self.url +
+            "/api-ser/api/v1/transportdemand/queryDemand",
+            params=values,
+            headers=headers)
+        self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
+        whCode = result.json()["data"]["warehouseCode"]
+        whname = result.json()["data"]["warehouseName"]
+        print(">>>>>>>>>>成功获取仓库code：{}和仓库name：{}>>>>>>>>>>".format(whCode, whname))
+        return [whCode, whname]
+
+    def test_getaftertime(self,n):  # 精确到分钟
+        """
+        获取当前时间往后的时间
+        :param n: 当前时间后的n分钟
+        :return: 返回当前时间后的时间，精确当分钟
+        """
+        nowtime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 获取当前时间
+        c = time.strptime(nowtime, "%Y-%m-%d %H:%M:%S")
+        timeStamp = int(time.mktime(c))
+        timeStamp += (n * 60)
+        timeArray = time.localtime(timeStamp)
+        aftertime = time.strftime("%Y-%m-%d %H:%M", timeArray)
+        return aftertime
+
+    def test_createtransportdemand(self, name="jiangfengyu", cname="江凤余"):
+        """
+        发起物流需求单
+        :param name: 填入配置表里面的名字，用来获取他的手机号码
+        :param cname: 中文名
+        :return:
+        """
+        telnum = Read_Ini().get_value(name)[0]  # 获取手机号码
+        self.test_enterMatchDev()  # 完成进场验机等工作
+        warehouseinfo = self.test_getwarehousecode()  # 获取仓库信息
+        token = self.test_Login("jiangfengyu")
+        headers = {
+            'Content-Type': 'application/json',
+            "X-Auth-Token": token,
+        }
+        values = {"demandCode": "",
+                  "demandDeliveryAddress": "江宁区淳化街道茶岗社区104省道",
+                  "demandDeliveryAddressLatitude": 31.950859,
+                  "demandDeliveryAddressLongitude": 119.014704,
+                  "demandDeliveryContactCode": "USER180301156",
+                  "demandDeliveryContactName": cname,
+                  "demandDeliveryContactMobile": telnum,
+                  "demandPlanDeliveryTime": self.test_getaftertime(1),
+                  "demandPlanReceiptTime": self.test_getaftertime(2),
+                  "demandReceiptAddress": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
+                  "demandReceiptAddressLatitude": 31.991562671134364,
+                  "demandReceiptAddressLongitude": 118.7790948694178,
+                  "demandReceiptContactCode": "USER180301156",
+                  "demandReceiptContactName": cname,
+                  "demandReceiptContactMobile": telnum,
+                  "demandRelationCode": fwj,
+                  "demandType": "1",
+                  "warehouseCode": warehouseinfo[0],
+                  "warehouseName": warehouseinfo[1],
+                  "remarks": "",
+                  "devices": [{"category": "FORK",
+                               "categoryName": "剪叉",
+                               "shigh": "10",
+                               "shighName": "10米",
+                               "totalAmount": "1",
+                               "usedAmount": "1"}]}
+        values = json.dumps(values)
+        result = requests.post(self.url + "/api-ser/api/v1/transportdemand/create", data=values, headers=headers)
+        self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
+        self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
+        self.assertEqual("成功", result.json()['message'], msg="验证'message': 成功,")
+        print(">>>>>>>>>>发起物流成功，成功获取到物流需求单号：{}>>>>>>>>>>".format(result.json()['data']["code"]))
+        return result.json()['data']["code"]

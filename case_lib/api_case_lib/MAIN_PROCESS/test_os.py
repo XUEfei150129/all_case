@@ -1635,13 +1635,130 @@
 # # # print(devhours)
 # #
 #
-def addone():
-    with open('devhours.txt', "r") as f:
-        last_hours = f.read()
-    with open('devhours.txt', "w") as f:
-        f.write(str(int(last_hours) + 1))
-    return int(last_hours)
+# def addone():
+#     with open('devhours.txt', "r") as f:
+#         last_hours = f.read()
+#     with open('devhours.txt', "w") as f:
+#         f.write(str(int(last_hours) + 1))
+#     return int(last_hours)
+#
+# a = addone()
+# print(a)
 
-a = addone()
-print(a)
+from datetime import datetime
+import time
 
+
+# a = datetime.now().strftime('%Y-%m-%d %H:%M')
+# b = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+# print(a)
+# print(b)
+# c = time.strptime(b, "%Y-%m-%d %H:%M:%S")
+# print(c)
+# d = int(time.mktime(c))
+# d = d + 120
+# print(d)
+#
+# timeArray = time.localtime(d)
+# otherStyleTime = time.strftime("%Y-%m-%d %H:%M", timeArray)
+# print(otherStyleTime)  # 2013--10--10 23:40:00
+
+
+# def getaftertime(n):  # 精确到分钟
+#     """
+#
+#     :param n: 当前时间后的n分钟
+#     :return: 返回当前时间后的时间，精确当分钟
+#     """
+#     nowtime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+#     c = time.strptime(nowtime, "%Y-%m-%d %H:%M:%S")
+#     timeStamp = int(time.mktime(c))
+#     timeStamp += (n * 60)
+#     timeArray = time.localtime(timeStamp)
+#     aftertime = time.strftime("%Y-%m-%d %H:%M", timeArray)
+#     return aftertime
+#
+#
+# a = getaftertime(33)
+# print(a)
+
+#  1 # 字符类型的时间
+#  2 tss1 = '2013-10-10 23:40:00'
+#  3 # 转为时间数组
+#  4 timeArray = time.strptime(tss1, "%Y-%m-%d %H:%M:%S")
+#  5 print timeArray
+#  6 # timeArray可以调用tm_year等
+#  7 print timeArray.tm_year   # 2013
+#  8 # 转为时间戳
+#  9 timeStamp = int(time.mktime(timeArray))
+# 10 print timeStamp  # 1381419600
+
+
+# import time
+# print (time.time())
+# 输出的结果是：
+# 1357723206.31
+
+# now_time = str(datetime.now())
+# print(now_time)
+# # now_time_year = now_time[0:4]  # 当前时间的年份
+# # # rulu_time = '{}-{}'.format(now_time_year, rulu_time_get)  # 拼接成完整的时间如：2019-01-02 20:30:07
+# # # timeArray = time.strptime(rulu_time, "%Y-%m-%d %H:%M:%S")
+# # # timeStamp = int(time.mktime(timeArray))  # 在规则列表页获取到的时间转为时间戳
+# names = ["a", "b", "c"]
+# for name in names:
+#     if len(names) != 0:
+#         print("里面有值依次是 {}: {}".format((names.index(name) + 1), name))
+#     else:  # 这个没有意义
+#         print("里面没有值")
+
+
+#
+# def kongornot():
+#     names = input("请输入一个列表(可以是空列表，可以有值)：")
+#     try:
+#         names = eval(str(names))
+#         if (type(names).__name__) == "list":
+#             # names = eval(names)
+#             if len(names) == 0:
+#                 print("空列表，列表里没有值")
+#             else:
+#                 for name in names:
+#                     print(
+#                         "里面有值依次是 {}: {}".format(
+#                             (names.index(name) + 1), name))
+#     except BaseException:
+#         print("你输入的不是列表，重新输入")
+#         kongornot()
+#
+#
+# kongornot()
+
+#
+# def kongornot():
+#     #names = input("请输入一个列表(可以是空列表，可以有值)：")
+#     names = "[],"
+#     try:
+#         names = eval(str(names))
+#         if (type(names).__name__) == "list":
+#             # names = eval(names)
+#             if len(names) == 0:
+#                 print("空列表，列表里没有值")
+#             else:
+#                 for name in names:
+#                     print(
+#                         "里面有值依次是 {}: {}".format(
+#                             (names.index(name) + 1), name))
+#     except BaseException:
+#         print("你输入的不是列表，重新输入")
+#         kongornot()
+#
+#
+# kongornot()
+
+
+# a = "[],"
+# b= eval(str(a))
+# b = type(a).__name__
+# print(b)

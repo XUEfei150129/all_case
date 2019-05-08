@@ -44,4 +44,4 @@ class Read_Ini(object):
 
 if __name__ == '__main__':
     read_init = Read_Ini()
-    print(read_init.get_value("zhukuankuan"))
+    print(read_init.get_value("jiangfengyu"))
