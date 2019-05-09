@@ -11,6 +11,7 @@
 
 """
 
+
 #
 # # 简单条件判断
 # age2 = int(input("你今年几岁："))
@@ -214,6 +215,30 @@
 # 在函数中使用 return 关键字可以返回结果
 # 调用函数一方，可以 使用变量 来 接收 函数的返回结果
 # """
+#
+x = 1
+def a():
+    global x
+    x = 2
+    print("函数里面的x值是:{}".format(x))
+# a()
+print(f"函数外面的x值是:{x}")
+a()
+print("函数外面的x值是:%s"%(x))
 
 
-
+# class test1:
+#     def __init__(self, w):
+#         if w > 3:
+#             self.a()
+#         else:
+#             self.b()
+#
+#     def a(self):
+#         print("这是方法a的")
+#
+#     def b(self):
+#         print("这是方法b的")
+#
+#
+# t = test1(6)

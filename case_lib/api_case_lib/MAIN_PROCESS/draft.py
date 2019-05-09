@@ -108,7 +108,7 @@ from pprint import pprint
     1.在完成摸一个需求前，首先要确定职责 --- 要做的的事情（方法）
     2.根据职责确定不同的对象，在对象内部封装不同的方法（多个）
     3.最后完成代码，就是顺序的让不同的对象调用不同的方法
- 
+
 面向对象的特点：
     1.注重对象和职责，不同的对象承担不同的职责
     2.更适合应对复杂的需求变化，是专门应对复杂项目开发，提供的固定套路
@@ -116,13 +116,13 @@ from pprint import pprint
 
 类和对象
     类和对象是面向对象编程的两个核心概念
-    
-    
+
+
 类：
     类 是对一群具有 相同特征 或者 行为 的事物的一个统称，是抽象的，不能直接使用
         特征 被称为 属性
         行为 被称为 方法
-        
+
     类 就相当于制造飞机时的 图纸，是一个 模板，是 负责创建对象的
 对象：
     对象 是由类创建出来的一个具体存在，可以直接使用
@@ -144,14 +144,14 @@ from pprint import pprint
                 2.单词与单词之间没有下划线
         2.属性 这类事物具有什么样的特征
         3.方法 这类食物具有什么样的行为
-    
+
     类名的确定
         名词提炼法 分析整个业务流程，出现的名词，通常就是找到的类
     属性和方法的确定
         对 对象的特征描述，通常可以定义成属性
         对象具有的行为（动词），通常可以定义为方法
             提示：需求中没有涉及的属性或者是方法在设计类时，不需要考虑
-    
+
 面向对象基础语法
     dir内置函数
      使用内置函数dir传入标识符/数据，可以查看对象内的所有属性及方法
@@ -162,7 +162,7 @@ from pprint import pprint
         print(dir(aaa()))
         #结果：['__bool__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
 
-    
+
     引用的概念：
         在面向对象开发中，引用的概念是同样适用的！
         ·在python中使用类创建对象之后，tom变量中仍然记录的是对象在内存中的地址
@@ -170,13 +170,13 @@ from pprint import pprint
         ·使用print输出对象变量，默认情况下，是能够输出这个变量引用的对象是由那一个类创建的对象，
           以及在内存中的地址（16进制表示）
            提示：在计算机中，通常使用16进制表示内存地址
-            
+
             ·十进制和十六进制都是用来表达数字的，只是表示的方式不一样
             ·十进制和十六进制的数字之间可以来回转换
         ·%d 可以以10进制输出数字
         ·%x 可以以16进制输出数字
-            
-    
+
+
 class Cat:
 def eat(self):
     print("小猫哎吃鱼")
@@ -202,7 +202,7 @@ print("%x"%(id(tom)))           #%X打印的是16进制的
         1.为对象在内存中分配空间 -- 创建对象
         2.为对象的属性设置初始值 --初始化方法（init）
     这个初始化方法就是__init__方法，__init__是对象的 内置方法
-     __init__方法是专门用来定义一个类具有哪些属性的方法  
+     __init__方法是专门用来定义一个类具有哪些属性的方法
 
 """
 
@@ -215,35 +215,28 @@ print("%x"%(id(tom)))           #%X打印的是16进制的
 # tom = Cat()
 
 
-
 # result = 0
 # i = 0
 # while i<=100:
 #     if i % 2 == 0:
+import time
+from datetime import datetime
 
 
-import requests
+def getaftertime(n):  # 精确到分钟
+    """
+    获取当前时间往后的时间
+    :param n: 当前时间后的n分钟
+    :return: 返回当前时间后的时间，精确当分钟
+    """
+    nowtime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 获取当前时间
+    c = time.strptime(nowtime, "%Y-%m-%d %H:%M:%S")
+    timeStamp = int(time.mktime(c))
+    timeStamp += (n * 60)
+    timeArray = time.localtime(timeStamp)
+    aftertime = time.strftime("%Y-%m-%d %H:%M", timeArray)
+    return aftertime
 
 
-def Login():
-    result = requests.get(
-        "http://api.zuul.autotest.znlhzl.org/api-sso/api/v1/login?name=15050563690&pwd=888888")
-    return result.json()["data"]["token"]
-
-
-session = Login()
-print(session)
-
-headers = {
-    'Content-Type': 'application/json',
-    "X-Auth-Token": session,
-}
-values = {"pageNo": "1",
-                  "pageSize": "20",
-                  "truckPlateNumber": "冀A1T2C6",
-                  "truckType": "",
-                  "truckBelong": "",
-                  "truckLoad": ""
-                  }
-a = requests.get("http://api.zuul.autotest.znlhzl.org/api-tms/api/v1/bd/truck/loadTrucks",params=values,headers = headers)
-print(a.url)
+a = getaftertime(91)
+print(a)

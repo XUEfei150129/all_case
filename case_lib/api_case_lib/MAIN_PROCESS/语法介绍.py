@@ -10260,3 +10260,48 @@ b = {"createName": "薛飞", "customerName": "薛飞", "storeCode": "DEP18020003
                  "warehouseCode": "DEP1802000106", "dayGuidePrice": "125", "kzCount": "10",
                  "num": "{}".format(self.num_order),
                  "maxDayPrice": "375", "shighAndCategory": "6 FORK", "dayRentPrice": "125", "dayInfoFee": "0"}]}
+
+
+
+
+"""
+Testing started at 16:14 ...
+"C:\Program Files (x86)\Python36-32\python.exe" "C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.3\helpers\pycharm\_jb_unittest_runner.py" --target Main_Process1.Main_Process.test_freightcalculate
+Launching unittests with arguments python -m unittest Main_Process1.Main_Process.test_freightcalculate in D:\all_case\case_lib\api_case_lib\MAIN_PROCESS
+
+Process finished with exit code 0
+>>>>>>>>>>生成的工程单号是：PROJECT107406>>>>>>>>>>
+>>>>>>>>>>工程关联客户成功>>>>>>>>>>
+>>>>>>>>>>成功获取到刚创建的工程名:auto20190509161424;工程id:PROJECT107406>>>>>>>>>>
+>>>>>>>>>>订单创建成功>>>>>>>>>>
+>>>>>>>>>>bizNo:ZNLHZL-2019-28816,instNo:daad0c2acbde48ff8e2867f2c123fcbc 获取成功>>>>>>>>>>
+>>>>>>>>>>城市经理审核通过>>>>>>>>>>
+D:\all_case\case_lib\api_case_lib\MAIN_PROCESS\Main_Process1.py:283: ResourceWarning: unclosed file <_io.BufferedReader name='d:\\1.png'>
+  "image/png")})],
+>>>>>>>>>客户经理上传合同成功>>>>>>>>>>
+>>>>>>>>>>让服务器休息5秒钟>>>>>>>>>>
+>>>>>>>>>>好，继续工作>>>>>>>>>>
+>>>>>>>>>>合同专员审核合同通过>>>>>>>>>>
+>>>>>>>>>>客户经理发起进场成功>>>>>>>>>>
+>>>>>>>>>>进场单号是：FWJ190560925>>>>>>>>>>
+>>>>>>>>>>服务经理成功分配进场需求>>>>>>>>>>
+>>>>>>>>>>成功获取devEnterDemandCode的值：FWJ_DEMAND_190555129
+'>>>>>>>>>>成功获取设备的出厂编号：LWJAS100JJ0701698>>>>>>>>>>'
+'>>>>>>>>>>选择设备成功,并正常返回devEnterMatchCode：FWJ_MATCH_190574274>>>>>>>>>>'
+D:\all_case\case_lib\api_case_lib\MAIN_PROCESS\Main_Process1.py:574: ResourceWarning: unclosed file <_io.BufferedReader name='d:\\2.png'>
+  "imgFile": ("2.png", open(r"d:\2.png", "rb"), "image/png")})],
+'>>>>>>>>>>服务工程师成功验机>>>>>>>>>>'
+>>>>>>>>>>成功获取仓库code：DEP1802000106和仓库name：南京仓>>>>>>>>>>
+>>>>>>>>>>发起物流需求单成功，成功获取到物流需求单号：WL2019005672>>>>>>>>>>
+'>>>>>>>>>>成功获取物流运输单号：YS2019006037>>>>>>>>>>'
+>>>>>>>>>>成功获取物流车的truckCode，分别是：b3c80069-3fd1-11e9-b0af-005056883963，b7eef176-3fd1-11e9-b0af-005056883963，bc6b6bb6-3fd1-11e9-b0af-005056883963>>>>>>>>>>
+>>>>>>>>>>成功获取到承运商code：9920f956-b580-40a3-beff-381de301335f，和承运商的名字：天津恒路物流有限公司>>>>>>>>>>
+'>>>>>>>>>>成功获取到公里数：42>>>>>>>>>>'
+
+
+Ran 1 test in 37.903s
+
+OK
+>>>>>>>>>>成功获取推荐运费：858.06>>>>>>>>>>
+
+"""
