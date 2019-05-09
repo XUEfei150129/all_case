@@ -642,6 +642,8 @@ class Main_Process(LoginShort, Login):
         self.test_enterMatchDev()  # 完成进场验机等工作
         global warehouseinfo
         warehouseinfo = self.test_getwarehousecode()  # 获取仓库信息
+        global PlanDeliveryTime
+        PlanDeliveryTime = self.test_getaftertime(1)
         token = self.test_Login("jiangfengyu")
         headers = {
             'Content-Type': 'application/json',
@@ -654,7 +656,7 @@ class Main_Process(LoginShort, Login):
                   "demandDeliveryContactCode": "USER180301156",
                   "demandDeliveryContactName": cname,
                   "demandDeliveryContactMobile": telnum,
-                  "demandPlanDeliveryTime": self.test_getaftertime(1),
+                  "demandPlanDeliveryTime": PlanDeliveryTime,
                   "demandPlanReceiptTime": self.test_getaftertime(2),
                   "demandReceiptAddress": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
                   "demandReceiptAddressLatitude": 31.991562671134364,
@@ -883,35 +885,37 @@ class Main_Process(LoginShort, Login):
         print(">>>>>>>>>>成功获取推荐运费：{}>>>>>>>>>>".format(
             result.json()["data"]["freightRecommended"]))
         return result.json()["data"]["freightRecommended"]
-    #上面的代码是可以用的
+
+
 
     def test_createtransportorder(self):
         """
         创建物流运输单
         :return:
         """
+        freightRecommended = self.test_freightcalculate()  # 流程进展到发起物流需求单，返回推荐运费
         token = self.test_Login("zhuchunjiao")
         headers = {
             "X-Auth-Token": token,
+            'Content-Type': 'application/json',
         }
-        values = {"transportCode": "YS2019006033",
-                  "carrierCode": "9920f956-b580-40a3-beff-381de301335f",
-                  "carrierName": "天津恒路物流有限公司",
-                  "planDeliveryTime": "2019-05-08 11:52",
-                  "freightRecommended": "858.06",
-                  "freightPayable": "858.06",
+        values = {"transportCode": transportCode,
+                  "carrierCode": codeandname[0],
+                  "carrierName": codeandname[1],
+                  "planDeliveryTime": PlanDeliveryTime,
+                  "freightRecommended": freightRecommended,
+                  "freightPayable": freightRecommended,
                   "dockFee": "0.00",
-                  "kilometers": "42",
-                  "originalDemandCode": "WL2019005669",
+                  "kilometers": kilometers,
+                  "originalDemandCode": demandCode,
                   "reasonForFreightModified": "",
                   "remarks": "",
                   "plateNumber": "苏A",
-                  "takeDeliveryTime": self.test_getaftertime(91),
+                  "takeDeliveryTime": self.test_getaftertime(91),  # 精确到分钟
+
                   "navigationType": "2",
-                  "recommendedTruckCodes": ["b3c80069-3fd1-11e9-b0af-005056883963",
-                                            "b7eef176-3fd1-11e9-b0af-005056883963",
-                                            "bc6b6bb6-3fd1-11e9-b0af-005056883963"],
-                  "demands": [{"demandCode": "WL2019005669",
+                  "recommendedTruckCodes": RecommendTrucks_info,
+                  "demands": [{"demandCode": demandCode,
                                "demandDeliveryAddress": "江宁区淳化街道茶岗社区104省道",
                                "demandDeliveryAddressLatitude": 31.950859,
                                "demandDeliveryAddressLongitude": 119.014704,
@@ -920,13 +924,13 @@ class Main_Process(LoginShort, Login):
                                "demandReceiptAddressLongitude": 118.779095,
                                "demandType": "1",
                                "kilometers": "0",
-                               "demandRelationCode": "FWJ190560922",
+                               "demandRelationCode": fwj,
                                "devices": [{"category": "FORK",
                                             "categoryName": "剪叉",
                                             "shigh": "10",
                                             "shighName": "10米",
                                             "usedAmount": "1"}]}],
-                  "positions": [{"demandCode": "WL2019005669",
+                  "positions": [{"demandCode": demandCode,
                                  "address": "江宁区淳化街道茶岗社区104省道",
                                  "latitude": "31.950859",
                                  "longitude": "119.014704",
@@ -934,18 +938,18 @@ class Main_Process(LoginShort, Login):
                                  "order": "1",
                                  "type": "0",
                                  "mergedCodes": [],
-                                 "demandHandTypes": [{"demandCode": "WL2019005669",
+                                 "demandHandTypes": [{"demandCode": demandCode,
                                                       "type": "0",
                                                       "orderIndex": 1}]},
-                                {"demandCode": "WL2019005669",
+                                {"demandCode": demandCode,
                                  "address": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
                                  "latitude": "31.991563",
                                  "longitude": "118.779095",
-                                 "kilometers": 42,
+                                 "kilometers": kilometers,
                                  "order": "2",
                                  "type": "1",
                                  "mergedCodes": [],
-                                 "demandHandTypes": [{"demandCode": "WL2019005669",
+                                 "demandHandTypes": [{"demandCode": demandCode,
                                                       "type": "1",
                                                       "orderIndex": 2}]}],
                   "navigationRules": []}
@@ -955,7 +959,6 @@ class Main_Process(LoginShort, Login):
             "/api-tms/api/v1/transportorder/create",
             data=values,
             headers=headers)
-        print(result.json())
-
-
-
+        self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
+        self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
+        print(">>>>>>>>>>成功创建物流运输单>>>>>>>>>>".format(result.json()))

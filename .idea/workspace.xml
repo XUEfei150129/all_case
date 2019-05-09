@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22199">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="179">
+              <caret line="960" column="28" lean-forward="true" selection-start-line="960" selection-start-column="28" selection-end-line="960" selection-end-column="28" />
               <folding>
                 <element signature="e#83#128#0" expanded="true" />
               </folding>
@@ -75,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="10299" lean-forward="true" selection-start-line="10299" selection-end-line="10299" />
+            <state relative-caret-position="214">
+              <caret line="10342" lean-forward="true" selection-start-line="10342" selection-end-line="10342" />
               <folding>
                 <element signature="e#1034829#1034858#0" expanded="true" />
               </folding>
@@ -151,12 +151,17 @@
       <find>245</find>
       <find>false</find>
       <find>operateFlag</find>
-      <find>CUST112589</find>
       <find>devhours</find>
       <find>warehouseCode</find>
       <find>demandCode</find>
-      <find>transportCode</find>
       <find>truckCodes</find>
+      <find>CUST112589</find>
+      <find>planDeliveryTime</find>
+      <find>transportCode</find>
+      <find>carrierCode</find>
+      <find>carrierName</find>
+      <find>recommendedTruckCodes</find>
+      <find>kilometers</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;&quot;</replace>
@@ -216,13 +221,13 @@
         <option value="$PROJECT_DIR$/login_api/Read_Ini.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_three.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="426" />
     <option name="y" value="42" />
     <option name="width" value="1746" />
@@ -310,7 +315,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.share_three">
+  <component name="RunManager" selected="Python tests.Unittests for Main_Process1.Main_Process.test_createtransportorder">
     <configuration name="draft" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="all_case" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -419,9 +424,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_createtransportorder" />
         <item itemvalue="Python.share_three" />
         <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_freightcalculate" />
-        <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_createtransportorder" />
         <item itemvalue="Python.draft" />
         <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_calcMileage" />
       </list>
@@ -441,12 +446,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_freightcalculate - 2019.05.09 at 14h 43m 13s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_freightcalculate - 2019.05.09 at 14h 43m 35s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_Main_Process1_Main_Process_test_freightcalculate - 2019.05.09 at 14h 45m 26s.xml">
       <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" configurationId="tests" />
     </history-entry>
@@ -471,6 +470,12 @@
     <history-entry file="Unittests_for_Main_Process1_Main_Process_test_freightcalculate - 2019.05.09 at 16h 15m 00s.xml">
       <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_createtransportorder - 2019.05.09 at 16h 56m 26s.xml">
+      <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_createtransportorder - 2019.05.09 at 17h 17m 28s.xml">
+      <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -482,16 +487,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8004926" visible="true" weight="0.19777602" />
-      <window_info id="Structure" order="1" sideWeight="0.19950739" side_tool="true" weight="0.2112788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8235294" visible="true" weight="0.19777602" />
+      <window_info id="Structure" order="1" sideWeight="0.1764706" side_tool="true" visible="true" weight="0.19777602" />
       <window_info id="Favorites" order="2" sideWeight="0.50259066" side_tool="true" weight="0.19769503" />
       <window_info id="DB Browser" order="3" weight="0.21141478" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.44463086" />
-      <window_info anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="2" sideWeight="0.49642575" weight="0.27886322" />
+      <window_info anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="2" sideWeight="0.49642575" visible="true" weight="0.24511546" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49722" weight="0.1634103" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -916,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="10299" lean-forward="true" selection-start-line="10299" selection-end-line="10299" />
+        <state relative-caret-position="214">
+          <caret line="10342" lean-forward="true" selection-start-line="10342" selection-end-line="10342" />
           <folding>
             <element signature="e#1034829#1034858#0" expanded="true" />
           </folding>
@@ -926,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22199">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="179">
+          <caret line="960" column="28" lean-forward="true" selection-start-line="960" selection-start-column="28" selection-end-line="960" selection-end-column="28" />
           <folding>
             <element signature="e#83#128#0" expanded="true" />
           </folding>
