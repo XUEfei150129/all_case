@@ -140,7 +140,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同,
         :return:第一个订单号
         """
-        token = self.test_Login("qinchuanxiu")
+        token = self.test_Login("zhuchunjiao")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -160,7 +160,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同
         :return:
         """
-        token = self.test_Login("qinchuanxiu")
+        token = self.test_Login("zhuchunjiao")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -181,7 +181,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同
         :return:
         """
-        token = self.test_Login("qinchuanxiu")
+        token = self.test_Login("zhuchunjiao")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -195,7 +195,7 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         # pprint(result.json()['data']['list'][6])
         for i in result.json()['data']['list']:
-            if "415" in i["bizNo"]:
+            if "68" in i["bizNo"]:
                 break
             print("销售单号依次是{}：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
 
@@ -211,7 +211,7 @@ class Main_Process(LoginShort, Login):
         合同管理专员获取最新的合同
         :return:
         """
-        token = self.test_Login("qinchuanxiu")
+        token = self.test_Login("zhuchunjiao")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -225,26 +225,18 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         # pprint(result.json()['data']['list'])
         for i in result.json()['data']['list']:
-            if "415" in i["bizNo"]:
+            if "68" in i["bizNo"]:
                 continue
             print("销售单号依次是{}：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
 
-    # 销售单号依次是1：ZNLHZL - 2019 - 28526
-    # 销售单号依次是2：REPAIR19032110997
-    # 销售单号依次是3：REPAIR19031051006
-    # 销售单号依次是4：REPAIR19030781316
-    # 销售单号依次是5：REPAIR19031229802
-    # 销售单号依次是7：REPAIR19030360302
-    # 销售单号依次是8：REPAIR19030696232
-    # 销售单号依次是9：REPAIR19031031734
-    # 销售单号依次是10：REPAIR19030967080
+
 
     def test_list3(self):
         """
         合同管理专员获取最新的合同
         :return:
         """
-        token = self.test_Login("qinchuanxiu")
+        token = self.test_Login("zhuchunjiao")
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -258,10 +250,10 @@ class Main_Process(LoginShort, Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         # pprint(result.json()['data']['list'])
         for i in result.json()['data']['list']:
-            if "415" in i["bizNo"]:
+            if "68" in i["bizNo"]:
                 print("销售单号是{}：{}".format(((result.json()['data']['list']).index(i)) + 1, i["bizNo"]))
-                break
-                # continue      (同break效果一样)
+                #break
+                continue      #(同break效果一样)
 
     # 销售单号依次是6：CHA_CONT222
 

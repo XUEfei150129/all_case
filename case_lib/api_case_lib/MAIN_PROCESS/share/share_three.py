@@ -11,7 +11,6 @@
 
 """
 
-
 #
 # # 简单条件判断
 # age2 = int(input("你今年几岁："))
@@ -21,7 +20,7 @@
 #     print("记得时间不要太长")
 # else:
 #     print("你还小，回家写作业去吧！！！")
-#
+# #
 # print("看看这句话是不是一直打印")
 # #
 # # 条件控制加逻辑运算符
@@ -45,7 +44,7 @@
 #     print("每天都是情人节")
 #
 # # if 嵌套
-# has_ticket = True
+# has_ticket = False
 # knife_length = 50
 #
 # if has_ticket:
@@ -56,6 +55,7 @@
 #         print("请进入候车室")
 #
 # else:
+#
 #     print("请先买票奥")
 #
 # # if嵌套
@@ -75,6 +75,7 @@
 #     print("请输入正整数")
 #
 # # if 实现石头剪刀布
+# import random
 # player = int(input("玩家输入要出的拳--石头（1）/剪刀（2）/布（3）:"))
 # computer = random.randint(1, 3)
 # print("玩家出的拳头是：%d ———电脑出的拳头是：%d" % (player, computer))
@@ -100,7 +101,9 @@
 #     print(i)
 
 # 简单遍历 while写法
-# languages = ["C", "C++", "Perl", "Python"]
+languages = ["C", "C++", "Perl", "Python"]
+
+
 # i = 0
 # while i < len(languages):
 #     print(languages[i])
@@ -108,7 +111,7 @@
 # # 简单遍历
 # languages = ["C", "C++", "Perl", "Python"]
 # for i in languages:
-#     print("第{}门课程是:{}".format(languages.index(i) + 1, i))
+#     print(f"第{languages.index(i) + 1}门课程是:{i}")
 
 #
 # # 遍历加判断加运算
@@ -121,7 +124,7 @@
 
 # # 遍历---列表生成式
 # salary_before = [1000, 2000, 15000, 20000]
-# salary_after = [int(0.9 * one) for one in salary_before]
+# salary_after = [int(0.9 * one) for one in salary_before if one >= 15000]
 # print(salary_after)
 # range
 # range() 函数可创建一个整数列表，一般用在 for 循环中
@@ -129,7 +132,7 @@
 # start: 计数从 start 开始。默认是从 0 开始。例如range（5）等价于range（0， 5）;
 # stop: 计数到 stop 结束，但不包括 stop。例如：range（0， 5） 是[0, 1, 2, 3, 4]没有5
 # step：步长，默认为1。例如：range（0， 5） 等价于 range(0, 5, 1)
-# for n in range(50, 101, 5):
+# for n in range(50, 101):
 #     print(n)
 
 # sumData = 0
@@ -194,7 +197,7 @@
 # break是条出整个循环，后面的循环都不要管了
 # for i in "python":
 #     if i == "h":
-#         break
+#         continue
 #     print(i)
 # p y t
 
@@ -216,15 +219,15 @@
 # 调用函数一方，可以 使用变量 来 接收 函数的返回结果
 # """
 #
-x = 1
-def a():
-    global x
-    x = 2
-    print("函数里面的x值是:{}".format(x))
+# x = 1
+# def a():
+#     global x
+#     x = 2
+#     print("函数里面的x值是:{}".format(x))
+# # a()
+# print(f"函数外面的x值是:{x}")
 # a()
-print(f"函数外面的x值是:{x}")
-a()
-print("函数外面的x值是:%s"%(x))
+# print("函数外面的x值是:%s"%(x))
 
 
 # class test1:
@@ -242,3 +245,13 @@ print("函数外面的x值是:%s"%(x))
 #
 #
 # t = test1(6)
+
+
+# def a(x, y):
+#     print(x + y)
+#     return x * y
+#
+#
+# # a(2, 4)
+# b = a(2, 4)
+# print(b)
