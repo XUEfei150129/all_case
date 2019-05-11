@@ -6,20 +6,35 @@ from login_api.Login import Login, LoginShort
 from Mysql_db.connect_db import OperationMysql
 from method.checkmethod import isJson, checktype
 from login_api.Read_Ini import Read_Ini
-import string, random, json, requests, time, re
+import string
+import random
+import json
+import requests
+import time
+import decimal
+import re
 from datetime import datetime
 from pprint import pprint
 from time import sleep
 
 
-class Main_Process3(LoginShort, Login):
+class Main_Process5(LoginShort, Login):
     """
     主流程测试用例
+    """
+    """
+    优化工程信息和客户信息
     """
 
     num_order = 1  # 订单设备数据
     enter_order = 1  # 发起进场的设备数量
-    cCode = "CUST112589"  # 创建订单是要选的客户,默认选的客户是薛飞
+    projectinfo = [
+        "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
+        "118.7790948694178",
+        "31.991562671134364"]  # 默认工程地址，抓包后将address，longitude，latitude信息存在在这个列表里面
+
+    custmoerinfo = "CUST112622",  # 默认客户，客户名：“薛飞客户”。
+
     khjl = "薛飞"  # 客户经理                 需要维护D:\all_case\login_api\user_name.ini对应的用户
     cslj = "黄飞"  # 城市经理                 需要维护D:\all_case\login_api\user_name.ini对应的用户
     fwgcs = "江凤余"  # 服务工程师            需要维护D:\all_case\login_api\user_name.ini对应的用户
@@ -27,11 +42,53 @@ class Main_Process3(LoginShort, Login):
     htzy = "虞晨露"  # 合同专员               需要维护D:\all_case\login_api\user_name.ini对应的用户
     zhglg = "朱春娇"  # 综合管理岗/物流专员   需要维护D:\all_case\login_api\user_name.ini对应的用户
 
+    def sishewuru(self, num, precision="0.000000"):
+        """
+        将一个浮点数四舍五入
+        :param num: 要四舍五入的数字
+        :param precision: 小数点后保留几位，缺省保留6位小数
+        :return: 四舍五入的浮点数
+        """
+        swnum = decimal.Decimal(
+            "{}".format(num)).quantize(
+            decimal.Decimal(
+                "{}".format(precision)))
+        return swnum
+
+    def test_getCustomerDetail(self):
+        """
+        客户经理根据客户cCode，获取客户信息。包括：客户姓名，电话，身份证信息
+        :return: list
+        """
+        token = self.test_Login(self.khjl)
+        headers = {
+            "X-Auth-Token": token,
+        }
+        values = {
+            "custCode": self.custmoerinfo,
+        }
+        result = requests.get(
+            self.url +
+            "/api-crm/api/v2/crm/customer/crmCustomerDetail",
+            params=values,
+            headers=headers)
+        custmobile = result.json()["data"]["custTel"]  # 客户电话号码
+        custidcard = result.json()["data"]["identityCard"]  # 客户身份证号码
+        custNickName = result.json()["data"]["custNickName"]  # 客户姓名
+        pprint(
+            ">>>>>>>>>>成功获取到客户电话号码：{}，客户身份证号码：{}，客户姓名：{}>>>>>>>>>>".format(
+                str(custmobile),
+                str(custidcard),
+                str(custNickName)))
+        return [custmobile, custidcard, custNickName]
+
     def test_addproject(self):
         """
         客户经理创建工程
         :return: 返回值为工程号
         """
+        global custmoer_info
+        custmoer_info = self.test_getCustomerDetail()
         token = self.test_Login(self.khjl)
         headers = {
             'Content-Type': 'application/json',
@@ -42,9 +99,9 @@ class Main_Process3(LoginShort, Login):
         projectname = "auto" + nowT  # 生成一个以当前时间命名的工程名
         values = {
             "projectFullName": "{}".format(projectname),  # 工程全称（必填）
-            "address": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",  # 工程地址（必填）
-            "longitude": "118.7790948694178",
-            "latitude": "31.991562671134364",
+            "address": "{}".format(self.projectinfo[0]),  # 工程地址（必填）
+            "longitude": "{}".format(self.projectinfo[1]),
+            "latitude": "{}".format(self.projectinfo[2]),
             "filePath": [],  # 上传照片（非必填）
             "projectTrade": 1,
             "constructionStage": 0,
@@ -76,7 +133,7 @@ class Main_Process3(LoginShort, Login):
             "X-Auth-Token": token,
         }
         values = {
-            "custCode": self.cCode,
+            "custCode": "{}".format(self.custmoerinfo),
             "projectCode": "{}".format(pcode)}  # 这两个参数都是可以获取的
         values = json.dumps(values)
         result = requests.post(
@@ -101,7 +158,7 @@ class Main_Process3(LoginShort, Login):
         values = {
             "pageNo": 1,
             "pageSize": 10,
-            "custCode": "{}".format(self.cCode),
+            "custCode": "{}".format(self.custmoerinfo),
             "projectName": ""
         }
         result = requests.get(
@@ -134,17 +191,17 @@ class Main_Process3(LoginShort, Login):
         }
         nowtime = datetime.now().strftime('%Y-%m-%d')
         values = {"createName": self.khjl,
-                  "customerName": "薛飞",
+                  "customerName": custmoer_info[2],
                   "storeCode": "DEP18020003",
-                  "customerCode": "{}".format(self.cCode),
+                  "customerCode": "{}".format(self.custmoerinfo),
                   "enterpriseCode": "",
                   "enterpriseName": "",
                   "estimatePriceUpdateFlag": 0,
                   "orderInfo": {"projectName": "{}".format(pnaemcode[0]),
                                 "fileid": "",
-                                "lon": "118.7790948694178",
+                                "lon": "{}".format(self.projectinfo[1]),
                                 "estimatePrice": "500",
-                                "jobAddress": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
+                                "jobAddress": self.projectinfo[0],
                                 "balanceTypeName": "后付",
                                 "projectCode": "{}".format(pnaemcode[0]),
                                 "businessPolicyChangeReason": "",
@@ -152,7 +209,7 @@ class Main_Process3(LoginShort, Login):
                                 "jobType": "1",
                                 "jobTypeName": "钢结构",
                                 "balanceType": 3,
-                                "lat": "31.991562671134364",
+                                "lat": "{}".format(self.projectinfo[2]),
                                 "city": "",
                                 "accountPeriod": "30",
                                 "isTransport": "{}".format(self.num_order),
@@ -281,9 +338,11 @@ class Main_Process3(LoginShort, Login):
                                                              "rb"),
                                                         "image/png")})],
                   "orderCode": bizNo,
-                  "orderSignPersonVoList": [{"idcard": "320882198810292412",
-                                             "mobile": "15151864744",
-                                             "name": "薛飞",  # 客户姓名
+                  "orderSignPersonVoList": [{"idcard": custmoer_info[1],  # 客户身份证
+                                             # 客户手机号
+                                             "mobile": custmoer_info[0],
+                                             # 客户姓名
+                                             "name": custmoer_info[2],
                                              "images": ["lpt/0/1108990759794774016.jpg",
                                                         "lpt/1/1108990760113541120.jpg"]}]}
         values = json.dumps(values)
@@ -658,9 +717,9 @@ class Main_Process3(LoginShort, Login):
                   "demandDeliveryContactMobile": Read_Ini().get_value(self.fwgcs)[0],
                   "demandPlanDeliveryTime": PlanDeliveryTime,
                   "demandPlanReceiptTime": self.test_getaftertime(2),
-                  "demandReceiptAddress": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
-                  "demandReceiptAddressLatitude": 31.991562671134364,
-                  "demandReceiptAddressLongitude": 118.7790948694178,
+                  "demandReceiptAddress": self.projectinfo[0],
+                  "demandReceiptAddressLatitude": self.projectinfo[2],
+                  "demandReceiptAddressLongitude": self.projectinfo[1],
                   "demandReceiptContactCode": Read_Ini().get_value(self.fwgcs)[2],
                   "demandReceiptContactName": self.fwgcs,
                   "demandReceiptContactMobile": Read_Ini().get_value(self.fwgcs)[0],
@@ -795,9 +854,9 @@ class Main_Process3(LoginShort, Login):
                                  "mergedCodes": None,
                                  "demandHandTypes": None},
                                 {"demandCode": demandCode,
-                                 "address": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
-                                 "latitude": "31.991563",
-                                 "longitude": "118.779095",
+                                 "address": self.projectinfo[0],
+                                 "latitude": "{}".format(self.sishewuru(self.projectinfo[2])),
+                                 "longitude": "{}".format(self.sishewuru(self.projectinfo[1])),
                                  "kilometers": 0,
                                  "order": "2",
                                  "type": "1",
@@ -840,9 +899,9 @@ class Main_Process3(LoginShort, Login):
                                "demandDeliveryAddress": "江宁区淳化街道茶岗社区104省道",
                                "demandDeliveryAddressLatitude": 31.950859,
                                "demandDeliveryAddressLongitude": 119.014704,
-                               "demandReceiptAddress": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
-                               "demandReceiptAddressLatitude": 31.991563,
-                               "demandReceiptAddressLongitude": 118.779095,
+                               "demandReceiptAddress": "{}".format(self.projectinfo[0]),
+                               "demandReceiptAddressLatitude": "{}".format(self.sishewuru(self.projectinfo[2])),
+                               "demandReceiptAddressLongitude": "{}".format(self.sishewuru(self.projectinfo[1])),
                                "demandType": "1",
                                "kilometers": "0",
                                "demandRelationCode": fwj,
@@ -863,9 +922,9 @@ class Main_Process3(LoginShort, Login):
                                                       "type": "0",
                                                       "orderIndex": 1}]},
                                 {"demandCode": demandCode,
-                                 "address": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
-                                 "latitude": "31.991563",
-                                 "longitude": "118.779095",
+                                 "address": self.projectinfo[0],
+                                 "latitude": "{}".format(self.sishewuru(self.projectinfo[2])),
+                                 "longitude": "{}".format(self.sishewuru(self.projectinfo[1])),
                                  "kilometers": kilometers,
                                  "order": "2",
                                  "type": "1",
@@ -917,9 +976,9 @@ class Main_Process3(LoginShort, Login):
                                "demandDeliveryAddress": "江宁区淳化街道茶岗社区104省道",
                                "demandDeliveryAddressLatitude": 31.950859,
                                "demandDeliveryAddressLongitude": 119.014704,
-                               "demandReceiptAddress": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
-                               "demandReceiptAddressLatitude": 31.991563,
-                               "demandReceiptAddressLongitude": 118.779095,
+                               "demandReceiptAddress": "{}".format(self.projectinfo[0]),
+                               "demandReceiptAddressLatitude": "{}".format(self.sishewuru(self.projectinfo[2])),
+                               "demandReceiptAddressLongitude": "{}".format(self.sishewuru(self.projectinfo[1])),
                                "demandType": "1",
                                "kilometers": "0",
                                "demandRelationCode": fwj,
@@ -940,9 +999,9 @@ class Main_Process3(LoginShort, Login):
                                                       "type": "0",
                                                       "orderIndex": 1}]},
                                 {"demandCode": demandCode,
-                                 "address": "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
-                                 "latitude": "31.991563",
-                                 "longitude": "118.779095",
+                                 "address": "{}".format(self.projectinfo[0]),
+                                 "latitude": "{}".format(self.sishewuru(self.projectinfo[2])),
+                                 "longitude": "{}".format(self.sishewuru(self.projectinfo[1])),
                                  "kilometers": kilometers,
                                  "order": "2",
                                  "type": "1",

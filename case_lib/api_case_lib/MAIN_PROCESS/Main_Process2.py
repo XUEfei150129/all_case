@@ -17,7 +17,7 @@ from time import sleep
 import re
 
 
-class Main_Process(LoginShort, Login):
+class Main_Process2(LoginShort, Login):
     """
     主流程测试用例
     """

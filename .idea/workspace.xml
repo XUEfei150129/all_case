@@ -42,81 +42,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="989" column="24" lean-forward="true" selection-start-line="989" selection-start-column="24" selection-end-line="989" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py">
+        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="960" column="28" lean-forward="true" selection-start-line="960" selection-start-column="28" selection-end-line="960" selection-end-column="28" />
-              <folding>
-                <element signature="e#83#128#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login_api/user_name.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="143" column="8" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="10342" lean-forward="true" selection-start-line="10342" selection-end-line="10342" />
-              <folding>
-                <element signature="e#1034829#1034858#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_three.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="223" column="5" lean-forward="true" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="1782" lean-forward="true" selection-start-line="1782" selection-end-line="1782" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/握手.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/流程图示.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login_api/Read_Ini.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="-675">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -124,8 +63,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="240" column="20" lean-forward="true" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
+            <state relative-caret-position="39">
+              <caret line="247" selection-start-line="247" selection-end-line="247" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5954">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="1588" column="11" lean-forward="true" selection-start-line="1581" selection-end-line="1621" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login_api/user_name.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/api_case/MAIN_PROCESS/main_process.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+              <folding>
+                <element signature="e#15#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/api_case/LGT/car_basc_info.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,27 +143,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>true</find>
-      <find>文本</find>
-      <find>test_submitAuditInst</find>
-      <find>join</find>
-      <find>list</find>
-      <find>girls</find>
-      <find>Check_elements</find>
-      <find>245</find>
-      <find>false</find>
-      <find>operateFlag</find>
-      <find>devhours</find>
-      <find>warehouseCode</find>
       <find>demandCode</find>
       <find>truckCodes</find>
-      <find>CUST112589</find>
       <find>planDeliveryTime</find>
       <find>transportCode</find>
       <find>carrierCode</find>
       <find>carrierName</find>
       <find>recommendedTruckCodes</find>
       <find>kilometers</find>
+      <find>self.test_get</find>
+      <find>CUST110359</find>
+      <find>People</find>
+      <find>devhours.txt</find>
+      <find>江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府</find>
+      <find>118.7790948694178</find>
+      <find>31.991562671134364</find>
+      <find>118.779095</find>
+      <find>31.991563</find>
+      <find>customer</find>
+      <find>cust</find>
+      <find>cCode</find>
+      <find>薛飞</find>
+      <find>CUST112589</find>
+      <find>320882198810292412</find>
+      <find>15151864744</find>
+      <find>self.cCode</find>
+      <find>DEP18020003</find>
+      <find>A</find>
+      <find>custmoerinfo</find>
+      <find>www</find>
+      <find>custmoer_info</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;&quot;</replace>
@@ -173,19 +184,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/send_email/email_263.py" />
-        <option value="$PROJECT_DIR$/send_email/Email_263.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/main_process.py" />
-        <option value="$PROJECT_DIR$/case_lib/UI_case_lib/logistics/Car_Base_Info_UI.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/LOG/Car_Basc_Info.py" />
-        <option value="$PROJECT_DIR$/case/api_case/LOG/car_basc_info.robot" />
-        <option value="$PROJECT_DIR$/Mysql_db/find_dbparameter.py" />
         <option value="$PROJECT_DIR$/Mysql_db/Read_Ini.py" />
         <option value="$PROJECT_DIR$/case_lib/UI_case_lib/LGT/Car_Basc_Info.py" />
         <option value="$PROJECT_DIR$/case_lib/UI_case_lib/LGT/Car_Basc_Info_UI.py" />
         <option value="$PROJECT_DIR$/Mysql_db/db.ini" />
         <option value="$PROJECT_DIR$/Mysql_db/connect_db.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/分享一.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_one.py" />
         <option value="$PROJECT_DIR$/method/checkmethod.py" />
@@ -195,9 +198,7 @@
         <option value="$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUITool.py" />
         <option value="$PROJECT_DIR$/case/UI_case/LGT/CarBascInfoUI.robot.py" />
         <option value="$PROJECT_DIR$/case/__init__.robot" />
-        <option value="$PROJECT_DIR$/case/api_case/LGT/__init__.robot" />
         <option value="$PROJECT_DIR$/case/UI_case/LGT/CarBascInfoUI.robot" />
-        <option value="$PROJECT_DIR$/case/api_case/MAIN_PROCESS/__init__.robot" />
         <option value="$PROJECT_DIR$/case/api_case/SALE/__init__.py" />
         <option value="$PROJECT_DIR$/case/api_case/LGT/car_basc_info.robot" />
         <option value="$PROJECT_DIR$/case/UI_case/LGT/carbascinfoUI.robot" />
@@ -213,31 +214,42 @@
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/test1.py" />
         <option value="$PROJECT_DIR$/login_api/Login_a.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_two.py" />
-        <option value="$PROJECT_DIR$/login_api/Login.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/devhours" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/devhours.txt" />
-        <option value="$PROJECT_DIR$/login_api/user_name.ini" />
-        <option value="$PROJECT_DIR$/login_api/Read_Ini.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_three.py" />
-        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py" />
         <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_three.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/nameinfo.txt" />
+        <option value="$PROJECT_DIR$/login_api/Login.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py" />
+        <option value="$PROJECT_DIR$/login_api/Read_Ini.py" />
+        <option value="$PROJECT_DIR$/login_api/user_name.ini" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/test0510.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process2.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py" />
+        <option value="$PROJECT_DIR$/case/api_case/MAIN_PROCESS/__init__.robot" />
+        <option value="$PROJECT_DIR$/case/api_case/LGT/__init__.robot" />
+        <option value="$PROJECT_DIR$/case/api_case/MAIN_PROCESS/main_process.robot" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process3.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process4.py" />
+        <option value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process5.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="426" />
-    <option name="y" value="42" />
-    <option name="width" value="1746" />
-    <option name="height" value="1008" />
+    <option name="x" value="117" />
+    <option name="y" value="21" />
+    <option name="width" value="1920" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,41 +278,32 @@
             <path>
               <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
               <item name="all_case" type="462c0819:PsiDirectoryNode" />
-              <item name="case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="api_case_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="MAIN_PROCESS" type="462c0819:PsiDirectoryNode" />
-              <item name="share" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="all_case" type="b2602c69:ProjectViewProjectNode" />
-              <item name="all_case" type="462c0819:PsiDirectoryNode" />
               <item name="login_api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../参考/ruleUI" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\all_case\login_api" />
-      <recent name="D:\all_case\case_lib\api_case_lib\MAIN_PROCESS" />
-      <recent name="D:\all_case\case\UI_case\LGT" />
-      <recent name="D:\all_case\case_lib\UI_case_lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\all_case\case_lib\api_case_lib\MAIN_PROCESS" />
       <recent name="D:\all_case\case_lib\api_case_lib\MAIN_PROCESS\share" />
       <recent name="D:\all_case\Excel" />
       <recent name="D:\all_case\login_ui" />
       <recent name="D:\all_case" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\all_case\case_lib\api_case_lib\MAIN_PROCESS" />
+      <recent name="D:\all_case\login_api" />
+      <recent name="D:\all_case\case\UI_case\LGT" />
+      <recent name="D:\all_case\case_lib\UI_case_lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -315,50 +318,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for Main_Process1.Main_Process.test_createtransportorder">
-    <configuration name="draft" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="all_case" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="share_three" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="all_case" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_three.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for Main_Process1.Main_Process.test_calcMileage" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for Main_Process5.Main_Process5.test_createtransportorder">
+    <configuration name="Unittests for Main_Process4.Main_Process4.test_createtransportorder" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="all_case" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -368,11 +329,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Main_Process1.Main_Process.test_calcMileage&quot;" />
+      <option name="_new_target" value="&quot;Main_Process4.Main_Process4.test_createtransportorder&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for Main_Process5.Main_Process5.test_addproject" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="all_case" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -382,11 +343,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Main_Process1.Main_Process.test_createtransportorder&quot;" />
+      <option name="_new_target" value="&quot;Main_Process5.Main_Process5.test_addproject&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for Main_Process5.Main_Process5.test_ceratorder" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="all_case" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -396,7 +357,35 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Main_Process1.Main_Process.test_freightcalculate&quot;" />
+      <option name="_new_target" value="&quot;Main_Process5.Main_Process5.test_ceratorder&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Main_Process5.Main_Process5.test_createtransportorder" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="all_case" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Main_Process5.Main_Process5.test_createtransportorder&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="all_case" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Main_Process5.Main_Process5.test_getCustomerDetail&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -416,19 +405,19 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.Unittests for case_lib.api_case_lib.MAIN_PROCESS.Main_Process.MainProcess.test_ordersignsave" />
-      <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_calcMileage" />
-      <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_freightcalculate" />
-      <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_createtransportorder" />
-      <item itemvalue="Python.draft" />
-      <item itemvalue="Python.share_three" />
+      <item itemvalue="Python tests.Unittests for Main_Process5.Main_Process5.test_createtransportorder" />
+      <item itemvalue="Python tests.Unittests for Main_Process5.Main_Process5.test_ceratorder" />
+      <item itemvalue="Python tests.Unittests for Main_Process5.Main_Process5.test_addproject" />
+      <item itemvalue="Python tests.Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" />
+      <item itemvalue="Python tests.Unittests for Main_Process4.Main_Process4.test_createtransportorder" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_createtransportorder" />
-        <item itemvalue="Python.share_three" />
-        <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_freightcalculate" />
-        <item itemvalue="Python.draft" />
-        <item itemvalue="Python tests.Unittests for Main_Process1.Main_Process.test_calcMileage" />
+        <item itemvalue="Python tests.Unittests for Main_Process5.Main_Process5.test_createtransportorder" />
+        <item itemvalue="Python tests.Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" />
+        <item itemvalue="Python tests.Unittests for Main_Process4.Main_Process4.test_createtransportorder" />
+        <item itemvalue="Python tests.Unittests for Main_Process5.Main_Process5.test_ceratorder" />
+        <item itemvalue="Python tests.Unittests for Main_Process5.Main_Process5.test_addproject" />
       </list>
     </recent_temporary>
   </component>
@@ -446,35 +435,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_freightcalculate - 2019.05.09 at 14h 45m 26s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_getCustomerDetail - 2019.05.11 at 17h 36m 39s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_createtransportorder - 2019.05.09 at 15h 31m 05s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_getCustomerDetail - 2019.05.11 at 17h 39m 20s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_createtransportorder - 2019.05.09 at 15h 38m 19s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_getCustomerDetail - 2019.05.11 at 17h 40m 05s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_createtransportorder - 2019.05.09 at 15h 40m 41s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_getCustomerDetail - 2019.05.11 at 17h 41m 20s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_createtransportorder - 2019.05.09 at 15h 49m 37s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_getCustomerDetail - 2019.05.11 at 17h 42m 29s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_freightcalculate - 2019.05.09 at 16h 03m 47s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_getCustomerDetail - 2019.05.11 at 17h 43m 28s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_freightcalculate - 2019.05.09 at 16h 06m 48s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_createtransportorder - 2019.05.11 at 17h 47m 07s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_createtransportorder" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_freightcalculate - 2019.05.09 at 16h 15m 00s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_freightcalculate" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_getCustomerDetail - 2019.05.11 at 17h 49m 10s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_getCustomerDetail" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_createtransportorder - 2019.05.09 at 16h 56m 26s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_createtransportorder - 2019.05.11 at 17h 49m 32s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_createtransportorder" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Main_Process1_Main_Process_test_createtransportorder - 2019.05.09 at 17h 17m 28s.xml">
-      <configuration name="Unittests for Main_Process1.Main_Process.test_createtransportorder" configurationId="tests" />
+    <history-entry file="Unittests_for_Main_Process5_Main_Process5_test_createtransportorder - 2019.05.11 at 17h 51m 29s.xml">
+      <configuration name="Unittests for Main_Process5.Main_Process5.test_createtransportorder" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
@@ -490,47 +479,26 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8235294" visible="true" weight="0.19777602" />
-      <window_info id="Structure" order="1" sideWeight="0.1764706" side_tool="true" visible="true" weight="0.19777602" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4907749" visible="true" weight="0.20969023" />
+      <window_info id="Structure" order="1" sideWeight="0.5092251" side_tool="true" weight="0.20969023" />
       <window_info id="Favorites" order="2" sideWeight="0.50259066" side_tool="true" weight="0.19769503" />
       <window_info id="DB Browser" order="3" weight="0.21141478" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.44463086" />
-      <window_info anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="2" sideWeight="0.49642575" visible="true" weight="0.24511546" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49722" weight="0.1634103" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49722" weight="0.25754884" />
+      <window_info active="true" anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="2" sideWeight="0.49642575" visible="true" weight="0.13676731" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49722" weight="0.25399646" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.28419182" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50357425" side_tool="true" weight="0.22557727" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32777777" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50277996" side_tool="true" weight="0.07282416" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32777777" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8004926" visible="true" weight="0.2112788" />
-      <window_info id="Structure" order="1" sideWeight="0.19950739" side_tool="true" visible="true" weight="0.2112788" />
-      <window_info id="Favorites" order="2" sideWeight="0.50259066" side_tool="true" weight="0.19769503" />
-      <window_info id="DB Browser" order="3" weight="0.21141478" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.44463086" />
-      <window_info active="true" anchor="bottom" x="13" y="248" width="1259" height="73" id="Run" maximized="true" order="2" sideWeight="0.49642575" visible="true" weight="0.27886322" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49722" weight="0.1634103" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.28419182" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50357425" side_tool="true" weight="0.22557727" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3285968" />
-      <window_info anchor="bottom" id="DB Execution Console" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -589,84 +557,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Mysql_db/Read_Ini.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="328" column="8" selection-start-line="328" selection-start-column="8" selection-end-line="328" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/selenium/webdriver/remote/webelement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="634" column="8" selection-start-line="634" selection-start-column="8" selection-end-line="634" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/hello">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1402888915/winsound.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/api_case/CIS/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/api_case/MAIN_PROCESS/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/api_case/SALE/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/UI_case/LGT/carbascinfoUI.robot" />
-    <entry file="file://$PROJECT_DIR$/case/api_case/LGT/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#38#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/api_case/LGT/car_basc_info.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LGT/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2071">
-          <caret line="109" column="34" lean-forward="true" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
-          <folding>
-            <element signature="e#15#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/case/api_case/__init__.robot">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -731,54 +621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_ui/Login_UI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI_Element_Tool/Find_Elements.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5795">
-          <caret line="317" selection-start-line="317" selection-end-line="317" />
-          <folding>
-            <element signature="e#86#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUITool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="e#83#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="e#99#144#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,20 +645,6 @@
           <folding>
             <element signature="e#15#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_api/Login_a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_two.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="80" lean-forward="true" selection-end-line="257" />
         </state>
       </provider>
     </entry>
@@ -838,56 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/devhours.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5149">
-          <caret line="280" column="32" selection-start-line="280" selection-start-column="27" selection-end-line="280" selection-end-column="32" />
-          <folding>
-            <element signature="e#83#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_api/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#15#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/select_need.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/握手.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_api/Read_Ini.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="240" column="20" lean-forward="true" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -895,47 +677,242 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_api/user_name.ini">
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/hello">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="19">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/select_need.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_three.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="256" column="10" selection-start-line="256" selection-start-column="10" selection-end-line="256" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/流程图示.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_three.py">
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/握手.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="223" column="5" lean-forward="true" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
+        <state relative-caret-position="309">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#99#144#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py">
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/share_two.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="1782" lean-forward="true" selection-start-line="1782" selection-end-line="1782" />
+        <state relative-caret-position="285">
+          <caret line="251" column="24" lean-forward="true" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_api/Login_a.py" />
+    <entry file="file://$PROJECT_DIR$/login_api/Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#15#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/nameinfo.txt" />
+    <entry file="file://$PROJECT_DIR$/login_api/Read_Ini.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/2.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/语法介绍.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="10342" lean-forward="true" selection-start-line="10342" selection-end-line="10342" />
+        <state relative-caret-position="196479">
+          <caret line="10342" selection-start-line="10342" selection-end-line="10342" />
           <folding>
             <element signature="e#1034829#1034858#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py">
+    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="960" column="28" lean-forward="true" selection-start-line="960" selection-start-column="28" selection-end-line="960" selection-end-column="28" />
+        <state relative-caret-position="190">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI_Element_Tool/Find_Elements.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5776">
+          <caret line="316" column="9" selection-start-line="316" selection-start-column="9" selection-end-line="316" selection-end-column="9" />
+          <folding>
+            <element signature="e#86#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/UI_case_lib/LGT/CarBascInfoUITool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="109" column="26" lean-forward="true" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_ui/Login_UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <element signature="e#84#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/share/test0510.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2261">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding>
             <element signature="e#83#128#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/api_case/LGT/__init__.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/api_case/MAIN_PROCESS/__init__.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#33#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/devhours.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/api_case/LGT/car_basc_info.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/api_case/MAIN_PROCESS/main_process.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/LGT/Car_Basc_Info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+          <folding>
+            <element signature="e#15#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/test_os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="1588" column="11" lean-forward="true" selection-start-line="1581" selection-end-line="1621" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/draft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="247" selection-start-line="247" selection-end-line="247" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="284" column="52" selection-start-line="284" selection-start-column="46" selection-end-line="284" selection-end-column="52" />
+          <folding>
+            <element signature="e#83#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_api/user_name.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5954">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="989" column="24" lean-forward="true" selection-start-line="989" selection-start-column="24" selection-end-line="989" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lib/api_case_lib/MAIN_PROCESS/Main_Process5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>

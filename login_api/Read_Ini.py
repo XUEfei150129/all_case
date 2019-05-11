@@ -25,11 +25,11 @@ class Read_Ini(object):
         :return:
         """
         cf = configparser.ConfigParser()
-        cf.read(file_name)
+        cf.read(file_name, encoding="utf-8")
         return cf
 
     # 获取用户的姓名，和密码
-    #不同的环境，需要更换node值
+    # 不同的环境，需要更换node值
     def get_value(self, key, node="user_name_password_uat"):
         """
         :param node 对应的是配置文件中的节点
@@ -44,4 +44,4 @@ class Read_Ini(object):
 
 if __name__ == '__main__':
     read_init = Read_Ini()
-    print(read_init.get_value("zhuchunjiao"))
+    print(read_init.get_value("江凤余")[2])
