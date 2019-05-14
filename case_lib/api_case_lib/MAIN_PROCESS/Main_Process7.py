@@ -1,6 +1,6 @@
 #! /usr/bin/env/python3
 # coding=utf-8
-# @Time : 2019/3/27 9:52
+# @Time : 2019/5/14 11:16
 # @Author : XueFei
 from login_api.Login import Login
 from Mysql_db.connect_db import OperationMysql
@@ -18,13 +18,14 @@ from pprint import pprint
 from time import sleep
 
 
-class Main_Process6(Login):
+class Main_Process7(Login):
     """
     主流程测试用例
     """
     """
-    优化工程信息和客户信息he
+    优化工程信息和客户信息
     优化登录模块
+    优化客户信息
     """
 
     num_order = 1  # 订单设备数据
@@ -36,7 +37,7 @@ class Main_Process6(Login):
 
     custmoerinfo = "CUST112622",  # 默认客户，客户名：“薛飞客户”。
     env = "uat"  # 运行环境
-    khjl = "薛飞"  # 客户经理               需要维护D:\all_case\login_api\user_name.ini对应的用户
+    khjl = "薛飞"  # 客户经理                 需要维护D:\all_case\login_api\user_name.ini对应的用户
     cslj = "黄飞"  # 城市经理                 需要维护D:\all_case\login_api\user_name.ini对应的用户
     fwgcs = "江凤余"  # 服务工程师            需要维护D:\all_case\login_api\user_name.ini对应的用户
     csfwjl = "朱宽宽"  # 城市服务经理         需要维护D:\all_case\login_api\user_name.ini对应的用户
@@ -58,7 +59,7 @@ class Main_Process6(Login):
 
     def test_getCustomerDetail(self):
         """
-        客户经理根据客户cCode，获取客户信息。包括：客户姓名，电话，身份证信息
+        客户经理根据客户cCode，获取客户信息。包括：客户姓名，电话，身份证信息等
         :return: list
         """
         token = self.test_Login(self.env, self.khjl)
@@ -78,13 +79,24 @@ class Main_Process6(Login):
         custNickName = result.json()["data"]["custNickName"]  # 客户姓名
         storeCode = result.json(
         )["data"]["belongedToInfoList"][0]["storeCode"]  # 仓库code
+        storeName = result.json(
+        )["data"]["belongedToInfoList"][0]["storeName"]  # 仓库code
+        personalCredit = result.json()["data"]["personalCredit"]  # 个人信用等级
         pprint(
-            ">>>>>>>>>>成功获取到客户电话号码：{}，客户身份证号码：{}，客户姓名：{}，仓库Code：{}>>>>>>>>>>".format(
+            ">>>>>>>>>>成功获取到客户电话号码：{}，客户身份证号码：{}，客户姓名：{}，店Code：{}，店名：{},信用等级：{}>>>>>>>>>>".format(
                 str(custmobile),
                 str(custidcard),
                 str(custNickName),
-                str(storeCode)))
-        return [custmobile, custidcard, custNickName, storeCode]
+                str(storeCode),
+                str(storeName),
+                str(personalCredit)))
+        return [
+            custmobile,
+            custidcard,
+            custNickName,
+            storeCode,
+            storeName,
+            personalCredit]
 
     def test_addproject(self):
         """
@@ -125,12 +137,47 @@ class Main_Process6(Login):
         print(">>>>>>>>>>生成的工程单号是：{}>>>>>>>>>>".format(result.json()["data"]))
         return result.json()["data"]
 
+    def test_getstorewareinfo(self):
+        """
+        根据工程单号获取店仓信息
+        :return:
+        """
+        global pcode
+        pcode = self.test_addproject()  # 获取到生成的工程单号
+        token = self.test_Login(self.env, self.khjl)
+        headers = {
+            'Content-Type': 'application/json',
+            "X-Auth-Token": token,
+        }
+        values = {
+            "projectCode": pcode,
+            "longitude": "",
+            "latitude": ""
+        }
+        result = requests.get(
+            self.url +
+            "/api-crm/api/v2/crm/project/storeAndWmsInfoByProject",
+            params=values,
+            headers=headers)
+        storeCode = result.json()["data"]["storeCode"]
+        storeName = result.json()["data"]["storeName"]
+        warehouseCode = result.json()["data"]["warehouseCode"]
+        warehouseName = result.json()["data"]["warehouseName"]
+        pprint(
+            ">>>>>>>>>>成功获取到storeCode：{}，storeName：{}，warehouseCode：{}，warehouseName：{}".format(
+                storeCode,
+                storeName,
+                warehouseCode,
+                warehouseName))
+        return [storeCode, storeName, warehouseCode, warehouseName]
+
     def test_crmCustomerAndProject(self):
         """
         客户经理将工程关联客户
         :return:
         """
-        pcode = self.test_addproject()  # 获取到生成的工程单号
+        global storewareinfo
+        storewareinfo = self.test_getstorewareinfo()
         token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
@@ -217,7 +264,7 @@ class Main_Process6(Login):
                                 "city": "",
                                 "accountPeriod": "30",
                                 "isTransport": "{}".format(self.num_order),
-                                "creditLevel": "A",
+                                "creditLevel": custmoer_info[5],
                                 "creditScore": "",
                                 "remarks": ""},
                   "orderCode": "",
@@ -225,7 +272,7 @@ class Main_Process6(Login):
                                     "rentPriceCommission": "87",
                                     "categoryName": "剪叉",
                                     "minDayPrice": "130",
-                                    "warehouseName": "南京仓",
+                                    "warehouseName": storewareinfo[3],
                                     "days": "30",
                                     "shighNameAndCategoryName": "10米 剪叉",
                                     "maxMonthPrice": "4350",
@@ -237,7 +284,7 @@ class Main_Process6(Login):
                                     "monthGuidePrice": "2900",
                                     "useDate": "{}".format(nowtime),
                                     "monthRentPrice": "2900",
-                                    "warehouseCode": "DEP1802000106",
+                                    "warehouseCode": storewareinfo[2],
                                     "dayGuidePrice": "145",
                                     "kzCount": "17",
                                     "num": "{}".format(self.num_order),
@@ -420,12 +467,40 @@ class Main_Process6(Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print(">>>>>>>>>>合同专员审核合同通过>>>>>>>>>>")
 
+    def test_getorderDevCode(self):
+        """
+        根据bizNo获取orderDevCode
+        :return:
+        """
+        token = self.test_Login(self.env, self.khjl)
+        headers = {
+            'Content-Type': 'application/json',
+            "X-Auth-Token": token,
+        }
+        values = {
+            "orderCode": bizNo
+
+        }
+        result = requests.get(
+            self.url +
+            "/api-ser/api/ser/enter/initAddEnterDemand",
+            params=values,
+            headers=headers)
+        self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
+        self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
+        orderDevCode = result.json()["data"][0]["orderDevCode"]
+        pprint(
+            ">>>>>>>>>>成功获取到orderDevCode：{}>>>>>>>>>>".format(
+                orderDevCode, ))
+        return orderDevCode
+
     def test_createDevEnter(self):
         """
         客户经理发起进场
         :return:
         """
         self.test_ubmitAuditInst()
+        orderDevCode = self.test_getorderDevCode()
         token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
@@ -436,15 +511,15 @@ class Main_Process6(Login):
                   "isAdd": "0",
                   "balanceTypeName": "后付",
                   "addBailFee": "",
-                  "warehouseCode": "DEP1802000106",
+                  "warehouseCode": storewareinfo[2],
                   "balanceType": "3",
                   "serDevEnterDemandList": [{"lockedNum": "1",
                                              "notEnterNumTe": "1",
                                              "storeCode": custmoer_info[3],
                                              "categoryName": "剪叉",
-                                             "warehouseName": "南京仓",
+                                             "warehouseName": storewareinfo[3],
                                              "days": "30",
-                                             "orderDevCode": "DEV190517738",
+                                             "orderDevCode": orderDevCode,
                                              "addNum": 0,
                                              "category": "FORK",
                                              "isExit": False,
@@ -454,13 +529,13 @@ class Main_Process6(Login):
                                              "shighName": "10米",
                                              "type": "0",
                                              "monthRentPrice": "2900",
-                                             "warehouseCode": "DEP1802000106",
+                                             "warehouseCode": storewareinfo[2],
                                              "num": "{}".format(self.enter_order),
                                              "stockNum": "20",
                                              "dayRentPrice": "145"}],
-                  "warehouseName": "南京仓",
+                  "warehouseName": storewareinfo[3],
                   "storeCode": custmoer_info[3],
-                  "storeName": "南京店",
+                  "storeName": custmoer_info[4],
                   "addTransFee": "",
                   "remarks": "",
                   "planQuitDate": "{}".format(nowtime)}
@@ -551,7 +626,7 @@ class Main_Process6(Login):
         global devEnterDemandCode
         devEnterDemandCode = result.json(
         )["data"]["serDevEnterDemandList"][0]["devEnterDemandCode"]
-        print(">>>>>>>>>>成功获取devEnterDemandCode的值：{}".format(devEnterDemandCode))
+        print(">>>>>>>>>>成功获取devEnterDemandCode的值：{}>>>>>>>>>>".format(devEnterDemandCode))
         return devEnterDemandCode
 
     def test_selectEnterMatchDev(self):
