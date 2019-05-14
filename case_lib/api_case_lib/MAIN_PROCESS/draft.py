@@ -252,8 +252,8 @@ import decimal
 # decimal.getcontext().rounding = "ROUND_HALF_UP"
 
 # 使用字符串来储存小数不会有精度误差，Decimal可以正确处理这种方法表示的数字
-def sishewuru(num, precision = "0.000000"):
-    swnum = decimal.Decimal("{}".format(num)).quantize(decimal.Decimal("{}".format(precision)))
-    return swnum
-
-print(sishewuru(12.12312355))
+# def sishewuru(num, precision = "0.00"):
+#     swnum = decimal.Decimal("{}".format(num)).quantize(decimal.Decimal("{}".format(precision)))
+#     return swnum
+#
+# print(sishewuru(12.12612355))

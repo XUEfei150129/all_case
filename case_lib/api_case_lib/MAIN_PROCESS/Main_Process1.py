@@ -2,7 +2,7 @@
 # coding=utf-8
 # @Time : 2019/3/27 9:52
 # @Author : XueFei
-from login_api.Login import Login, LoginShort
+from login_api.Login import Login
 from Mysql_db.connect_db import OperationMysql
 from method.checkmethod import isJson, checktype
 from login_api.Read_Ini import Read_Ini
@@ -17,7 +17,7 @@ from time import sleep
 import re
 
 
-class Main_Process1(LoginShort, Login):
+class Main_Process1(Login):
     """
     主流程测试用例
     """

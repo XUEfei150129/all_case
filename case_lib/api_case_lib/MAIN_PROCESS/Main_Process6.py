@@ -2,7 +2,7 @@
 # coding=utf-8
 # @Time : 2019/3/27 9:52
 # @Author : XueFei
-from login_api.Login import Login, LoginShort
+from login_api.Login import Login
 from Mysql_db.connect_db import OperationMysql
 from method.checkmethod import isJson, checktype
 from login_api.Read_Ini import Read_Ini
@@ -18,12 +18,13 @@ from pprint import pprint
 from time import sleep
 
 
-class Main_Process5(LoginShort, Login):
+class Main_Process6(Login):
     """
     主流程测试用例
     """
     """
-    优化工程信息和客户信息
+    优化工程信息和客户信息he
+    优化登录模块
     """
 
     num_order = 1  # 订单设备数据
@@ -34,8 +35,8 @@ class Main_Process5(LoginShort, Login):
         "31.991562671134364"]  # 默认工程地址，抓包后将address，longitude，latitude信息存在在这个列表里面
 
     custmoerinfo = "CUST112622",  # 默认客户，客户名：“薛飞客户”。
-
-    khjl = "薛飞"  # 客户经理                 需要维护D:\all_case\login_api\user_name.ini对应的用户
+    env = "uat"  # 运行环境
+    khjl = "薛飞"  # 客户经理               需要维护D:\all_case\login_api\user_name.ini对应的用户
     cslj = "黄飞"  # 城市经理                 需要维护D:\all_case\login_api\user_name.ini对应的用户
     fwgcs = "江凤余"  # 服务工程师            需要维护D:\all_case\login_api\user_name.ini对应的用户
     csfwjl = "朱宽宽"  # 城市服务经理         需要维护D:\all_case\login_api\user_name.ini对应的用户
@@ -60,7 +61,7 @@ class Main_Process5(LoginShort, Login):
         客户经理根据客户cCode，获取客户信息。包括：客户姓名，电话，身份证信息
         :return: list
         """
-        token = self.test_Login(self.khjl)
+        token = self.test_Login(self.env, self.khjl)
         headers = {
             "X-Auth-Token": token,
         }
@@ -75,7 +76,8 @@ class Main_Process5(LoginShort, Login):
         custmobile = result.json()["data"]["custTel"]  # 客户电话号码
         custidcard = result.json()["data"]["identityCard"]  # 客户身份证号码
         custNickName = result.json()["data"]["custNickName"]  # 客户姓名
-        storeCode = result.json()["data"]["belongedToInfoList"][0]["storeCode"]  # 仓库code
+        storeCode = result.json(
+        )["data"]["belongedToInfoList"][0]["storeCode"]  # 仓库code
         pprint(
             ">>>>>>>>>>成功获取到客户电话号码：{}，客户身份证号码：{}，客户姓名：{}，仓库Code：{}>>>>>>>>>>".format(
                 str(custmobile),
@@ -91,7 +93,7 @@ class Main_Process5(LoginShort, Login):
         """
         global custmoer_info
         custmoer_info = self.test_getCustomerDetail()
-        token = self.test_Login(self.khjl)
+        token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -129,7 +131,7 @@ class Main_Process5(LoginShort, Login):
         :return:
         """
         pcode = self.test_addproject()  # 获取到生成的工程单号
-        token = self.test_Login(self.khjl)
+        token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -152,7 +154,7 @@ class Main_Process5(LoginShort, Login):
         客户经理获取用户关联的工程里的第一个工程，即为刚创建的工程
         :return:
         """
-        token = self.test_Login(self.khjl)
+        token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -186,7 +188,7 @@ class Main_Process5(LoginShort, Login):
         self.test_crmCustomerAndProject()  # 创建工程并关联客户
         global pnaemcode
         pnaemcode = self.test_projectListUnderCust()  # 获取创建的工程名和工程id
-        token = self.test_Login(self.khjl)
+        token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -262,7 +264,7 @@ class Main_Process5(LoginShort, Login):
         应用访问地址：
         城市经理在客户经理创建订单之后，刷新代办审批，在响应中获取到相应的数据
         '''
-        token = self.test_Login(self.cslj)
+        token = self.test_Login(self.env, self.cslj)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -293,7 +295,7 @@ class Main_Process5(LoginShort, Login):
         global bizNo
         bizNo = info[0]
         instNo = info[1]
-        token = self.test_Login(self.cslj)
+        token = self.test_Login(self.env, self.cslj)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -323,7 +325,7 @@ class Main_Process5(LoginShort, Login):
         :return:
         """
         self.test_submitAuditInst()
-        token = self.test_Login(self.khjl)
+        token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -369,7 +371,7 @@ class Main_Process5(LoginShort, Login):
         合同管理专员获取最新的合同,
         :return:第一个订单号
         """
-        token = self.test_Login(self.htzy)
+        token = self.test_Login(self.env, self.htzy)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -394,7 +396,7 @@ class Main_Process5(LoginShort, Login):
         """
         self.test_ordersignsave()
         instNo = self.test_list()
-        token = self.test_Login(self.htzy)
+        token = self.test_Login(self.env, self.htzy)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -424,7 +426,7 @@ class Main_Process5(LoginShort, Login):
         :return:
         """
         self.test_ubmitAuditInst()
-        token = self.test_Login(self.khjl)
+        token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -477,7 +479,7 @@ class Main_Process5(LoginShort, Login):
         城市服务经理获取列表中第一个进场需求
         :return: 进场单号
         """
-        token = self.test_Login(self.csfwjl)
+        token = self.test_Login(self.env, self.csfwjl)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -505,7 +507,7 @@ class Main_Process5(LoginShort, Login):
         self.test_createDevEnter()  # 发起进场，获取第一个进场单
         global fwj
         fwj = self.test_jclist()  # 获取进场单号
-        token = self.test_Login(self.csfwjl)
+        token = self.test_Login(self.env, self.csfwjl)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -531,7 +533,7 @@ class Main_Process5(LoginShort, Login):
         服务工程师验机：先根据进场单号获取devEnterDemandCode的值
         :return:
         """
-        token = self.test_Login(self.fwgcs)
+        token = self.test_Login(self.env, self.fwgcs)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -558,7 +560,7 @@ class Main_Process5(LoginShort, Login):
         :return:设备的出厂编号
         """
         self.test_getserDevEnterByCode()  # 获取devEnterDemandCode值，这个函数有全局变量
-        token = self.test_Login(self.fwgcs)
+        token = self.test_Login(self.env, self.fwgcs)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -586,7 +588,7 @@ class Main_Process5(LoginShort, Login):
         self.test_enterAssign()  # 服务经理分配进场给服务工程师
         global devCode
         devCode = self.test_selectEnterMatchDev()  # 获取出厂编号
-        token = self.test_Login(self.fwgcs)
+        token = self.test_Login(self.env, self.fwgcs)
         headers = {
             "Content-Type": "application/x-www-form-urlencoded",
             "X-Auth-Token": token,
@@ -625,7 +627,7 @@ class Main_Process5(LoginShort, Login):
         """
         dEMC = self.test_addEnterMatchDev()
         last_hours = self.test_addone()
-        token = self.test_Login(self.fwgcs)
+        token = self.test_Login(self.env, self.fwgcs)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -659,7 +661,7 @@ class Main_Process5(LoginShort, Login):
         服务工程师获取仓库code和仓库name
         :return:仓库code和仓库name
         """
-        token = self.test_Login(self.fwgcs)
+        token = self.test_Login(self.env, self.fwgcs)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -705,7 +707,7 @@ class Main_Process5(LoginShort, Login):
         warehouseinfo = self.test_getwarehousecode()  # 获取仓库信息
         global PlanDeliveryTime
         PlanDeliveryTime = self.test_getaftertime(1)
-        token = self.test_Login(self.fwgcs)
+        token = self.test_Login(self.env, self.fwgcs)
         headers = {
             'Content-Type': 'application/json',
             "X-Auth-Token": token,
@@ -761,7 +763,7 @@ class Main_Process5(LoginShort, Login):
         """
         global demandCode
         demandCode = self.test_createtransportdemand()  # 获取物流需求单号
-        token = self.test_Login(self.zhglg)
+        token = self.test_Login(self.env, self.zhglg)
         headers = {
             "X-Auth-Token": token,
         }
@@ -784,7 +786,7 @@ class Main_Process5(LoginShort, Login):
         综合管理岗获取推荐车型，便于发起物流运输单的时候传值
         :return:返回9.6米，13米，17,5米物流车的truckCode，为获取承运商信息做准备
         """
-        token = self.test_Login(self.zhglg)
+        token = self.test_Login(self.env, self.zhglg)
         headers = {
             "X-Auth-Token": token,
         }
@@ -810,7 +812,7 @@ class Main_Process5(LoginShort, Login):
         """
         global RecommendTrucks_info
         RecommendTrucks_info = self.test_getRecommendTrucks()
-        token = self.test_Login(self.zhglg)
+        token = self.test_Login(self.env, self.zhglg)
         headers = {
             "X-Auth-Token": token,
             'Content-Type': 'application/json',
@@ -836,7 +838,7 @@ class Main_Process5(LoginShort, Login):
         综合管理岗点击导航服务，获取公里数
         :return: 公里数
         """
-        token = self.test_Login(self.zhglg)
+        token = self.test_Login(self.env, self.zhglg)
         headers = {
             "X-Auth-Token": token,
             'Content-Type': 'application/json',
@@ -887,7 +889,7 @@ class Main_Process5(LoginShort, Login):
         codeandname = self.test_carrierlist()  # 获取承运商信息
         global kilometers
         kilometers = self.test_calcMileage()  # 获取公里数
-        token = self.test_Login(self.zhglg)
+        token = self.test_Login(self.env, self.zhglg)
         headers = {
             "X-Auth-Token": token,
             'Content-Type': 'application/json',
@@ -953,7 +955,7 @@ class Main_Process5(LoginShort, Login):
         :return:
         """
         freightRecommended = self.test_freightcalculate()  # 流程进展到发起物流需求单，返回推荐运费
-        token = self.test_Login(self.zhglg)
+        token = self.test_Login(self.env, self.zhglg)
         headers = {
             "X-Auth-Token": token,
             'Content-Type': 'application/json',
