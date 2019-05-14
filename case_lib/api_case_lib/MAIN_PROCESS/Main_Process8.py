@@ -1,7 +1,9 @@
 #! /usr/bin/env/python3
 # coding=utf-8
-# @Time : 2019/5/14 11:16
+# @Time : 2019/5/14 16:31
 # @Author : XueFei
+
+
 from login_api.Login import Login
 from Mysql_db.connect_db import OperationMysql
 from method.checkmethod import isJson, checktype
@@ -18,7 +20,7 @@ from pprint import pprint
 from time import sleep
 
 
-class Main_Process7(Login):
+class Main_Process8(Login):
     """
     主流程测试用例
     """
@@ -366,12 +368,41 @@ class Main_Process7(Login):
         self.assertEqual(0, result.json()['errCode'], msg="验证'errCode': 0,")
         print(">>>>>>>>>>城市经理审核通过>>>>>>>>>>")
 
+    def test_getsignatorys(self):
+        """
+        获取客户的鉴权信息
+        :return:list
+        """
+        token = self.test_Login(self.env, self.khjl)
+        headers = {
+            'Content-Type': 'application/json',
+            "X-Auth-Token": token,
+        }
+        values = {
+            "custCode": self.custmoerinfo
+        }
+        result = requests.get(
+            self.url +
+            "/api-crm/api/v2/crm/customer/signatorys",
+            params=values,
+            headers=headers)
+        custRealName = result.json()["data"]["custRealName"]
+        qrelativePath = result.json(
+        )["data"]["omsOrderSignPerson"]["filePathList"][0]["relativePath"]
+        hrelativePath = result.json(
+        )["data"]["omsOrderSignPerson"]["filePathList"][1]["relativePath"]
+        relativePath = [qrelativePath, hrelativePath]
+        pprint(">>>>>>>>>>成功获取客户的真实姓名和身份证的相对路径:{}".format(
+            [custRealName, relativePath]))
+        return [custRealName, relativePath]
+
     def test_ordersignsave(self):
         """
         客户经理上传合同
         :return:
         """
         self.test_submitAuditInst()
+        signatorys = self.test_getsignatorys()
         token = self.test_Login(self.env, self.khjl)
         headers = {
             'Content-Type': 'application/json',
@@ -379,7 +410,7 @@ class Main_Process7(Login):
         }
         values = {"contractStatus": 1,
                   "contractTargetCode": self.custmoerinfo[0],
-                  "contractTargetName": custmoer_info[2],
+                  "contractTargetName": signatorys[0],
                   "contractTargetType": 1,
                   "licenseFilePath": [],
                   "filePath": ["{}".format({"localUrl": (None,
@@ -394,8 +425,7 @@ class Main_Process7(Login):
                                              "mobile": custmoer_info[0],
                                              # 客户姓名
                                              "name": custmoer_info[2],
-                                             "images": ["lpt/0/1108990759794774016.jpg",
-                                                        "lpt/1/1108990760113541120.jpg"]}]}
+                                             "images": signatorys[1]}]}
         values = json.dumps(values)
         result = requests.post(
             self.url +
@@ -625,7 +655,8 @@ class Main_Process7(Login):
         global devEnterDemandCode
         devEnterDemandCode = result.json(
         )["data"]["serDevEnterDemandList"][0]["devEnterDemandCode"]
-        print(">>>>>>>>>>成功获取devEnterDemandCode的值：{}>>>>>>>>>>".format(devEnterDemandCode))
+        print(">>>>>>>>>>成功获取devEnterDemandCode的值：{}>>>>>>>>>>".format(
+            devEnterDemandCode))
         return devEnterDemandCode
 
     def test_selectEnterMatchDev(self):

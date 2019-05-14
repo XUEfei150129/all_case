@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.6.7 on win32)" generated="20190514 14:36:31.211" rpa="false">
+<suite id="s1" name="Case" source="D:\all_case\case">
+<suite id="s1-s1" name="Api Case" source="D:\all_case\case\api_case">
+<suite id="s1-s1-s1" name="MAIN PROCESS" source="D:\all_case\case\api_case\MAIN_PROCESS">
+<suite id="s1-s1-s1-s1" name="Main Process" source="D:\all_case\case\api_case\MAIN_PROCESS\main_process.robot">
+<test id="s1-s1-s1-s1-t1" name="验证主流程 -- Main0009000">
+<kw name="Test Createtransportorder" library="case_lib.api_case_lib.MAIN_PROCESS.Main_Process7">
+<doc>创建物流运输单
+:return:</doc>
+<msg timestamp="20190514 14:37:31.219" level="INFO">'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取到客户电话号码：15151864744，客户身份证号码：320882198810292412，客户姓名：薛飞客户，店Code：DEP18020003，店名：南京店,信用等级：A&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;'
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;生成的工程单号是：PROJECT107521&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取到storeCode：DEP18020003，storeName：南京店，warehouseCode：DEP1802000106，warehouseName：南京仓'
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;工程关联客户成功&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取到刚创建的工程名:auto20190514143632;工程id:PROJECT107521&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;订单创建成功&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;bizNo:ZNLHZL-2019-28889,instNo:a671df6f50f1408983bbdd3715f2a622 获取成功&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;城市经理审核通过&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;客户经理上传合同成功&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;让服务器休息5秒钟&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;好，继续工作&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;合同专员审核合同通过&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取到orderDevCode：DEV190517840&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;'
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;客户经理发起进场成功&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;进场单号是：FWJ190560978&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;城市服务工程师成功分配进场需求&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取devEnterDemandCode的值：FWJ_DEMAND_190555182&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取设备的出厂编号：TEST000000054&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;'
+'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;选择设备成功,并正常返回devEnterMatchCode：FWJ_MATCH_190574327&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;'
+'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;服务工程师成功验机&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;'
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取仓库code：DEP1802000106和仓库name：南京仓&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;发起物流需求单成功，成功获取到物流需求单号：WL2019005715&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取物流运输单号：YS2019006095&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;'
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取物流车的truckCode，分别是：b3c80069-3fd1-11e9-b0af-005056883963，b7eef176-3fd1-11e9-b0af-005056883963，bc6b6bb6-3fd1-11e9-b0af-005056883963&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取到承运商code：9920f956-b580-40a3-beff-381de301335f，和承运商的名字：天津恒路物流有限公司&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+'&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取到公里数：42&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;'
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功获取推荐运费：858.06&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;成功创建物流运输单&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</msg>
+<status status="PASS" starttime="20190514 14:36:31.407" endtime="20190514 14:37:31.219"></status>
+</kw>
+<tags>
+<tag>main</tag>
+</tags>
+<status status="PASS" starttime="20190514 14:36:31.406" endtime="20190514 14:37:31.220" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190514 14:36:31.255" endtime="20190514 14:37:31.221"></status>
+</suite>
+<status status="PASS" starttime="20190514 14:36:31.253" endtime="20190514 14:37:31.223"></status>
+</suite>
+<status status="PASS" starttime="20190514 14:36:31.251" endtime="20190514 14:37:31.225"></status>
+</suite>
+<status status="PASS" starttime="20190514 14:36:31.214" endtime="20190514 14:37:31.226"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">main</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Case">Case</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Api Case">Case.Api Case</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="MAIN PROCESS">Case.Api Case.MAIN PROCESS</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Main Process">Case.Api Case.MAIN PROCESS.Main Process</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

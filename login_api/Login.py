@@ -14,7 +14,7 @@ class Login(unittest.TestCase):
 
     def test_Login(self, env, name):
         if env == "uat":
-            self.url = "http://api.zuul.uat.znlhzl.cn"
+            self.url = "http://uatapi.znlhzl.cn"
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
@@ -24,7 +24,7 @@ class Login(unittest.TestCase):
             )
             token = result.json()["data"]["token"]
         elif env == "uatzms":
-            self.url = "https://zms.uat.znlhzl.cn"
+            self.url = "https://uatzms.znlhzl.cn"
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
