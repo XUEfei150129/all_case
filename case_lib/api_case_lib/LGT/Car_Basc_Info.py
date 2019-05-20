@@ -1,5 +1,5 @@
 # coding=utf-8
-from login_api.Login import Login_new
+from login_api.Login import Login
 from Mysql_db.connect_db import OperationMysql
 from method.checkmethod import isJson, checktype
 import string
@@ -9,14 +9,13 @@ import requests
 from pprint import pprint
 
 
-class Car_Basc_Info(Login_new):
+class Car_Basc_Info(Login):
     def test_getIndexMenuAndButton(self):
         '''调用端：web
             应用访问地址：/#/LGT/carBaseInfo
             平台应用场景：进入物流管理，点击车辆基本信息
         '''
-        token = self.test_Login("uatzms", "薛飞")
-        print(token)
+        token = self.test_Login("autozms", "薛飞")
         headers = {
             "X-Auth-Token": token,
         }

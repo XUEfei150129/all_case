@@ -10,7 +10,12 @@ import requests
 import json
 
 
-class Login(unittest.TestCase):
+class Login(unittest.TestCase, Read_Ini):
+    """
+    优化工程信息和客户信息
+    优化登录模块
+    优化客户信息
+    """
 
     def test_Login(self, env, name):
         if env == "uat":
@@ -18,8 +23,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -28,8 +33,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -38,8 +43,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -48,8 +53,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -58,8 +63,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -68,8 +73,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -78,8 +83,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -88,8 +93,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms//api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -98,8 +103,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -108,8 +113,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -118,8 +123,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -128,8 +133,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -138,8 +143,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -148,8 +153,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -158,8 +163,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -168,8 +173,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -178,8 +183,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -188,8 +193,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -198,8 +203,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -208,8 +213,8 @@ class Login(unittest.TestCase):
             result = requests.get(
                 "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
                     self.url,
-                    Read_Ini().get_value(name)[0],
-                    Read_Ini().get_value(name)[1],
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
                     timeout=10),
             )
             token = result.json()["data"]["token"]
@@ -219,13 +224,33 @@ class Login(unittest.TestCase):
                 "charset": "UTF - 8"
             }
             values = {
-                "password": Read_Ini().get_value(name)[1],
-                "mobile": Read_Ini().get_value(name)[0]
+                "password": Read_Ini().get_value(env, name)[1],
+                "mobile": Read_Ini().get_value(env, name)[0]
             }
             values = json.dumps(values)
             result = requests.post(
                 "{}/api-sso/api/v2/pc/creditUser/custLogin".format(
                     self.url), data=values, headers=headers)
             token = result.json()["data"]["userInfo"]["tokenId"]
-        return token
+        elif env == "auto":
+            self.url = "http://api.zuul.autotest.znlhzl.org/"
+            result = requests.get(
+                "{}/api-sso/api/v1/login?name={}&pwd={}".format(
+                    self.url,
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
+                    timeout=10),
+            )
+            token = result.json()["data"]["token"]
+        elif env == "autozms":
+            self.url = "http://zms.autotest.znlhzl.org"
+            result = requests.get(
+                "{}/zms/api-sso/api/v1/login?name={}&pwd={}".format(
+                    self.url,
+                    Read_Ini().get_value(env, name)[0],
+                    Read_Ini().get_value(env, name)[1],
+                    timeout=10),
+            )
+            token = result.json()["data"]["token"]
 
+        return token

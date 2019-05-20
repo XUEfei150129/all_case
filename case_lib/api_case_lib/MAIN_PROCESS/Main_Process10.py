@@ -1,8 +1,7 @@
 #! /usr/bin/env/python3
 # coding=utf-8
-# @Time : 2019/5/14 16:31
+# @Time : 2019/5/17 12:19
 # @Author : XueFei
-
 
 from login_api.Login import Login
 from Mysql_db.connect_db import OperationMysql
@@ -20,9 +19,14 @@ from pprint import pprint
 from time import sleep
 
 
-class Main_Process8(Login):
+class Main_Process10(Login):
     """
-    主流程测试用例，UAT环境
+    主流程测试用例。用来测试图片上传
+    """
+    """
+    优化工程信息和客户信息
+    优化登录模块
+    优化客户信息
     """
     num_order = 1  # 订单设备数据
     enter_order = 1  # 发起进场的设备数量
@@ -30,13 +34,13 @@ class Main_Process8(Login):
         "江苏省南京市雨花台区雨花街道雨花南路2号雨花台区人民政府",
         "118.7790948694178",
         "31.991562671134364"]  # 默认工程地址，抓包后将address，longitude，latitude信息存在在这个列表里面
-    custmoerinfo = "CUST112622",  # 默认客户，客户名：“薛飞客户”。
-    env = "uat"
+    custmoerinfo = "CUST313544",  # 默认客户，客户名：“薛飞客户”。
+
     khjl = "薛飞"  # 客户经理                 需要维护D:\all_case\login_api\user_name.ini对应的用户
     cslj = "黄飞"  # 城市经理                 需要维护D:\all_case\login_api\user_name.ini对应的用户
     fwgcs = "江凤余"  # 服务工程师            需要维护D:\all_case\login_api\user_name.ini对应的用户
     csfwjl = "朱宽宽"  # 城市服务经理         需要维护D:\all_case\login_api\user_name.ini对应的用户
-    htzy = "陈艳艳"  # 合同专员               需要维护D:\all_case\login_api\user_name.ini对应的用户
+    htzy = "秦传秀"  # 合同专员               需要维护D:\all_case\login_api\user_name.ini对应的用户
     zhglg = "朱春娇"  # 综合管理岗/物流专员    需要维护D:\all_case\login_api\user_name.ini对应的用户
 
     def sishewuru(self, num, precision="0.000000"):
@@ -119,7 +123,7 @@ class Main_Process8(Login):
             "infoSource": 1,
             "forkCount": 1,  # 剪车预估台数
             "armCount": 1,  # 臂车预估台数
-            "custCode": None,  # None不是“”
+            "custCode": None,  # None不等于“”空
             "creatFlag": 1}
         values = json.dumps(values)
         result = requests.post(
@@ -344,10 +348,10 @@ class Main_Process8(Login):
         }
         values = {
             "status": 1,
-            "submitUserCode": Read_Ini().get_value(self.env, self.cslj)[2],
+            "submitUserCode": Read_Ini().get_value(self.cslj)[2],
             "submitUserName": self.cslj,
             "bizNo": bizNo,
-            "updateUserCode": Read_Ini().get_value(self.env, self.cslj)[2],
+            "updateUserCode": Read_Ini().get_value(self.cslj)[2],
             "updateUserName": self.cslj,
             "instNo": instNo,
             "comment": "测试"}
@@ -406,12 +410,6 @@ class Main_Process8(Login):
                   "contractTargetName": signatorys[0],
                   "contractTargetType": 1,
                   "licenseFilePath": [],
-                  "filePath": ["{}".format({"localUrl": (None,
-                                                         "1.png"),
-                                            "imgFile": ("1.png",
-                                                        open(r"d:\1.png",
-                                                             "rb"),
-                                                        "image/png")})],
                   "orderCode": bizNo,
                   "orderSignPersonVoList": [{"idcard": custmoer_info[1],  # 客户身份证
                                              # 客户手机号
@@ -419,10 +417,12 @@ class Main_Process8(Login):
                                              # 客户姓名
                                              "name": custmoer_info[2],
                                              "images": signatorys[1]}]}
+        files = {"filePath": [("1.png", open(r"d:\1.png", "rb"), "image/png")]}
         values = json.dumps(values)
         result = requests.post(
             self.url +
             "/api-oms/api/order/sign/save",
+            files=files,
             data=values,
             headers=headers)
         self.assertEqual(True, isJson(jsonstr=result), msg='判断返回值是否为json格式')
@@ -473,10 +473,10 @@ class Main_Process8(Login):
         }
         values = {
             "status": 1,
-            "submitUserCode": Read_Ini().get_value(self.env, self.htzy)[2],
+            "submitUserCode": Read_Ini().get_value(self.htzy)[2],
             "submitUserName": self.htzy,
             "bizNo": bizNo,
-            "updateUserCode": Read_Ini().get_value(self.env, self.htzy)[2],
+            "updateUserCode": Read_Ini().get_value(self.htzy)[2],
             "updateUserName": self.htzy,
             "instNo": instNo,
             "comment": "测试"}
@@ -611,9 +611,9 @@ class Main_Process8(Login):
         }
         values = {
             "devEnterCode": fwj,
-            "loadingStaff": Read_Ini().get_value(self.env, self.fwgcs)[2],
+            "loadingStaff": Read_Ini().get_value(self.fwgcs)[2],
             "loadingStaffName": self.fwgcs,
-            "deliveryStaff": Read_Ini().get_value(self.env, self.fwgcs)[2],
+            "deliveryStaff": Read_Ini().get_value(self.fwgcs)[2],
             "deliveryStaffName": self.fwgcs}
         values = json.dumps(values)
         result = requests.post(
@@ -814,17 +814,17 @@ class Main_Process8(Login):
                   "demandDeliveryAddress": "江宁区淳化街道茶岗社区104省道",
                   "demandDeliveryAddressLatitude": 31.950859,
                   "demandDeliveryAddressLongitude": 119.014704,
-                  "demandDeliveryContactCode": Read_Ini().get_value(self.env, self.fwgcs)[2],
+                  "demandDeliveryContactCode": Read_Ini().get_value(self.fwgcs)[2],
                   "demandDeliveryContactName": self.fwgcs,
-                  "demandDeliveryContactMobile": Read_Ini().get_value(self.env, self.fwgcs)[0],
+                  "demandDeliveryContactMobile": Read_Ini().get_value(self.fwgcs)[0],
                   "demandPlanDeliveryTime": PlanDeliveryTime,
                   "demandPlanReceiptTime": self.test_getaftertime(2),
                   "demandReceiptAddress": self.projectinfo[0],
                   "demandReceiptAddressLatitude": self.projectinfo[2],
                   "demandReceiptAddressLongitude": self.projectinfo[1],
-                  "demandReceiptContactCode": Read_Ini().get_value(self.env, self.fwgcs)[2],
+                  "demandReceiptContactCode": Read_Ini().get_value(self.fwgcs)[2],
                   "demandReceiptContactName": self.fwgcs,
-                  "demandReceiptContactMobile": Read_Ini().get_value(self.env, self.fwgcs)[0],
+                  "demandReceiptContactMobile": Read_Ini().get_value(self.fwgcs)[0],
                   "demandRelationCode": fwj,
                   "demandType": "1",
                   "warehouseCode": warehouseinfo[0],

@@ -30,18 +30,18 @@ class Read_Ini(object):
 
     # 获取用户的姓名，和密码
     # 不同的环境，需要更换node值
-    def get_value(self, key, node="user_name_password_uat"):
+    def get_value(self, env, key):
         """
         :param node 对应的是配置文件中的节点
         :param key: 配置文件中页面元素对应的名称
         :return: 元素的选取方式和元素数据
         """
 
-        data = self.load_ini().get(node, key)
+        data = self.load_ini().get(env, key)
         data = data.split(">")
         return data
 
 
 if __name__ == '__main__':
     read_init = Read_Ini()
-    print(read_init.get_value("江凤余")[2])
+    print(read_init.get_value("autozms", "薛飞")[1])
